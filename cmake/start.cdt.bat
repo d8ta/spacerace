@@ -1,0 +1,5 @@
+@setlocal
+@cd "%~dp0"
+@set PATH=@CMAKE_FIXED_RUNTIME_OUTPUT_DIRECTORY@;@CURRENT_BIN_DIRS@;%PATH%;
+@@CURRENT_OUTPUT_NAME@.exe %*
+@pause

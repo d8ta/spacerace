@@ -1,11 +1,24 @@
-Game name:
-„Space race“
+= Readme =
 
-Overall game idea and concept
- Der Spieler steuert ein Raumschiff, welches er von hinten sieht, durch einen Parcour von Ringen/Asteroiden. Für das Spiel ist ein Zeitlimit vorgesehen nach dessen Ablauf das Spiel endet. Die Ringe setzten dabei Checkpoints bei deren passieren das Raumschiff schneller wird um die Schwierigkeit zu erhöhen. Erreicht der Spieler vor Ablauf der Zeit das Ziel hat er gewonnen.
+0. preconditons: 
+cmake and xcode are already installed
 
-Chosen special effect(s)
-Als Spezialeffekt soll die Kollision mit den Ringen/Asteroiden eingefügt werden. Fliegt das Ufo an diese Objekte ist das Spiel beendet bzw. startet das Spiel von vorne.
+install brew:
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
-Planned interaction
-Der Spieler kann die Geschwindigkeit in einem bestimmten Rahmen durch die Pfeiltasten (w, s) erhöhen oder verringern. Mit der Maus und den Pfeiltasten kann der Spieler das Raumschiff bewegen (links, rechts, hoch, runter).
+1. install libjpeg and libpng if you don't already have it
+brew link libpng jpeg
+
+2. install libdevil:
+brew install devil --use-llvm 
+
+3 using cmake normally and choose XCode as generator
+
+4. build normally
+
+5. adapt working directory
+in order to launch the selected scheme in the correct directory. go to
+-> Edit Scheme -> Options -> "Use Custom working directory" 
+and select the project directory where the current exercise is in
+
+

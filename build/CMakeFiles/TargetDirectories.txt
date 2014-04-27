@@ -1,3 +1,0 @@
-/Users/danielraudschus/Documents/spacerace/build/CMakeFiles/ALL_BUILD.dir
-/Users/danielraudschus/Documents/spacerace/build/CMakeFiles/ZERO_CHECK.dir
-/Users/danielraudschus/Documents/spacerace/build/src/CMakeFiles/spacerace.dir
