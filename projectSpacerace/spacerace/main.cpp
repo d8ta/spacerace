@@ -106,29 +106,29 @@ void drawCube() {
     glVertex3f( -5, -5, -5 );
     glVertex3f( 5, -5, -5 );
     glEnd();
+    
+    
 }
 
 void drawSpheres() {
     
-    
 	//draw the sphere
-    //	glColor3f(1.5f, 1.0f, 0.0f);
-    //	glutSolidSphere(10.0, 60, 60);
+//    glColor3f(1.5f, 1.0f, 0.0f);
+//    glutSolidSphere(10.0, 60, 60);
     
+glPushMatrix();
+    {
     glTranslatef(30, 20, -10);
-    
 	glColor3f(0.0f, 1.0f, 1.0f);
 	glutSolidSphere(5.0, 60, 60);
     
     glTranslatef(10, 10, 10);
-    
 	glColor3f(0.0f, 1.0f, 0.0f);
 	glutSolidSphere(5.0, 60, 60);
-}
+    }
+glPopMatrix();
+    }
 
-void drawCam() {
-    glutSolidSphere(0.0f, 0.0f, 0.0f);
-}
 
 void display() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear color and depth buffer
@@ -136,7 +136,7 @@ void display() {
 	// switch to modelview matrix
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-    gluLookAt(cameraPositionX, cameraPositionY, cameraPositionZ, moveX, moveY, moveZ, 0.0, 1.0, 0.0);
+    //gluLookAt(cameraPositionX, cameraPositionY, cameraPositionZ, moveX, moveY, moveZ, 0.0, 20.0, 0.0);
     
 	// set vantage point
 	glTranslatef(0.0f, 0.0f, -50.0f);
@@ -146,13 +146,12 @@ void display() {
     glRotatef(rotationY, 0.0f, 1.0f, 0.0f);
     
 
-	// Projektaufrufe
-    
+	/** Projektaufrufe **/
     drawSpheres();
-    
+
     glTranslatef(moveX, moveY, moveZ);
     drawCube();
-    //drawCam();
+    
     
 	LOG_GL_ERRORS();
 	glutSwapBuffers(); // draw scene
