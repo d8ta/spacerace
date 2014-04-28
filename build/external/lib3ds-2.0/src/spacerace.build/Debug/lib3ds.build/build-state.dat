@@ -1,0 +1,856 @@
+Tlib3ds
+v6
+r1
+cCheck dependencies
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_background.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_camera.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunk.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunktable.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_file.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_io.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_light.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_material.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_math.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_matrix.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_mesh.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_node.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_quat.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_shadow.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_track.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_util.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_vector.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_viewport.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib normal x86_64
+cPhaseScriptExecution CMake\ PostBuild\ Rules /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000530295C100000000000000AA
+t1392678337
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000535B4D29000000000000044C
+t1398492457
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000535B4D2900000000000001DE
+t1398492457
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+c00000000535B4D2C000000000000681C
+t1398492460
+s26652
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+c00000000535B4D2C0000000000004734
+t1398492460
+s18228
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+c00000000535B4D2C000000000000FC6C
+t1398492460
+s64620
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+c00000000535B4D2C000000000000F6A0
+t1398492460
+s63136
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+c00000000535B4D2C0000000000006254
+t1398492460
+s25172
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+c00000000535B4D2C000000000000E0F8
+t1398492460
+s57592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+c00000000535B4D2C000000000000D6DC
+t1398492460
+s55004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+c00000000535B4D2C0000000000006308
+t1398492460
+s25352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+c00000000535B4D2C0000000000004050
+t1398492460
+s16464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+c00000000535B4D2C0000000000008570
+t1398492460
+s34160
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+c00000000535B4D2C0000000000005EA0
+t1398492460
+s24224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+c00000000535B4D2C0000000000005FAC
+t1398492460
+s24492
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+c00000000535B4D2C0000000000004440
+t1398492460
+s17472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+c00000000535B4D2C000000000000AA28
+t1398492460
+s43560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+c00000000535B4D2C0000000000003E2C
+t1398492460
+s15916
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+c00000000535B4D2C0000000000030B04
+t1398492460
+s199428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+c00000000535B4D2C0000000000005E54
+t1398492460
+s24148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+c00000000535B4D2C0000000000006A90
+t1398492460
+s27280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+c00000000535B4D2C00000000000178AC
+t1398492460
+s96428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+c00000000535B4D2C000000000001ADC8
+t1398492460
+s110024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+c00000000535B4D2C000000000001028C
+t1398492460
+s66188
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+c00000000535B4D2C0000000000008800
+t1398492460
+s34816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+c00000000535B4D2C0000000000011090
+t1398492460
+s69776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+c00000000535B4D2C000000000000882C
+t1398492460
+s34860
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+c00000000535B4D2C00000000000067AC
+t1398492460
+s26540
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+c00000000535B4D2C0000000000008DEC
+t1398492460
+s36332
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+c00000000535B4D2C0000000000004C08
+t1398492460
+s19464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+c00000000535B4D2C0000000000002428
+t1398492460
+s9256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+c00000000535B4D2C000000000000439C
+t1398492460
+s17308
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+c00000000535B4D2C0000000000006768
+t1398492460
+s26472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+c00000000535B4D2C00000000000172F4
+t1398492460
+s94964
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+c00000000535B4D310000000000001770
+t1398492465
+s6000
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.o
+t1398595003
+s15836
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_background.o
+t1398595003
+s15736
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_camera.o
+t1398595003
+s14076
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunk.o
+t1398595003
+s10400
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunktable.o
+t1398595003
+s17080
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_file.o
+t1398595003
+s64936
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_io.o
+t1398595003
+s24536
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_light.o
+t1398595003
+s18640
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_material.o
+t1398595003
+s32284
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_math.o
+t1398595003
+s4212
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_matrix.o
+t1398595004
+s16576
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_mesh.o
+t1398595004
+s38780
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_node.o
+t1398595004
+s42700
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_quat.o
+t1398595004
+s13452
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_shadow.o
+t1398595004
+s12020
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_track.o
+t1398595004
+s25740
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_util.o
+t1398595004
+s6596
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_vector.o
+t1398595004
+s9800
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_viewport.o
+t1398595004
+s17680
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3dsd.2.0.LinkFileList
+c00000000535CDDBB0000000000000AD3
+t1398595003
+s2771
+
+N/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh
+c00000000535CDDBB00000000000000E1
+t1398595003
+s225
+
+N/Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib
+t1398595004
+s144464
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+c00000000533D45EC00000000000076CE
+t1396524524
+s30414
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c
+c00000000533D45EC0000000000001C26
+t1396524524
+s7206
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c
+c00000000533D45EC00000000000016A9
+t1396524524
+s5801
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c
+c00000000533D45EC00000000000010E2
+t1396524524
+s4322
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c
+c00000000533D45EC0000000000000E4C
+t1396524524
+s3660
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c
+c00000000533D45EC0000000000002681
+t1396524524
+s9857
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c
+c00000000533D45EC0000000000009589
+t1396524524
+s38281
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+c00000000533D45EC0000000000003A70
+t1396524524
+s14960
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c
+c00000000533D45EC00000000000024F0
+t1396524524
+s9456
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c
+c00000000533D45EC00000000000024D3
+t1396524524
+s9427
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c
+c00000000533D45EC0000000000006507
+t1396524524
+s25863
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c
+c00000000533D45EC00000000000007AB
+t1396524524
+s1963
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c
+c00000000533D45EC000000000000294C
+t1396524524
+s10572
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c
+c00000000533D45EC0000000000004F7A
+t1396524524
+s20346
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c
+c00000000533D45EC0000000000008B85
+t1396524524
+s35717
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c
+c00000000533D45EC00000000000017FD
+t1396524524
+s6141
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c
+c00000000533D45EC0000000000000B55
+t1396524524
+s2901
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c
+c00000000533D45EC0000000000003B83
+t1396524524
+s15235
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c
+c00000000533D45EC0000000000000AF9
+t1396524524
+s2809
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c
+c00000000533D45EC00000000000013EA
+t1396524524
+s5098
+
+N/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c
+c00000000533D45EC0000000000002F66
+t1396524524
+s12134
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c
+r0
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies319718f1830eb941^13b518f1830eb941^---0#1#1#--18"Check dependencies36"67CFD2BE-6CF0-4761-AA2E-2E6D62672936-
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.691578
+e420287803.817398
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c219"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.o external/lib3ds-2.0/src/lib3ds_atmosphere.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler0728b13b150db941^5341d13b150db941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c0000000000000000^2390"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.o external/lib3ds-2.0/src/lib3ds_atmosphere.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.o36"3E8268E0-289D-4F30-9E36-DC09E4EED899-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_background.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.691887
+e420287803.807238
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_background.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c219"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_background.o external/lib3ds-2.0/src/lib3ds_background.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler5036b13b150db941^16a3ce3b150db941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c0000000000000000^2390"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_background.o external/lib3ds-2.0/src/lib3ds_background.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_background.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_background.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_background.o36"B705E8C6-D819-4D25-92C5-B247AFAF794A-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_camera.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.692293
+e420287803.801717
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_camera.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c211"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_camera.o external/lib3ds-2.0/src/lib3ds_camera.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler5264b13b150db941^643dcd3b150db941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c0000000000000000^2366"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_camera.o external/lib3ds-2.0/src/lib3ds_camera.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_camera.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_camera.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_camera.o36"0CF93CAB-DE99-4345-8284-500B9E907953-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunk.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.693335
+e420287803.787587
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunk.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c209"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunk.o external/lib3ds-2.0/src/lib3ds_chunk.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler0da6b13b150db941^e99ec93b150db941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c0000000000000000^2360"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunk.o external/lib3ds-2.0/src/lib3ds_chunk.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunk.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunk.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunk.o36"2748AFEB-DF00-4393-ABE2-5D3C044AD4ED-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunktable.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.787853
+e420287803.858498
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunktable.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c219"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunktable.o external/lib3ds-2.0/src/lib3ds_chunktable.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler8ac7c93b150db941^b378dd3b150db941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c0000000000000000^2390"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunktable.o external/lib3ds-2.0/src/lib3ds_chunktable.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunktable.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunktable.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunktable.o36"1CD1BD86-9EC4-444B-B775-E630C0B5ABE5-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_file.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.807757
+e420287803.949742
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_file.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c207"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_file.o external/lib3ds-2.0/src/lib3ds_file.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler19e4ce3b150db941^05e1f23b150db941^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c0000000000000000^2354"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_file.o external/lib3ds-2.0/src/lib3ds_file.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_file.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_file.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_file.o36"690A814A-F92B-4653-B042-DAEC6528FFF8-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_io.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.827105
+e420287803.913030
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_io.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c203"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_io.o external/lib3ds-2.0/src/lib3ds_io.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler62d6d33b150db941^5ccae93b150db941^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c0000000000000000^2342"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_io.o external/lib3ds-2.0/src/lib3ds_io.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_io.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_io.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_io.o36"67329CF4-2998-4A0A-8B25-58962AE11C51-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_light.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.860190
+e420287803.931602
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_light.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c209"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_light.o external/lib3ds-2.0/src/lib3ds_light.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler064cdc3b150db941^df88ee3b150db941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c0000000000000000^2360"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_light.o external/lib3ds-2.0/src/lib3ds_light.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_light.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_light.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_light.o36"0DA78C3F-CC9A-400E-B8FE-6B2E435FEDB4-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_material.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.893594
+e420287803.995239
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_material.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c215"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_material.o external/lib3ds-2.0/src/lib3ds_material.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilerfddce43b150db941^b2d4fe3b150db941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c0000000000000000^2378"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_material.o external/lib3ds-2.0/src/lib3ds_material.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_material.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_material.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_material.o36"CBAD65CB-88D0-4650-9CC6-6B6D990CFC65-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_math.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.914520
+e420287803.970996
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_math.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c207"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_math.o external/lib3ds-2.0/src/lib3ds_math.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler4c36ea3b150db941^e99bf83b150db941^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c0000000000000000^2354"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_math.o external/lib3ds-2.0/src/lib3ds_math.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_math.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_math.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_math.o36"C4AF4A18-3020-44EE-AEC4-5B1F994D6B8D-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_matrix.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.931877
+e420287804.012913
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_matrix.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c211"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_matrix.o external/lib3ds-2.0/src/lib3ds_matrix.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilera5d7ee3b150db941^247e053c150db941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c0000000000000000^2366"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_matrix.o external/lib3ds-2.0/src/lib3ds_matrix.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_matrix.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_matrix.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_matrix.o36"2348593B-A724-4E5C-BFE7-F73A66D9187B-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_mesh.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.944763
+e420287804.041858
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_mesh.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c207"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_mesh.o external/lib3ds-2.0/src/lib3ds_mesh.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler077cf23b150db941^99b70a3c150db941^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c0000000000000000^2354"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_mesh.o external/lib3ds-2.0/src/lib3ds_mesh.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_mesh.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_mesh.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_mesh.o36"6530929E-CE0E-4360-95C3-B2F1C993F616-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_node.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.950089
+e420287804.060802
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_node.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c207"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_node.o external/lib3ds-2.0/src/lib3ds_node.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler834ff33b150db941^535a0f3c150db941^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c0000000000000000^2354"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_node.o external/lib3ds-2.0/src/lib3ds_node.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_node.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_node.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_node.o36"659B9993-EB34-4543-BE32-BBE9DA24E019-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_quat.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.965140
+e420287804.034545
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_quat.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c207"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_quat.o external/lib3ds-2.0/src/lib3ds_quat.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler522cf73b150db941^77d8083c150db941^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c0000000000000000^2354"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_quat.o external/lib3ds-2.0/src/lib3ds_quat.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_quat.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_quat.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_quat.o36"68239166-DDE5-4174-9459-D421D3EAC032-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_shadow.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.972354
+e420287804.032907
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_shadow.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c211"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_shadow.o external/lib3ds-2.0/src/lib3ds_shadow.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler8e05f93b150db941^266f083c150db941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c0000000000000000^2366"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_shadow.o external/lib3ds-2.0/src/lib3ds_shadow.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_shadow.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_shadow.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_shadow.o36"A342B15F-E515-436D-9C54-A58A260DF328-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_track.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.985996
+e420287804.075396
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_track.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c209"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_track.o external/lib3ds-2.0/src/lib3ds_track.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilerdc7ffc3b150db941^7b4d133c150db941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c0000000000000000^2360"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_track.o external/lib3ds-2.0/src/lib3ds_track.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_track.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_track.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_track.o36"0BD1F1BA-1453-45A1-8943-D52793CA5311-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_util.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.997803
+e420287804.060764
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_util.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c207"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_util.o external/lib3ds-2.0/src/lib3ds_util.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler7688ff3b150db941^8d600f3c150db941^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c0000000000000000^2354"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_util.o external/lib3ds-2.0/src/lib3ds_util.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_util.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_util.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_util.o36"66F1B624-DEC8-4FC0-B42C-2BA78832234A-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_vector.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287804.014252
+e420287804.079138
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_vector.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c211"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_vector.o external/lib3ds-2.0/src/lib3ds_vector.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler6404043c150db941^3d43143c150db941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c0000000000000000^2366"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_vector.o external/lib3ds-2.0/src/lib3ds_vector.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_vector.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_vector.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_vector.o36"CBC4C659-552C-4F45-B10B-7960EE769799-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_viewport.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s420287804.034810
+e420287804.095972
+r1
+xCompileC
+xbuild/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_viewport.o
+x/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h
+d/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c215"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_viewport.o external/lib3ds-2.0/src/lib3ds_viewport.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilere700093c150db941^0492183c150db941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c0000000000000000^2378"CompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_viewport.o external/lib3ds-2.0/src/lib3ds_viewport.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -Dlib3ds_EXPORTS -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -fPIC -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_viewport.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_viewport.dia -c /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c -o /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_viewport.o36"81A80AB2-78C6-4A98-9BFC-3E259FCCBE4D-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CLd /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib normal x86_64
+s420287804.097693
+e420287804.121338
+r1
+xLd
+x/Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib
+xnormal
+xx86_64
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3dsd.2.0.LinkFileList
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_background.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_camera.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunk.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_chunktable.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_file.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_io.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_light.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_material.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_math.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_matrix.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_mesh.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_node.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_quat.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_shadow.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_track.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_util.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_vector.o
+d/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_viewport.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Link /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib53"Ld build/lib/Debug/liblib3dsd.2.0.dylib normal x86_64ed0e193c150db941^390f1f3c150db941^---0#0#1#--1146"Ld build/lib/Debug/liblib3dsd.2.0.dylib normal x86_64    cd /Users/danielraudschus/Documents/spacerace    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/danielraudschus/Documents/spacerace/build/lib/Debug -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -filelist /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3dsd.2.0.LinkFileList -install_name /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib -mmacosx-version-min=10.9 -dynamiclib -Wl,-headerpad_max_install_names -single_module -current_version 2.0.0 -Xlinker -dependency_info -Xlinker /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3dsd.2.0_dependency_info.dat -o /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib36"7856F379-D3CF-49E6-8C47-F5A6DF8C632A-
+b6809C53F-38A9-4147-8B70-710DBE98354A
+
+CPhaseScriptExecution CMake\ PostBuild\ Rules /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh
+s420381681.100675
+e420381681.120498
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh
+oecho "Creating symlinks"
+oCreating symlinks
+o/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -E cmake_symlink_library /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'144"PhaseScriptExecution CMake\ PostBuild\ Rules build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh931e1af1830eb941^8cd91ef1830eb941^-355"echo "Creating symlinks"Creating symlinks/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -E cmake_symlink_library /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.dylib3(21%IDEActivityLogMessage2@25"echo "Creating symlinks"-420381681#0#25#-0#-----2@18"Creating symlinks-420381681#25#18#-0#-----2@312"/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -E cmake_symlink_library /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.dylib-420381681#43#312#-0#-----0#0#1#--353"PhaseScriptExecution CMake\ PostBuild\ Rules build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh    cd /Users/danielraudschus/Documents/spacerace    /bin/sh -c /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh36"5B55E997-F942-4469-B6F2-C908D72366DF-
+bD9610713-EB02-4DE7-80EB-F9F28346D56F
+

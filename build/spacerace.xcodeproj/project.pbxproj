@@ -1,0 +1,1979 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              5BED7116FA7C4433BB3A19BD /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = A61CDF3DAAAA44C69C8E654B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            4260A150602D4806A47DDBE7 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            E07947F8FBAD47AFAA89F4B0 /* PBXTargetDependency */,
+                            D3B9B6A18DDD4CB1A3A79EBE /* PBXTargetDependency */,
+                            4BE1BED4E46D4A928CFD90E3 /* PBXTargetDependency */,
+                            87ACE43867A04FD4929792BA /* PBXTargetDependency */,
+                            C310BC80C0A54F898EBAC5C3 /* PBXTargetDependency */,
+                            441FD1BDA6514ACBA70E58A3 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              EB655D5F874849F6A877467A /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = E7E293BA44B94418BF6ADD46 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            2080782B6E9D452E99E41D38 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              B5CA7B2A191A4578A80C657A /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = D4DBD03ABD9E4E2580CACF6D /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            1B6D9A091B9241AE9AC40F00 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            3CC570CC49B247299A350533 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+E47E51EBD7A44B80B572F972 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A9280560FBE948D6AA64CC15 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+BADB6C3E501E4D0797052577 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp */ = {isa = PBXBuildFile; fileRef = C9CF60DF61314D229B9971D8 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+063E95F8EF364165BB650056 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.h */ = {isa = PBXBuildFile; fileRef = DAF1A63A803248F787EF89F6 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.h */; settings = { COMPILER_FLAGS = ""; }; };
+59D15642D18F4043A1B05084 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7F4B2153BF84432CB64B5B02 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+B4386F0E6826475AB7DFAA1D /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm.cpp */ = {isa = PBXBuildFile; fileRef = 434531B1DCC643B2B5D38C5F /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+B4258639C65C43E4BAC39910 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm.h */ = {isa = PBXBuildFile; fileRef = A8C88CF84B5A4F2C9DDB55C7 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm.h */; settings = { COMPILER_FLAGS = ""; }; };
+A42DBB3494664104B66BE518 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm_util.cpp */ = {isa = PBXBuildFile; fileRef = BDEDD822A21A41EFB3E84D66 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm_util.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+2424843F6DB34126A2FEB6D2 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg.cpp */ = {isa = PBXBuildFile; fileRef = 0A736D8065B244A48758F0B8 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+03BEEA0C9FBB44CF9DF8EFDB /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_devil.cpp */ = {isa = PBXBuildFile; fileRef = 64CD6BDFB137414D8AFFA113 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_devil.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+95448E09E6A144C48BBEE3E0 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_jpg.cpp */ = {isa = PBXBuildFile; fileRef = 54D66C2E16DE43C3B40A36F6 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_jpg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+8F9D905C8E4542338D3DE6FE /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_png.cpp */ = {isa = PBXBuildFile; fileRef = 0B86169E8E874AAB8BB3C5FF /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_png.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+38E9C3CE2E3C43F3AC4928A9 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_sdl.cpp */ = {isa = PBXBuildFile; fileRef = FB95021E0D204A9AAE6B040E /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_sdl.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+F6B8D247270A4B21831C79EA /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_sim.cpp */ = {isa = PBXBuildFile; fileRef = CEE1088FA4CD4671BD1B3517 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_sim.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+6C3327A9EBEE4059ABC4A253 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmint.h */ = {isa = PBXBuildFile; fileRef = 89E1F0A8B72F44ABBB32A66F /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmint.h */; settings = { COMPILER_FLAGS = ""; }; };
+3A86520696A04F839CD390F0 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 55C9CC83C1EE4226AAEB9753 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+045F4D89EE5E4D43B9D3B733 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h */ = {isa = PBXBuildFile; fileRef = E6F26C43EE394DA1A1DE6503 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h */; settings = { COMPILER_FLAGS = ""; }; };
+56D00AD255FE4DAA8F250DCD /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c */ = {isa = PBXBuildFile; fileRef = B1DEEE2AF5CC44D0AD4EEE7B /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c */; settings = { COMPILER_FLAGS = ""; }; };
+A7EF8A48784348AAA063D146 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c */ = {isa = PBXBuildFile; fileRef = C9CF592C36C742F28E801A5A /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c */; settings = { COMPILER_FLAGS = ""; }; };
+B80809453E7D46C1877BDEC6 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c */ = {isa = PBXBuildFile; fileRef = F1793280FA6F43B999B47A33 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c */; settings = { COMPILER_FLAGS = ""; }; };
+D8CB8E492B254A5AAAB3F99C /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c */ = {isa = PBXBuildFile; fileRef = 34C73A6A83234CDC96D65AFE /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c */; settings = { COMPILER_FLAGS = ""; }; };
+80A8B839649644B6A03997D8 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c */ = {isa = PBXBuildFile; fileRef = 679B986DC3174F6595412D18 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c */; settings = { COMPILER_FLAGS = ""; }; };
+8FB3EF09FE764A6E96332BBE /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c */ = {isa = PBXBuildFile; fileRef = AEA3468FBC7C44848361EDFF /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c */; settings = { COMPILER_FLAGS = ""; }; };
+3DBA297A18414FD48F377273 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h */ = {isa = PBXBuildFile; fileRef = 519525C5DB2A4BFB91B65652 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h */; settings = { COMPILER_FLAGS = ""; }; };
+83FBD78D9E97407FB0669592 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c */ = {isa = PBXBuildFile; fileRef = 626479D91079450383EDF8E8 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c */; settings = { COMPILER_FLAGS = ""; }; };
+07D1C89CFBD24F6BA7E110BD /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c */ = {isa = PBXBuildFile; fileRef = 829B74308E4F4519A4AD7502 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c */; settings = { COMPILER_FLAGS = ""; }; };
+864CB0658BA5420B8CFE7C9F /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c */ = {isa = PBXBuildFile; fileRef = 5D734DCFE5FC40EFA03FD340 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c */; settings = { COMPILER_FLAGS = ""; }; };
+64F07C26974347DCAB7D6F9E /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c */ = {isa = PBXBuildFile; fileRef = 40F0620093EC41E281A88063 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c */; settings = { COMPILER_FLAGS = ""; }; };
+739202F62FC94F68BD4A22D0 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c */ = {isa = PBXBuildFile; fileRef = 6FF5F92697C949A1BABEE10A /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c */; settings = { COMPILER_FLAGS = ""; }; };
+084104A7F9E34FF893219AD3 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c */ = {isa = PBXBuildFile; fileRef = 32341EA0B4DE4184A156ECE7 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c */; settings = { COMPILER_FLAGS = ""; }; };
+F2BE5CDFA23A4BD2BFF0742F /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c */ = {isa = PBXBuildFile; fileRef = 3C0DD53AFAA649A0A8880327 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c */; settings = { COMPILER_FLAGS = ""; }; };
+2CD7E7D989754FF6AE5E8424 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c */ = {isa = PBXBuildFile; fileRef = AB0DE50BDE6C43DAA801725C /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c */; settings = { COMPILER_FLAGS = ""; }; };
+5240192965D14AA9B7E55296 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c */ = {isa = PBXBuildFile; fileRef = A6CB23F937F04F97B08245D5 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c */; settings = { COMPILER_FLAGS = ""; }; };
+87C52162F3F547F7A048E70E /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c */ = {isa = PBXBuildFile; fileRef = ABB8CF56560E446EB2AC771B /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c */; settings = { COMPILER_FLAGS = ""; }; };
+ACC1840A0A094EA8B739615E /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c */ = {isa = PBXBuildFile; fileRef = 5FF4293F5D4F4995BB31374B /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c */; settings = { COMPILER_FLAGS = ""; }; };
+39E5E8DDDC2F49AFBC6EFB82 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c */ = {isa = PBXBuildFile; fileRef = CB744121B8D440FA93662D25 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c */; settings = { COMPILER_FLAGS = ""; }; };
+306D311B20B242C68F446BEA /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c */ = {isa = PBXBuildFile; fileRef = 619C1FA30415427D80FBB249 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c */; settings = { COMPILER_FLAGS = ""; }; };
+808D2A3DC14D4403ADB2D557 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = AED7C64729974FFE8443D5C0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+0D0E9FE1E5E344C4B4FA15B3 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/DisplayList.cpp */ = {isa = PBXBuildFile; fileRef = 90AB5BE7B3FB45A2B2274EF3 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/DisplayList.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4DC2075EAD804EEA8FAC941A /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/DisplayList.h */ = {isa = PBXBuildFile; fileRef = 7D92766038564778905FA4A0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/DisplayList.h */; settings = { COMPILER_FLAGS = ""; }; };
+66EC746A87CC4A5584361141 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/FrameBufferObject.cpp */ = {isa = PBXBuildFile; fileRef = 004A91470C9D469CBBB5A09A /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/FrameBufferObject.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+AD36CA90012647C0A4A582B9 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/FrameBufferObject.h */ = {isa = PBXBuildFile; fileRef = 0B95F7A338B940EE9060A870 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/FrameBufferObject.h */; settings = { COMPILER_FLAGS = ""; }; };
+C0491861D96A425683AC0094 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLProgram.cpp */ = {isa = PBXBuildFile; fileRef = 9CBEDD49080A408A9D5F3A30 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLProgram.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+46680256671441EB8E4FC0FB /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLProgram.h */ = {isa = PBXBuildFile; fileRef = 835B9F3341D843D6B26CE07B /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLProgram.h */; settings = { COMPILER_FLAGS = ""; }; };
+2089AC10269F49EB9E25DFE0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLShader.cpp */ = {isa = PBXBuildFile; fileRef = 2FDCA75286694F28A99082B7 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLShader.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+557F60D884C34C3EA12CF918 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLShader.h */ = {isa = PBXBuildFile; fileRef = FD23349E699647868AB1CA67 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLShader.h */; settings = { COMPILER_FLAGS = ""; }; };
+748EA977A485445882A9372C /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Image.cpp */ = {isa = PBXBuildFile; fileRef = F7A7E6A0BCA9482D9EE580FB /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Image.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A56C6F6A0DDD456486F3A8AE /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Image.h */ = {isa = PBXBuildFile; fileRef = 39D74817A1644695B782D7D6 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Image.h */; settings = { COMPILER_FLAGS = ""; }; };
+E9180A75805246FE8FD82B9D /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Model.cpp */ = {isa = PBXBuildFile; fileRef = 2A9024A2A44E45A9B6AB99D8 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Model.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A6032D5D4B254092927E580D /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Model.h */ = {isa = PBXBuildFile; fileRef = 1325C278A7724D8FBFC64C7C /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Model.h */; settings = { COMPILER_FLAGS = ""; }; };
+B494A7369115496CB7850314 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Navigator.cpp */ = {isa = PBXBuildFile; fileRef = 7E27DC34C1A74F30B8E96D5F /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Navigator.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D23F0931574349C6A48B253B /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Navigator.h */ = {isa = PBXBuildFile; fileRef = 28DC5DAF518B4B8A8A9D9A53 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Navigator.h */; settings = { COMPILER_FLAGS = ""; }; };
+BA15075B055144B3AA5295FE /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture.cpp */ = {isa = PBXBuildFile; fileRef = BD80362A685242A286532917 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+BB9BFF13FC5048A6A7BE6396 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture.h */ = {isa = PBXBuildFile; fileRef = D0094FCA8FD34893B5B43C7E /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture.h */; settings = { COMPILER_FLAGS = ""; }; };
+8F388536E79E433EB6A84ABB /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture2D.cpp */ = {isa = PBXBuildFile; fileRef = AB66220E263740A98520FF7B /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture2D.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+546444DE3BEF40B8859C0E50 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture2D.h */ = {isa = PBXBuildFile; fileRef = 2A76B62BAC72476E94388795 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture2D.h */; settings = { COMPILER_FLAGS = ""; }; };
+5C9A6F88A9A9426A8306BE8F /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture3D.cpp */ = {isa = PBXBuildFile; fileRef = 6D321B9E612B4B43A2F5A5AA /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture3D.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E45D19581C9C4B2D9159F839 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture3D.h */ = {isa = PBXBuildFile; fileRef = 794BBC032B464F6A8E994FC5 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture3D.h */; settings = { COMPILER_FLAGS = ""; }; };
+ED5F1E4119DE4236985AA2EF /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/glIncludes.h */ = {isa = PBXBuildFile; fileRef = CE478E7531DC4B429BD41B1A /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/glIncludes.h */; settings = { COMPILER_FLAGS = ""; }; };
+A47D19F5822A4CAEBF53E146 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/gl_error.cpp */ = {isa = PBXBuildFile; fileRef = 44B45F6CE5FA47729F3B45E0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/gl_error.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+AC90F15D18E6459BAF20377F /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/gl_error.h */ = {isa = PBXBuildFile; fileRef = 0D9BBC0A0F98470F9ED4E9B1 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/gl_error.h */; settings = { COMPILER_FLAGS = ""; }; };
+5FA5921C52C54AECBE0822FB /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/glutIncludes.h */ = {isa = PBXBuildFile; fileRef = 13D19536622242A1AB3A7D9E /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/glutIncludes.h */; settings = { COMPILER_FLAGS = ""; }; };
+F5827991167F425D9D1766DB /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/Model3ds.cpp */ = {isa = PBXBuildFile; fileRef = 172C33EDE8F14A359469076C /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/Model3ds.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+827A4CF186CA49598FFB6DB2 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/Model3ds.h */ = {isa = PBXBuildFile; fileRef = B2BF7F78638C40A4AE42C4BC /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/Model3ds.h */; settings = { COMPILER_FLAGS = ""; }; };
+3760A067C7DD433DAAD29292 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/ModelObj.cpp */ = {isa = PBXBuildFile; fileRef = 0ADAAF0C0466411F9560F27D /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/ModelObj.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+FAC9667FEBC44F318DB11871 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/ModelObj.h */ = {isa = PBXBuildFile; fileRef = DE0BE256F94D4972AEB5704E /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/ModelObj.h */; settings = { COMPILER_FLAGS = ""; }; };
+5C69DFB4CBBA4CE0BFAD6E53 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/timer.cpp */ = {isa = PBXBuildFile; fileRef = 2E9E6D68C1EB463EB89E7019 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/timer.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E25F41390E4E45169312558D /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/timer.h */ = {isa = PBXBuildFile; fileRef = CC7DF822EF8F41F6BDAF11D1 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/timer.h */; settings = { COMPILER_FLAGS = ""; }; };
+E0BB90E665444CE081BBD403 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/log.h */ = {isa = PBXBuildFile; fileRef = ABE788F0B58A46019D3F9770 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/log.h */; settings = { COMPILER_FLAGS = ""; }; };
+540A246CA87C45BF8468370F /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/loglevels.h */ = {isa = PBXBuildFile; fileRef = 7AAA65970CDF487894574780 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/loglevels.h */; settings = { COMPILER_FLAGS = ""; }; };
+1D33244E4C0145DE8451A595 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/timer.cpp */ = {isa = PBXBuildFile; fileRef = 62689B07484A4646A9484981 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/timer.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+7045607776854279B5216ACF /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/timer.h */ = {isa = PBXBuildFile; fileRef = 40A40C8759F84D36881C9960 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/timer.h */; settings = { COMPILER_FLAGS = ""; }; };
+4F9DF0427BCE4661B33F6A77 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = AD60713ABCB142458582E2BD /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+4A5466D3EE1247C08595AEA5 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/main.cpp */ = {isa = PBXBuildFile; fileRef = A295CE5413024031BF80519A /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/main.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              D58414C4991A4CB0B767194D /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              C1EFA97A2AB14A0282B7781A /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              EA5EF9DEF08F4312AC4C070D /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              794AA1C65DA14D3CA13A18E8 /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              A9B38BBEA4794629A3CE6B1B /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              67C4DF295F3F4796B2BBB057 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1DBC3D5DC1D7473783C07DA4;
+                     remoteInfo = GLee;
+              };
+              DE2C79852D8441548321BED4 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EB655D5F874849F6A877467A;
+                     remoteInfo = ZERO_CHECK;
+              };
+              0034D9A8E5A5427285FFD574 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 6F8E2BFAA71348748EC9E229;
+                     remoteInfo = spacerace;
+              };
+              08AAE42309DE4BB88349932E /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 060ADB925E2B438A8543F4AB;
+                     remoteInfo = lib3ds;
+              };
+              D39FCC3F7F4042959313EABB /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = FF38F48FC560427BB3FDF9BA;
+                     remoteInfo = glmobj;
+              };
+              408ADF8BD78E43F1AD299973 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 30D76CDF07C64965983E8B8C;
+                     remoteInfo = common;
+              };
+              97D1A3A248DB4AA199D16CE5 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 5BED7116FA7C4433BB3A19BD;
+                     remoteInfo = ALL_BUILD;
+              };
+              7D80A0F3CC10431FA2E51973 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EB655D5F874849F6A877467A;
+                     remoteInfo = ZERO_CHECK;
+              };
+              E16AFE48D55B4C20985CA39B /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EB655D5F874849F6A877467A;
+                     remoteInfo = ZERO_CHECK;
+              };
+              A275F61BE00843CB976DDD98 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EB655D5F874849F6A877467A;
+                     remoteInfo = ZERO_CHECK;
+              };
+              55F6259039504488813BF602 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1DBC3D5DC1D7473783C07DA4;
+                     remoteInfo = GLee;
+              };
+              A0FE9D00343747A1B806BDC5 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EB655D5F874849F6A877467A;
+                     remoteInfo = ZERO_CHECK;
+              };
+              1693FC7053C9496E9FCBE320 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 060ADB925E2B438A8543F4AB;
+                     remoteInfo = lib3ds;
+              };
+              0108EBA500094880A226A6BF /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = FF38F48FC560427BB3FDF9BA;
+                     remoteInfo = glmobj;
+              };
+              465EFFD431254A23AF449800 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 1DBC3D5DC1D7473783C07DA4;
+                     remoteInfo = GLee;
+              };
+              AD15E4EA451E41E295F155B7 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EB655D5F874849F6A877467A;
+                     remoteInfo = ZERO_CHECK;
+              };
+              901DFD64CE7A4C7199A3C35D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 060ADB925E2B438A8543F4AB;
+                     remoteInfo = lib3ds;
+              };
+              0DC7B3300A5E47F3BF5075E2 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = FF38F48FC560427BB3FDF9BA;
+                     remoteInfo = glmobj;
+              };
+              83B75E91B25244229CE4AC6C /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CA013C4ACDA4C10A635C99C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 30D76CDF07C64965983E8B8C;
+                     remoteInfo = common;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+E752533DA1034DF1AA5948DB /* /Users/danielraudschus/Documents/spacerace/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+A9280560FBE948D6AA64CC15 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "external/GLee-5.4/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+C9CF60DF61314D229B9971D8 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "GLee.cpp"; path = "external/GLee-5.4/GLee.cpp"; sourceTree = SOURCE_ROOT; };
+DAF1A63A803248F787EF89F6 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "GLee.h"; path = "external/GLee-5.4/GLee.h"; sourceTree = SOURCE_ROOT; };
+F11FB633A3CB40A2BC8C2D5C /* GLee */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libGLeed.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+7F4B2153BF84432CB64B5B02 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "external/glm-obj-0.3.1/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+434531B1DCC643B2B5D38C5F /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "glm.cpp"; path = "external/glm-obj-0.3.1/glm/glm.cpp"; sourceTree = SOURCE_ROOT; };
+A8C88CF84B5A4F2C9DDB55C7 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "glm.h"; path = "external/glm-obj-0.3.1/glm/glm.h"; sourceTree = SOURCE_ROOT; };
+BDEDD822A21A41EFB3E84D66 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm_util.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "glm_util.cpp"; path = "external/glm-obj-0.3.1/glm/glm_util.cpp"; sourceTree = SOURCE_ROOT; };
+0A736D8065B244A48758F0B8 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "glmimg.cpp"; path = "external/glm-obj-0.3.1/glm/glmimg.cpp"; sourceTree = SOURCE_ROOT; };
+64CD6BDFB137414D8AFFA113 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_devil.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "glmimg_devil.cpp"; path = "external/glm-obj-0.3.1/glm/glmimg_devil.cpp"; sourceTree = SOURCE_ROOT; };
+54D66C2E16DE43C3B40A36F6 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_jpg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "glmimg_jpg.cpp"; path = "external/glm-obj-0.3.1/glm/glmimg_jpg.cpp"; sourceTree = SOURCE_ROOT; };
+0B86169E8E874AAB8BB3C5FF /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_png.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "glmimg_png.cpp"; path = "external/glm-obj-0.3.1/glm/glmimg_png.cpp"; sourceTree = SOURCE_ROOT; };
+FB95021E0D204A9AAE6B040E /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_sdl.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "glmimg_sdl.cpp"; path = "external/glm-obj-0.3.1/glm/glmimg_sdl.cpp"; sourceTree = SOURCE_ROOT; };
+CEE1088FA4CD4671BD1B3517 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_sim.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "glmimg_sim.cpp"; path = "external/glm-obj-0.3.1/glm/glmimg_sim.cpp"; sourceTree = SOURCE_ROOT; };
+89E1F0A8B72F44ABBB32A66F /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmint.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "glmint.h"; path = "external/glm-obj-0.3.1/glm/glmint.h"; sourceTree = SOURCE_ROOT; };
+7DEAC1375CB041789E8CDB2A /* glmobj */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libglmobjd.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+55C9CC83C1EE4226AAEB9753 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "external/lib3ds-2.0/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+E6F26C43EE394DA1A1DE6503 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "lib3ds.h"; path = "external/lib3ds-2.0/src/lib3ds.h"; sourceTree = SOURCE_ROOT; };
+B1DEEE2AF5CC44D0AD4EEE7B /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_atmosphere.c"; path = "external/lib3ds-2.0/src/lib3ds_atmosphere.c"; sourceTree = SOURCE_ROOT; };
+C9CF592C36C742F28E801A5A /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_background.c"; path = "external/lib3ds-2.0/src/lib3ds_background.c"; sourceTree = SOURCE_ROOT; };
+F1793280FA6F43B999B47A33 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_camera.c"; path = "external/lib3ds-2.0/src/lib3ds_camera.c"; sourceTree = SOURCE_ROOT; };
+34C73A6A83234CDC96D65AFE /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_chunk.c"; path = "external/lib3ds-2.0/src/lib3ds_chunk.c"; sourceTree = SOURCE_ROOT; };
+679B986DC3174F6595412D18 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_chunktable.c"; path = "external/lib3ds-2.0/src/lib3ds_chunktable.c"; sourceTree = SOURCE_ROOT; };
+AEA3468FBC7C44848361EDFF /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_file.c"; path = "external/lib3ds-2.0/src/lib3ds_file.c"; sourceTree = SOURCE_ROOT; };
+519525C5DB2A4BFB91B65652 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "lib3ds_impl.h"; path = "external/lib3ds-2.0/src/lib3ds_impl.h"; sourceTree = SOURCE_ROOT; };
+626479D91079450383EDF8E8 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_io.c"; path = "external/lib3ds-2.0/src/lib3ds_io.c"; sourceTree = SOURCE_ROOT; };
+829B74308E4F4519A4AD7502 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_light.c"; path = "external/lib3ds-2.0/src/lib3ds_light.c"; sourceTree = SOURCE_ROOT; };
+5D734DCFE5FC40EFA03FD340 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_material.c"; path = "external/lib3ds-2.0/src/lib3ds_material.c"; sourceTree = SOURCE_ROOT; };
+40F0620093EC41E281A88063 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_math.c"; path = "external/lib3ds-2.0/src/lib3ds_math.c"; sourceTree = SOURCE_ROOT; };
+6FF5F92697C949A1BABEE10A /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_matrix.c"; path = "external/lib3ds-2.0/src/lib3ds_matrix.c"; sourceTree = SOURCE_ROOT; };
+32341EA0B4DE4184A156ECE7 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_mesh.c"; path = "external/lib3ds-2.0/src/lib3ds_mesh.c"; sourceTree = SOURCE_ROOT; };
+3C0DD53AFAA649A0A8880327 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_node.c"; path = "external/lib3ds-2.0/src/lib3ds_node.c"; sourceTree = SOURCE_ROOT; };
+AB0DE50BDE6C43DAA801725C /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_quat.c"; path = "external/lib3ds-2.0/src/lib3ds_quat.c"; sourceTree = SOURCE_ROOT; };
+A6CB23F937F04F97B08245D5 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_shadow.c"; path = "external/lib3ds-2.0/src/lib3ds_shadow.c"; sourceTree = SOURCE_ROOT; };
+ABB8CF56560E446EB2AC771B /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_track.c"; path = "external/lib3ds-2.0/src/lib3ds_track.c"; sourceTree = SOURCE_ROOT; };
+5FF4293F5D4F4995BB31374B /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_util.c"; path = "external/lib3ds-2.0/src/lib3ds_util.c"; sourceTree = SOURCE_ROOT; };
+CB744121B8D440FA93662D25 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_vector.c"; path = "external/lib3ds-2.0/src/lib3ds_vector.c"; sourceTree = SOURCE_ROOT; };
+619C1FA30415427D80FBB249 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "lib3ds_viewport.c"; path = "external/lib3ds-2.0/src/lib3ds_viewport.c"; sourceTree = SOURCE_ROOT; };
+8AECCB5EB25B451689AA3178 /* lib3ds */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = "liblib3dsd.dylib"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+AED7C64729974FFE8443D5C0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "projectSpacerace/common/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+90AB5BE7B3FB45A2B2274EF3 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/DisplayList.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "DisplayList.cpp"; path = "projectSpacerace/common/oogl/DisplayList.cpp"; sourceTree = SOURCE_ROOT; };
+7D92766038564778905FA4A0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/DisplayList.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "DisplayList.h"; path = "projectSpacerace/common/oogl/DisplayList.h"; sourceTree = SOURCE_ROOT; };
+004A91470C9D469CBBB5A09A /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/FrameBufferObject.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "FrameBufferObject.cpp"; path = "projectSpacerace/common/oogl/FrameBufferObject.cpp"; sourceTree = SOURCE_ROOT; };
+0B95F7A338B940EE9060A870 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/FrameBufferObject.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "FrameBufferObject.h"; path = "projectSpacerace/common/oogl/FrameBufferObject.h"; sourceTree = SOURCE_ROOT; };
+9CBEDD49080A408A9D5F3A30 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLProgram.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "GLSLProgram.cpp"; path = "projectSpacerace/common/oogl/GLSLProgram.cpp"; sourceTree = SOURCE_ROOT; };
+835B9F3341D843D6B26CE07B /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLProgram.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "GLSLProgram.h"; path = "projectSpacerace/common/oogl/GLSLProgram.h"; sourceTree = SOURCE_ROOT; };
+2FDCA75286694F28A99082B7 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLShader.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "GLSLShader.cpp"; path = "projectSpacerace/common/oogl/GLSLShader.cpp"; sourceTree = SOURCE_ROOT; };
+FD23349E699647868AB1CA67 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLShader.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "GLSLShader.h"; path = "projectSpacerace/common/oogl/GLSLShader.h"; sourceTree = SOURCE_ROOT; };
+F7A7E6A0BCA9482D9EE580FB /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Image.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "Image.cpp"; path = "projectSpacerace/common/oogl/Image.cpp"; sourceTree = SOURCE_ROOT; };
+39D74817A1644695B782D7D6 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Image.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "Image.h"; path = "projectSpacerace/common/oogl/Image.h"; sourceTree = SOURCE_ROOT; };
+2A9024A2A44E45A9B6AB99D8 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Model.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "Model.cpp"; path = "projectSpacerace/common/oogl/Model.cpp"; sourceTree = SOURCE_ROOT; };
+1325C278A7724D8FBFC64C7C /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Model.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "Model.h"; path = "projectSpacerace/common/oogl/Model.h"; sourceTree = SOURCE_ROOT; };
+7E27DC34C1A74F30B8E96D5F /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Navigator.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "Navigator.cpp"; path = "projectSpacerace/common/oogl/Navigator.cpp"; sourceTree = SOURCE_ROOT; };
+28DC5DAF518B4B8A8A9D9A53 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Navigator.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "Navigator.h"; path = "projectSpacerace/common/oogl/Navigator.h"; sourceTree = SOURCE_ROOT; };
+BD80362A685242A286532917 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "Texture.cpp"; path = "projectSpacerace/common/oogl/Texture.cpp"; sourceTree = SOURCE_ROOT; };
+D0094FCA8FD34893B5B43C7E /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "Texture.h"; path = "projectSpacerace/common/oogl/Texture.h"; sourceTree = SOURCE_ROOT; };
+AB66220E263740A98520FF7B /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture2D.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "Texture2D.cpp"; path = "projectSpacerace/common/oogl/Texture2D.cpp"; sourceTree = SOURCE_ROOT; };
+2A76B62BAC72476E94388795 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture2D.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "Texture2D.h"; path = "projectSpacerace/common/oogl/Texture2D.h"; sourceTree = SOURCE_ROOT; };
+6D321B9E612B4B43A2F5A5AA /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture3D.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "Texture3D.cpp"; path = "projectSpacerace/common/oogl/Texture3D.cpp"; sourceTree = SOURCE_ROOT; };
+794BBC032B464F6A8E994FC5 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture3D.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "Texture3D.h"; path = "projectSpacerace/common/oogl/Texture3D.h"; sourceTree = SOURCE_ROOT; };
+CE478E7531DC4B429BD41B1A /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/glIncludes.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "glIncludes.h"; path = "projectSpacerace/common/oogl/glIncludes.h"; sourceTree = SOURCE_ROOT; };
+44B45F6CE5FA47729F3B45E0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/gl_error.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "gl_error.cpp"; path = "projectSpacerace/common/oogl/gl_error.cpp"; sourceTree = SOURCE_ROOT; };
+0D9BBC0A0F98470F9ED4E9B1 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/gl_error.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "gl_error.h"; path = "projectSpacerace/common/oogl/gl_error.h"; sourceTree = SOURCE_ROOT; };
+13D19536622242A1AB3A7D9E /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/glutIncludes.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "glutIncludes.h"; path = "projectSpacerace/common/oogl/glutIncludes.h"; sourceTree = SOURCE_ROOT; };
+172C33EDE8F14A359469076C /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/Model3ds.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "Model3ds.cpp"; path = "projectSpacerace/common/oogl/model/Model3ds.cpp"; sourceTree = SOURCE_ROOT; };
+B2BF7F78638C40A4AE42C4BC /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/Model3ds.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "Model3ds.h"; path = "projectSpacerace/common/oogl/model/Model3ds.h"; sourceTree = SOURCE_ROOT; };
+0ADAAF0C0466411F9560F27D /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/ModelObj.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ModelObj.cpp"; path = "projectSpacerace/common/oogl/model/ModelObj.cpp"; sourceTree = SOURCE_ROOT; };
+DE0BE256F94D4972AEB5704E /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/ModelObj.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "ModelObj.h"; path = "projectSpacerace/common/oogl/model/ModelObj.h"; sourceTree = SOURCE_ROOT; };
+2E9E6D68C1EB463EB89E7019 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/timer.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "timer.cpp"; path = "projectSpacerace/common/oogl/timer.cpp"; sourceTree = SOURCE_ROOT; };
+CC7DF822EF8F41F6BDAF11D1 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/timer.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "timer.h"; path = "projectSpacerace/common/oogl/timer.h"; sourceTree = SOURCE_ROOT; };
+ABE788F0B58A46019D3F9770 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/log.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "log.h"; path = "projectSpacerace/common/utils/log.h"; sourceTree = SOURCE_ROOT; };
+7AAA65970CDF487894574780 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/loglevels.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "loglevels.h"; path = "projectSpacerace/common/utils/loglevels.h"; sourceTree = SOURCE_ROOT; };
+62689B07484A4646A9484981 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/timer.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "timer.cpp"; path = "projectSpacerace/common/utils/timer.cpp"; sourceTree = SOURCE_ROOT; };
+40A40C8759F84D36881C9960 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/timer.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "timer.h"; path = "projectSpacerace/common/utils/timer.h"; sourceTree = SOURCE_ROOT; };
+8800F7ABA7CD4CDB8CE7353F /* common */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libcommond.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+AD60713ABCB142458582E2BD /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "projectSpacerace/spacerace/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+A295CE5413024031BF80519A /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/main.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "main.cpp"; path = "projectSpacerace/spacerace/main.cpp"; sourceTree = SOURCE_ROOT; };
+711E67C73EC14F53BA114CC9 /* spacerace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = spaceraced; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              1BF431D6176F447CBF6F6B72  = {
+                     isa = PBXGroup;
+                     children = (
+                            E1B3230DDA4C400D9739311F /* Sources */,
+                            8FFD0F1D89F24141BCF11D08 /* Resources */,
+                            8B47A0B8238247C98422F672 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              E1B3230DDA4C400D9739311F /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            19FC1D22D6D8416A9C8AE3D0 /* ALL_BUILD */,
+                            63E25606BA214A1A94372292 /* ZERO_CHECK */,
+                            DCD051D54B0D46DBA090A063 /* GLee */,
+                            BE3BDB01E7DA4CF0AC7D25A6 /* glmobj */,
+                            98FA3DE0145E481CBA5D6297 /* lib3ds */,
+                            027F055FC25046A3B56D9A0B /* common */,
+                            F0E01A38530741578F64B6FE /* spacerace */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              8FFD0F1D89F24141BCF11D08 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              19FC1D22D6D8416A9C8AE3D0 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            2C084E1EB5F8429F92B0C289 /* CMake Rules */,
+                            E752533DA1034DF1AA5948DB /* /Users/danielraudschus/Documents/spacerace/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              2C084E1EB5F8429F92B0C289 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              63E25606BA214A1A94372292 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            18309BCFA2D846F482280C4D /* CMake Rules */,
+                            E752533DA1034DF1AA5948DB /* /Users/danielraudschus/Documents/spacerace/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              18309BCFA2D846F482280C4D /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              DCD051D54B0D46DBA090A063 /* GLee */ = {
+                     isa = PBXGroup;
+                     children = (
+                            3B920447A4F7453482469D39 /* Header Files */,
+                            2C09FC31034E4F03AF8D9AFB /* Source Files */,
+                            A9280560FBE948D6AA64CC15 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/CMakeLists.txt */,
+                     );
+                     name = GLee;
+                     sourceTree = "<group>";
+              };
+              3B920447A4F7453482469D39 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            DAF1A63A803248F787EF89F6 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              2C09FC31034E4F03AF8D9AFB /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C9CF60DF61314D229B9971D8 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              BE3BDB01E7DA4CF0AC7D25A6 /* glmobj */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B432F6A048774C43B4E565C1 /* glm */,
+                            7F4B2153BF84432CB64B5B02 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/CMakeLists.txt */,
+                     );
+                     name = glmobj;
+                     sourceTree = "<group>";
+              };
+              B432F6A048774C43B4E565C1 /* glm */ = {
+                     isa = PBXGroup;
+                     children = (
+                            434531B1DCC643B2B5D38C5F /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm.cpp */,
+                            A8C88CF84B5A4F2C9DDB55C7 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm.h */,
+                            BDEDD822A21A41EFB3E84D66 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm_util.cpp */,
+                            0A736D8065B244A48758F0B8 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg.cpp */,
+                            64CD6BDFB137414D8AFFA113 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_devil.cpp */,
+                            54D66C2E16DE43C3B40A36F6 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_jpg.cpp */,
+                            0B86169E8E874AAB8BB3C5FF /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_png.cpp */,
+                            FB95021E0D204A9AAE6B040E /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_sdl.cpp */,
+                            CEE1088FA4CD4671BD1B3517 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_sim.cpp */,
+                            89E1F0A8B72F44ABBB32A66F /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmint.h */,
+                     );
+                     name = glm;
+                     sourceTree = "<group>";
+              };
+              98FA3DE0145E481CBA5D6297 /* lib3ds */ = {
+                     isa = PBXGroup;
+                     children = (
+                            704B815D572149568440E4ED /* Header Files */,
+                            6EAA01BE8E444E8687E081E7 /* Source Files */,
+                            55C9CC83C1EE4226AAEB9753 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/CMakeLists.txt */,
+                     );
+                     name = lib3ds;
+                     sourceTree = "<group>";
+              };
+              704B815D572149568440E4ED /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E6F26C43EE394DA1A1DE6503 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds.h */,
+                            519525C5DB2A4BFB91B65652 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_impl.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              6EAA01BE8E444E8687E081E7 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B1DEEE2AF5CC44D0AD4EEE7B /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c */,
+                            C9CF592C36C742F28E801A5A /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c */,
+                            F1793280FA6F43B999B47A33 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c */,
+                            34C73A6A83234CDC96D65AFE /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c */,
+                            679B986DC3174F6595412D18 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c */,
+                            AEA3468FBC7C44848361EDFF /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c */,
+                            626479D91079450383EDF8E8 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c */,
+                            829B74308E4F4519A4AD7502 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c */,
+                            5D734DCFE5FC40EFA03FD340 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c */,
+                            40F0620093EC41E281A88063 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c */,
+                            6FF5F92697C949A1BABEE10A /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c */,
+                            32341EA0B4DE4184A156ECE7 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c */,
+                            3C0DD53AFAA649A0A8880327 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c */,
+                            AB0DE50BDE6C43DAA801725C /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c */,
+                            A6CB23F937F04F97B08245D5 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c */,
+                            ABB8CF56560E446EB2AC771B /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c */,
+                            5FF4293F5D4F4995BB31374B /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c */,
+                            CB744121B8D440FA93662D25 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c */,
+                            619C1FA30415427D80FBB249 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              027F055FC25046A3B56D9A0B /* common */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F097EC26F500453C9D52349A /* oogl */,
+                            1C05284F5C6F4DAF8CDDC7CE /* utils */,
+                            AED7C64729974FFE8443D5C0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/CMakeLists.txt */,
+                     );
+                     name = common;
+                     sourceTree = "<group>";
+              };
+              F097EC26F500453C9D52349A /* oogl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            821FDC58D1504A728E806B7E /* model */,
+                            90AB5BE7B3FB45A2B2274EF3 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/DisplayList.cpp */,
+                            7D92766038564778905FA4A0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/DisplayList.h */,
+                            004A91470C9D469CBBB5A09A /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/FrameBufferObject.cpp */,
+                            0B95F7A338B940EE9060A870 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/FrameBufferObject.h */,
+                            9CBEDD49080A408A9D5F3A30 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLProgram.cpp */,
+                            835B9F3341D843D6B26CE07B /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLProgram.h */,
+                            2FDCA75286694F28A99082B7 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLShader.cpp */,
+                            FD23349E699647868AB1CA67 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLShader.h */,
+                            F7A7E6A0BCA9482D9EE580FB /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Image.cpp */,
+                            39D74817A1644695B782D7D6 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Image.h */,
+                            2A9024A2A44E45A9B6AB99D8 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Model.cpp */,
+                            1325C278A7724D8FBFC64C7C /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Model.h */,
+                            7E27DC34C1A74F30B8E96D5F /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Navigator.cpp */,
+                            28DC5DAF518B4B8A8A9D9A53 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Navigator.h */,
+                            BD80362A685242A286532917 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture.cpp */,
+                            D0094FCA8FD34893B5B43C7E /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture.h */,
+                            AB66220E263740A98520FF7B /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture2D.cpp */,
+                            2A76B62BAC72476E94388795 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture2D.h */,
+                            6D321B9E612B4B43A2F5A5AA /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture3D.cpp */,
+                            794BBC032B464F6A8E994FC5 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture3D.h */,
+                            CE478E7531DC4B429BD41B1A /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/glIncludes.h */,
+                            44B45F6CE5FA47729F3B45E0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/gl_error.cpp */,
+                            0D9BBC0A0F98470F9ED4E9B1 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/gl_error.h */,
+                            13D19536622242A1AB3A7D9E /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/glutIncludes.h */,
+                            2E9E6D68C1EB463EB89E7019 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/timer.cpp */,
+                            CC7DF822EF8F41F6BDAF11D1 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/timer.h */,
+                     );
+                     name = oogl;
+                     sourceTree = "<group>";
+              };
+              821FDC58D1504A728E806B7E /* model */ = {
+                     isa = PBXGroup;
+                     children = (
+                            172C33EDE8F14A359469076C /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/Model3ds.cpp */,
+                            B2BF7F78638C40A4AE42C4BC /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/Model3ds.h */,
+                            0ADAAF0C0466411F9560F27D /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/ModelObj.cpp */,
+                            DE0BE256F94D4972AEB5704E /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/ModelObj.h */,
+                     );
+                     name = model;
+                     sourceTree = "<group>";
+              };
+              1C05284F5C6F4DAF8CDDC7CE /* utils */ = {
+                     isa = PBXGroup;
+                     children = (
+                            ABE788F0B58A46019D3F9770 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/log.h */,
+                            7AAA65970CDF487894574780 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/loglevels.h */,
+                            62689B07484A4646A9484981 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/timer.cpp */,
+                            40A40C8759F84D36881C9960 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/timer.h */,
+                     );
+                     name = utils;
+                     sourceTree = "<group>";
+              };
+              F0E01A38530741578F64B6FE /* spacerace */ = {
+                     isa = PBXGroup;
+                     children = (
+                            065B016D8D3043F396594A97 /* Source Files */,
+                            AD60713ABCB142458582E2BD /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/CMakeLists.txt */,
+                     );
+                     name = spacerace;
+                     sourceTree = "<group>";
+              };
+              065B016D8D3043F396594A97 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A295CE5413024031BF80519A /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/main.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              8B47A0B8238247C98422F672 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F11FB633A3CB40A2BC8C2D5C /* GLee */,
+                            7DEAC1375CB041789E8CDB2A /* glmobj */,
+                            8AECCB5EB25B451689AA3178 /* lib3ds */,
+                            8800F7ABA7CD4CDB8CE7353F /* common */,
+                            711E67C73EC14F53BA114CC9 /* spacerace */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              1DBC3D5DC1D7473783C07DA4 /* GLee */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = CE6EC93AEB584188AE22F571 /* Build configuration list for PBXNativeTarget "GLee" */;
+                     buildPhases = (
+                            0DDB017805A84F63A475F03C /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            1060532A3585489B92AA9EDB /* PBXTargetDependency */,
+                     );
+                     name = GLee;
+                     productName = GLee;
+                     productReference = F11FB633A3CB40A2BC8C2D5C /* GLee */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              FF38F48FC560427BB3FDF9BA /* glmobj */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 7A8A6DC9DFAD43948DA6951C /* Build configuration list for PBXNativeTarget "glmobj" */;
+                     buildPhases = (
+                            0AEE9311033444378EA5E150 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            EC334835F6AE47B79B230265 /* PBXTargetDependency */,
+                     );
+                     name = glmobj;
+                     productName = glmobj;
+                     productReference = 7DEAC1375CB041789E8CDB2A /* glmobj */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              060ADB925E2B438A8543F4AB /* lib3ds */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 3F6182B5AFBB4E74B8365FAC /* Build configuration list for PBXNativeTarget "lib3ds" */;
+                     buildPhases = (
+                            2B30B46F217549C8903C566C /* Sources */,
+                            388D53AC98954772A167284A /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            5E52B1D2A1834AF7A5A4B8AB /* PBXTargetDependency */,
+                     );
+                     name = lib3ds;
+                     productName = lib3ds;
+                     productReference = 8AECCB5EB25B451689AA3178 /* lib3ds */;
+                     productType = "com.apple.product-type.library.dynamic";
+              };
+              30D76CDF07C64965983E8B8C /* common */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 205176B06F6649F3A92FD732 /* Build configuration list for PBXNativeTarget "common" */;
+                     buildPhases = (
+                            6C8B46B437CD476EAFB1EFD2 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            1980D9C0AC34416B99A4A2C0 /* PBXTargetDependency */,
+                            73B377947EF84F8880FA4F5B /* PBXTargetDependency */,
+                            A0EC4F55AEC74155ABFEF342 /* PBXTargetDependency */,
+                            0967A04C6BFD490786A91B0D /* PBXTargetDependency */,
+                     );
+                     name = common;
+                     productName = common;
+                     productReference = 8800F7ABA7CD4CDB8CE7353F /* common */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              6F8E2BFAA71348748EC9E229 /* spacerace */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = AE1120CB2B80447CB8C11EC1 /* Build configuration list for PBXNativeTarget "spacerace" */;
+                     buildPhases = (
+                            55BE6179C7214AA1BC237C38 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            C6AB5BF73E7346638CC8833A /* PBXTargetDependency */,
+                            88853D5B7E51497FB60871E6 /* PBXTargetDependency */,
+                            EFB5344FA245414E8BBDBB87 /* PBXTargetDependency */,
+                            0B86EEB3CABB4F8988824D1A /* PBXTargetDependency */,
+                            7ECDD08952A24D148E8EBA2D /* PBXTargetDependency */,
+                     );
+                     name = spacerace;
+                     productName = spacerace;
+                     productReference = 711E67C73EC14F53BA114CC9 /* spacerace */;
+                     productType = "com.apple.product-type.tool";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              5CA013C4ACDA4C10A635C99C /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 96FCC761BBE7442AB82374BD /* Build configuration list for PBXProject  "spacerace" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            C1EFA97A2AB14A0282B7781A /* Debug */,
+                            EA5EF9DEF08F4312AC4C070D /* Release */,
+                            794AA1C65DA14D3CA13A18E8 /* MinSizeRel */,
+                            A9B38BBEA4794629A3CE6B1B /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 1BF431D6176F447CBF6F6B72;
+                     projectDirPath = "..";
+                     projectRoot = "";
+                     targets = (
+                            5BED7116FA7C4433BB3A19BD /* ALL_BUILD */,
+                            EB655D5F874849F6A877467A /* ZERO_CHECK */,
+                            B5CA7B2A191A4578A80C657A /* install */,
+                            1DBC3D5DC1D7473783C07DA4 /* GLee */,
+                            FF38F48FC560427BB3FDF9BA /* glmobj */,
+                            060ADB925E2B438A8543F4AB /* lib3ds */,
+                            30D76CDF07C64965983E8B8C /* common */,
+                            6F8E2BFAA71348748EC9E229 /* spacerace */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              0AAC918D2C9F4B1F90079890 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              4260A150602D4806A47DDBE7 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/danielraudschus/Documents/spacerace/build -f /Users/danielraudschus/Documents/spacerace/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              E9F04448966C4A9A8E28DC10 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              2080782B6E9D452E99E41D38 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/danielraudschus/Documents/spacerace/build -f /Users/danielraudschus/Documents/spacerace/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              C4EE5E63D6C1402A8BA0C0BA /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              1B6D9A091B9241AE9AC40F00 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/danielraudschus/Documents/spacerace/build -f /Users/danielraudschus/Documents/spacerace/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              388D53AC98954772A167284A /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src -f /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/CMakeScripts/lib3ds_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              0DDB017805A84F63A475F03C /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            BADB6C3E501E4D0797052577 /* /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              0AEE9311033444378EA5E150 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            B4386F0E6826475AB7DFAA1D /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm.cpp */,
+                            A42DBB3494664104B66BE518 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glm_util.cpp */,
+                            2424843F6DB34126A2FEB6D2 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg.cpp */,
+                            03BEEA0C9FBB44CF9DF8EFDB /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_devil.cpp */,
+                            95448E09E6A144C48BBEE3E0 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_jpg.cpp */,
+                            8F9D905C8E4542338D3DE6FE /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_png.cpp */,
+                            38E9C3CE2E3C43F3AC4928A9 /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_sdl.cpp */,
+                            F6B8D247270A4B21831C79EA /* /Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1/glm/glmimg_sim.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              2B30B46F217549C8903C566C /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            56D00AD255FE4DAA8F250DCD /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c */,
+                            A7EF8A48784348AAA063D146 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_background.c */,
+                            B80809453E7D46C1877BDEC6 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_camera.c */,
+                            D8CB8E492B254A5AAAB3F99C /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunk.c */,
+                            80A8B839649644B6A03997D8 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_chunktable.c */,
+                            8FB3EF09FE764A6E96332BBE /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_file.c */,
+                            83FBD78D9E97407FB0669592 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_io.c */,
+                            07D1C89CFBD24F6BA7E110BD /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_light.c */,
+                            864CB0658BA5420B8CFE7C9F /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_material.c */,
+                            64F07C26974347DCAB7D6F9E /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_math.c */,
+                            739202F62FC94F68BD4A22D0 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_matrix.c */,
+                            084104A7F9E34FF893219AD3 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_mesh.c */,
+                            F2BE5CDFA23A4BD2BFF0742F /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_node.c */,
+                            2CD7E7D989754FF6AE5E8424 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_quat.c */,
+                            5240192965D14AA9B7E55296 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_shadow.c */,
+                            87C52162F3F547F7A048E70E /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_track.c */,
+                            ACC1840A0A094EA8B739615E /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_util.c */,
+                            39E5E8DDDC2F49AFBC6EFB82 /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_vector.c */,
+                            306D311B20B242C68F446BEA /* /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_viewport.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              6C8B46B437CD476EAFB1EFD2 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            0D0E9FE1E5E344C4B4FA15B3 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/DisplayList.cpp */,
+                            66EC746A87CC4A5584361141 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/FrameBufferObject.cpp */,
+                            C0491861D96A425683AC0094 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLProgram.cpp */,
+                            2089AC10269F49EB9E25DFE0 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLShader.cpp */,
+                            748EA977A485445882A9372C /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Image.cpp */,
+                            E9180A75805246FE8FD82B9D /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Model.cpp */,
+                            B494A7369115496CB7850314 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Navigator.cpp */,
+                            BA15075B055144B3AA5295FE /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture.cpp */,
+                            8F388536E79E433EB6A84ABB /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture2D.cpp */,
+                            5C9A6F88A9A9426A8306BE8F /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture3D.cpp */,
+                            A47D19F5822A4CAEBF53E146 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/gl_error.cpp */,
+                            F5827991167F425D9D1766DB /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/Model3ds.cpp */,
+                            3760A067C7DD433DAAD29292 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/model/ModelObj.cpp */,
+                            5C69DFB4CBBA4CE0BFAD6E53 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/timer.cpp */,
+                            1D33244E4C0145DE8451A595 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/utils/timer.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              55BE6179C7214AA1BC237C38 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            4A5466D3EE1247C08595AEA5 /* /Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/main.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              E07947F8FBAD47AFAA89F4B0 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1DBC3D5DC1D7473783C07DA4 /* GLee */;
+                     targetProxy = 67C4DF295F3F4796B2BBB057 /* PBXContainerItemProxy */;
+              };
+              D3B9B6A18DDD4CB1A3A79EBE /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EB655D5F874849F6A877467A /* ZERO_CHECK */;
+                     targetProxy = DE2C79852D8441548321BED4 /* PBXContainerItemProxy */;
+              };
+              4BE1BED4E46D4A928CFD90E3 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 6F8E2BFAA71348748EC9E229 /* spacerace */;
+                     targetProxy = 0034D9A8E5A5427285FFD574 /* PBXContainerItemProxy */;
+              };
+              87ACE43867A04FD4929792BA /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 060ADB925E2B438A8543F4AB /* lib3ds */;
+                     targetProxy = 08AAE42309DE4BB88349932E /* PBXContainerItemProxy */;
+              };
+              C310BC80C0A54F898EBAC5C3 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = FF38F48FC560427BB3FDF9BA /* glmobj */;
+                     targetProxy = D39FCC3F7F4042959313EABB /* PBXContainerItemProxy */;
+              };
+              441FD1BDA6514ACBA70E58A3 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 30D76CDF07C64965983E8B8C /* common */;
+                     targetProxy = 408ADF8BD78E43F1AD299973 /* PBXContainerItemProxy */;
+              };
+              3CC570CC49B247299A350533 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 5BED7116FA7C4433BB3A19BD /* ALL_BUILD */;
+                     targetProxy = 97D1A3A248DB4AA199D16CE5 /* PBXContainerItemProxy */;
+              };
+              1060532A3585489B92AA9EDB /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EB655D5F874849F6A877467A /* ZERO_CHECK */;
+                     targetProxy = 7D80A0F3CC10431FA2E51973 /* PBXContainerItemProxy */;
+              };
+              EC334835F6AE47B79B230265 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EB655D5F874849F6A877467A /* ZERO_CHECK */;
+                     targetProxy = E16AFE48D55B4C20985CA39B /* PBXContainerItemProxy */;
+              };
+              5E52B1D2A1834AF7A5A4B8AB /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EB655D5F874849F6A877467A /* ZERO_CHECK */;
+                     targetProxy = A275F61BE00843CB976DDD98 /* PBXContainerItemProxy */;
+              };
+              1980D9C0AC34416B99A4A2C0 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1DBC3D5DC1D7473783C07DA4 /* GLee */;
+                     targetProxy = 55F6259039504488813BF602 /* PBXContainerItemProxy */;
+              };
+              73B377947EF84F8880FA4F5B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EB655D5F874849F6A877467A /* ZERO_CHECK */;
+                     targetProxy = A0FE9D00343747A1B806BDC5 /* PBXContainerItemProxy */;
+              };
+              A0EC4F55AEC74155ABFEF342 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 060ADB925E2B438A8543F4AB /* lib3ds */;
+                     targetProxy = 1693FC7053C9496E9FCBE320 /* PBXContainerItemProxy */;
+              };
+              0967A04C6BFD490786A91B0D /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = FF38F48FC560427BB3FDF9BA /* glmobj */;
+                     targetProxy = 0108EBA500094880A226A6BF /* PBXContainerItemProxy */;
+              };
+              C6AB5BF73E7346638CC8833A /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 1DBC3D5DC1D7473783C07DA4 /* GLee */;
+                     targetProxy = 465EFFD431254A23AF449800 /* PBXContainerItemProxy */;
+              };
+              88853D5B7E51497FB60871E6 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EB655D5F874849F6A877467A /* ZERO_CHECK */;
+                     targetProxy = AD15E4EA451E41E295F155B7 /* PBXContainerItemProxy */;
+              };
+              EFB5344FA245414E8BBDBB87 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 060ADB925E2B438A8543F4AB /* lib3ds */;
+                     targetProxy = 901DFD64CE7A4C7199A3C35D /* PBXContainerItemProxy */;
+              };
+              0B86EEB3CABB4F8988824D1A /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = FF38F48FC560427BB3FDF9BA /* glmobj */;
+                     targetProxy = 0DC7B3300A5E47F3BF5075E2 /* PBXContainerItemProxy */;
+              };
+              7ECDD08952A24D148E8EBA2D /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 30D76CDF07C64965983E8B8C /* common */;
+                     targetProxy = 83B75E91B25244229CE4AC6C /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              6B24A115C20D4A128B6A0EAD /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/build;
+                     };
+                     name = Debug;
+              };
+              53E5E440C91241A8BBEDD121 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/build;
+                     };
+                     name = Release;
+              };
+              594110ED2E554D0EA8D78AB0 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/build;
+                     };
+                     name = MinSizeRel;
+              };
+              106AE1CDCD7A4F3D8497BE71 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/build;
+                     };
+                     name = RelWithDebInfo;
+              };
+              B7D4EC96198D415589F69306 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              DB109E62924E4148A2A86492 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              8D39E20442174FFEB1EDD3C8 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              B92B29367DE3459EB8383353 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              06AE9D57F67E4931946A7AD2 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              112F74E0125648A786157C4C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              03A6BE304FB649A7B23BE0AE /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              0DF3EB84777C42F799F14B4F /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              FD5627F8CA514559B9085A1C /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              44671F76513B40B39D57D07E /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              60DAAB05A6264340B6394C3E /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              3278234DD5E643F7A221BB52 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              083C76FB43804622916E5D8A /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/Debug;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    ";
+                            OTHER_CPLUSPLUSFLAGS = "    ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = GLeed;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              8AE3C9698704424E82BDF99C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/Release;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = GLee;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              0457653BEA99418A97114602 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/MinSizeRel;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = GLee;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              0188EFE49761451C94BCE4DC /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/RelWithDebInfo;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "       -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = GLee;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              E3E0790204B6494F80D8245D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/Debug;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", HAVE_DEVIL, ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", "/Users/danielraudschus/Documents/spacerace/build/external/glm-obj-0.3.1", /usr/local/include, /usr/local/include/IL, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    ";
+                            OTHER_CPLUSPLUSFLAGS = "    ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = glmobjd;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/glm-obj-0.3.1";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              5F7BE30E629D42E591932DFD /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/Release;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", HAVE_DEVIL, ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", "/Users/danielraudschus/Documents/spacerace/build/external/glm-obj-0.3.1", /usr/local/include, /usr/local/include/IL, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = glmobj;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/glm-obj-0.3.1";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              543716C6273247F38B0C98B0 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/MinSizeRel;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", HAVE_DEVIL, ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", "/Users/danielraudschus/Documents/spacerace/build/external/glm-obj-0.3.1", /usr/local/include, /usr/local/include/IL, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = glmobj;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/glm-obj-0.3.1";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              CA8D41C8DD6C4D2894A8A6D9 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/RelWithDebInfo;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", HAVE_DEVIL, ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", "/Users/danielraudschus/Documents/spacerace/build/external/glm-obj-0.3.1", /usr/local/include, /usr/local/include/IL, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "       -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = glmobj;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/glm-obj-0.3.1";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              1977CF8C656A40B9A17FD4D8 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/Debug;
+                            DYLIB_COMPATIBILITY_VERSION = "";
+                            DYLIB_CURRENT_VERSION = "2.0.0";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".dylib";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", lib3ds_EXPORTS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = /Users/danielraudschus/Documents/spacerace/build/lib/Debug;
+                            LIBRARY_SEARCH_PATHS = "";
+                            LIBRARY_STYLE = DYNAMIC;
+                            OTHER_CFLAGS = "   -fPIC  ";
+                            OTHER_LDFLAGS = "  -dynamiclib -Wl,-headerpad_max_install_names  ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = "lib3dsd.2.0";
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              3CD5DE79E0F743AE866F8747 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/Release;
+                            DYLIB_COMPATIBILITY_VERSION = "";
+                            DYLIB_CURRENT_VERSION = "2.0.0";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".dylib";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", lib3ds_EXPORTS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = /Users/danielraudschus/Documents/spacerace/build/lib/Release;
+                            LIBRARY_SEARCH_PATHS = "";
+                            LIBRARY_STYLE = DYNAMIC;
+                            OTHER_CFLAGS = "    -DNDEBUG -fPIC  ";
+                            OTHER_LDFLAGS = "  -dynamiclib -Wl,-headerpad_max_install_names  ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = "lib3ds.2.0";
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              CF0F9633A67449C784FB5FF7 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/MinSizeRel;
+                            DYLIB_COMPATIBILITY_VERSION = "";
+                            DYLIB_CURRENT_VERSION = "2.0.0";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".dylib";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", lib3ds_EXPORTS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = /Users/danielraudschus/Documents/spacerace/build/lib/MinSizeRel;
+                            LIBRARY_SEARCH_PATHS = "";
+                            LIBRARY_STYLE = DYNAMIC;
+                            OTHER_CFLAGS = "    -DNDEBUG -fPIC  ";
+                            OTHER_LDFLAGS = "  -dynamiclib -Wl,-headerpad_max_install_names  ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = "lib3ds.2.0";
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              F827D5414E3E4CFABE271C5D /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/RelWithDebInfo;
+                            DYLIB_COMPATIBILITY_VERSION = "";
+                            DYLIB_CURRENT_VERSION = "2.0.0";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".dylib";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", lib3ds_EXPORTS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = /Users/danielraudschus/Documents/spacerace/build/lib/RelWithDebInfo;
+                            LIBRARY_SEARCH_PATHS = "";
+                            LIBRARY_STYLE = DYNAMIC;
+                            OTHER_CFLAGS = "       -DNDEBUG -fPIC  ";
+                            OTHER_LDFLAGS = "  -dynamiclib -Wl,-headerpad_max_install_names  ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = "lib3ds.2.0";
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              5971FE704C8745A9B053E8F6 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/Debug;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/danielraudschus/Documents/spacerace/projectSpacerace/common, "/Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include", "/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", "/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src", /usr/local/include, /usr/local/include/IL, "/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    ";
+                            OTHER_CPLUSPLUSFLAGS = "    ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = commond;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/projectSpacerace/common;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B907A627FC6A403C8AB3F6CA /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/Release;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/danielraudschus/Documents/spacerace/projectSpacerace/common, "/Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include", "/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", "/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src", /usr/local/include, /usr/local/include/IL, "/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = common;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/projectSpacerace/common;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              234E4F2A9AF846E7BD5298A3 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/MinSizeRel;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/danielraudschus/Documents/spacerace/projectSpacerace/common, "/Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include", "/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", "/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src", /usr/local/include, /usr/local/include/IL, "/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = common;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/projectSpacerace/common;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              BD34EA40495D4927B5B47B03 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/lib/RelWithDebInfo;
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/danielraudschus/Documents/spacerace/projectSpacerace/common, "/Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include", "/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", "/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src", /usr/local/include, /usr/local/include/IL, "/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "       -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = common;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/projectSpacerace/common;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              041B23B269934789AF269432 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/bin/Debug;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace, "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/Headers", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/Headers/GL", /Users/danielraudschus/Documents/spacerace/projectSpacerace/common, "/Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include", "/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", "/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src", /usr/local/include, /usr/local/include/IL, "/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", );
+                            INSTALL_PATH = "";
+                            LD_RUNPATH_SEARCH_PATHS = "/Users/danielraudschus/Documents/spacerace/build/lib /usr/local/lib";
+                            LIBRARY_SEARCH_PATHS = " /Users/danielraudschus/Documents/spacerace/build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/danielraudschus/Documents/spacerace/build/lib /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "    ";
+                            OTHER_CPLUSPLUSFLAGS = "    ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework GLUT -framework Cocoa /Users/danielraudschus/Documents/spacerace/build/lib/Debug/libcommond.a -framework AGL -framework OpenGL /Users/danielraudschus/Documents/spacerace/build/lib/Debug/libGLeed.a -framework AGL -framework OpenGL /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /usr/local/lib/libIL.dylib /usr/local/lib/libILU.dylib /usr/local/lib/libILUT.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/libglmobjd.a -framework AGL -framework OpenGL /usr/local/lib/libIL.dylib /usr/local/lib/libILU.dylib /usr/local/lib/libILUT.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = spaceraced;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/projectSpacerace/spacerace;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              DD0682979EE14329980CF89D /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/bin/Release;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace, "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/Headers", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/Headers/GL", /Users/danielraudschus/Documents/spacerace/projectSpacerace/common, "/Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include", "/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", "/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src", /usr/local/include, /usr/local/include/IL, "/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", );
+                            INSTALL_PATH = "";
+                            LD_RUNPATH_SEARCH_PATHS = "/Users/danielraudschus/Documents/spacerace/build/lib /usr/local/lib";
+                            LIBRARY_SEARCH_PATHS = " /Users/danielraudschus/Documents/spacerace/build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/danielraudschus/Documents/spacerace/build/lib /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework GLUT -framework Cocoa /Users/danielraudschus/Documents/spacerace/build/lib/Release/libcommon.a -framework AGL -framework OpenGL /Users/danielraudschus/Documents/spacerace/build/lib/Release/libGLee.a -framework AGL -framework OpenGL /Users/danielraudschus/Documents/spacerace/build/lib/Release/liblib3ds.2.0.dylib /usr/local/lib/libIL.dylib /usr/local/lib/libILU.dylib /usr/local/lib/libILUT.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Release/libglmobj.a -framework AGL -framework OpenGL /usr/local/lib/libIL.dylib /usr/local/lib/libILU.dylib /usr/local/lib/libILUT.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = spacerace;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/projectSpacerace/spacerace;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              A92D32A2D7A3406B8C490B0B /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/bin/MinSizeRel;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace, "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/Headers", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/Headers/GL", /Users/danielraudschus/Documents/spacerace/projectSpacerace/common, "/Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include", "/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", "/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src", /usr/local/include, /usr/local/include/IL, "/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", );
+                            INSTALL_PATH = "";
+                            LD_RUNPATH_SEARCH_PATHS = "/Users/danielraudschus/Documents/spacerace/build/lib /usr/local/lib";
+                            LIBRARY_SEARCH_PATHS = " /Users/danielraudschus/Documents/spacerace/build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/danielraudschus/Documents/spacerace/build/lib /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework GLUT -framework Cocoa /Users/danielraudschus/Documents/spacerace/build/lib/MinSizeRel/libcommon.a -framework AGL -framework OpenGL /Users/danielraudschus/Documents/spacerace/build/lib/MinSizeRel/libGLee.a -framework AGL -framework OpenGL /Users/danielraudschus/Documents/spacerace/build/lib/MinSizeRel/liblib3ds.2.0.dylib /usr/local/lib/libIL.dylib /usr/local/lib/libILU.dylib /usr/local/lib/libILUT.dylib /Users/danielraudschus/Documents/spacerace/build/lib/MinSizeRel/libglmobj.a -framework AGL -framework OpenGL /usr/local/lib/libIL.dylib /usr/local/lib/libILU.dylib /usr/local/lib/libILUT.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = spacerace;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/projectSpacerace/spacerace;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              8E0272BA08B84D8F86982453 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = /Users/danielraudschus/Documents/spacerace/build/bin/RelWithDebInfo;
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", ILUT_USE_OPENGL, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace, "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/Headers", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework/Headers/GL", /Users/danielraudschus/Documents/spacerace/projectSpacerace/common, "/Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include", "/Users/danielraudschus/Documents/spacerace/external/GLee-5.4", "/Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src", /usr/local/include, /usr/local/include/IL, "/Users/danielraudschus/Documents/spacerace/external/glm-obj-0.3.1", );
+                            INSTALL_PATH = "";
+                            LD_RUNPATH_SEARCH_PATHS = "/Users/danielraudschus/Documents/spacerace/build/lib /usr/local/lib";
+                            LIBRARY_SEARCH_PATHS = " /Users/danielraudschus/Documents/spacerace/build/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/danielraudschus/Documents/spacerace/build/lib /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "       -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework GLUT -framework Cocoa /Users/danielraudschus/Documents/spacerace/build/lib/RelWithDebInfo/libcommon.a -framework AGL -framework OpenGL /Users/danielraudschus/Documents/spacerace/build/lib/RelWithDebInfo/libGLee.a -framework AGL -framework OpenGL /Users/danielraudschus/Documents/spacerace/build/lib/RelWithDebInfo/liblib3ds.2.0.dylib /usr/local/lib/libIL.dylib /usr/local/lib/libILU.dylib /usr/local/lib/libILUT.dylib /Users/danielraudschus/Documents/spacerace/build/lib/RelWithDebInfo/libglmobj.a -framework AGL -framework OpenGL /usr/local/lib/libIL.dylib /usr/local/lib/libILU.dylib /usr/local/lib/libILUT.dylib";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = spacerace;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = /Users/danielraudschus/Documents/spacerace/build/projectSpacerace/spacerace;
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              96FCC761BBE7442AB82374BD /* Build configuration list for PBXProject  "spacerace" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            6B24A115C20D4A128B6A0EAD /* Debug */,
+                            53E5E440C91241A8BBEDD121 /* Release */,
+                            594110ED2E554D0EA8D78AB0 /* MinSizeRel */,
+                            106AE1CDCD7A4F3D8497BE71 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              A61CDF3DAAAA44C69C8E654B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B7D4EC96198D415589F69306 /* Debug */,
+                            DB109E62924E4148A2A86492 /* Release */,
+                            8D39E20442174FFEB1EDD3C8 /* MinSizeRel */,
+                            B92B29367DE3459EB8383353 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              E7E293BA44B94418BF6ADD46 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            06AE9D57F67E4931946A7AD2 /* Debug */,
+                            112F74E0125648A786157C4C /* Release */,
+                            03A6BE304FB649A7B23BE0AE /* MinSizeRel */,
+                            0DF3EB84777C42F799F14B4F /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              D4DBD03ABD9E4E2580CACF6D /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            FD5627F8CA514559B9085A1C /* Debug */,
+                            44671F76513B40B39D57D07E /* Release */,
+                            60DAAB05A6264340B6394C3E /* MinSizeRel */,
+                            3278234DD5E643F7A221BB52 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              CE6EC93AEB584188AE22F571 /* Build configuration list for PBXNativeTarget "GLee" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            083C76FB43804622916E5D8A /* Debug */,
+                            8AE3C9698704424E82BDF99C /* Release */,
+                            0457653BEA99418A97114602 /* MinSizeRel */,
+                            0188EFE49761451C94BCE4DC /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              7A8A6DC9DFAD43948DA6951C /* Build configuration list for PBXNativeTarget "glmobj" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E3E0790204B6494F80D8245D /* Debug */,
+                            5F7BE30E629D42E591932DFD /* Release */,
+                            543716C6273247F38B0C98B0 /* MinSizeRel */,
+                            CA8D41C8DD6C4D2894A8A6D9 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              3F6182B5AFBB4E74B8365FAC /* Build configuration list for PBXNativeTarget "lib3ds" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1977CF8C656A40B9A17FD4D8 /* Debug */,
+                            3CD5DE79E0F743AE866F8747 /* Release */,
+                            CF0F9633A67449C784FB5FF7 /* MinSizeRel */,
+                            F827D5414E3E4CFABE271C5D /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              205176B06F6649F3A92FD732 /* Build configuration list for PBXNativeTarget "common" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            5971FE704C8745A9B053E8F6 /* Debug */,
+                            B907A627FC6A403C8AB3F6CA /* Release */,
+                            234E4F2A9AF846E7BD5298A3 /* MinSizeRel */,
+                            BD34EA40495D4927B5B47B03 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              AE1120CB2B80447CB8C11EC1 /* Build configuration list for PBXNativeTarget "spacerace" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            041B23B269934789AF269432 /* Debug */,
+                            DD0682979EE14329980CF89D /* Release */,
+                            A92D32A2D7A3406B8C490B0B /* MinSizeRel */,
+                            8E0272BA08B84D8F86982453 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 5CA013C4ACDA4C10A635C99C;
+}

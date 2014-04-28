@@ -1,0 +1,79 @@
+TGLee
+v6
+r1
+cCheck dependencies
+cCompileC build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLee.o /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/danielraudschus/Documents/spacerace/build/lib/Debug/libGLeed.a normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000530295C100000000000000AA
+t1392678337
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000535B4D29000000000000044C
+t1398492457
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000535B4D2900000000000001DE
+t1398492457
+s478
+
+N/Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLee.o
+t1398595005
+s1478860
+
+N/Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLeed.LinkFileList
+c00000000535CDDBB0000000000000081
+t1398595003
+s129
+
+N/Users/danielraudschus/Documents/spacerace/build/lib/Debug/libGLeed.a
+t1398595005
+s1625296
+
+N/Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp
+c00000000533D45EC0000000000109663
+t1396524524
+s1087075
+
+N/Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.h
+c00000000533D45EC00000000000E4F5B
+t1396524524
+s937819
+
+CBuild AST from /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd19518f1830eb941^43aa18f1830eb941^---0#1#1#--18"Check dependencies36"796E1E46-6C6F-4B03-B13D-0A5F9C06B348-
+
+CCompileC build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLee.o /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s420287803.691525
+e420287805.211680
+r1
+xCompileC
+xbuild/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLee.o
+x/Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp
+d/Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp183"CompileC build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLee.o external/GLee-5.4/GLee.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler2828b13b150db941^6a33363d150db941^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp0000000000000000^2306"CompileC build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLee.o external/GLee-5.4/GLee.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/danielraudschus/Documents/spacerace    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/danielraudschus/Documents/spacerace/build/lib/Debug/include -I/Users/danielraudschus/Documents/spacerace/external/GLee-5.4 -I/Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4/spacerace.build/Debug/GLee.build/DerivedSources/x86_64 -I/Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4/spacerace.build/Debug/GLee.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/danielraudschus/Documents/spacerace/build/lib/Debug -MMD -MT dependencies -MF /Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLee.d --serialize-diagnostics /Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLee.dia -c /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp -o /Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLee.o36"1C65FE32-D935-47A1-8452-202C6813E557-
+bB8E31E20-B992-4A73-B69E-4560AE6BBDB5
+
+CLibtool /Users/danielraudschus/Documents/spacerace/build/lib/Debug/libGLeed.a normal x86_64
+s420287805.212358
+e420287805.223856
+r1
+xLibtool
+x/Users/danielraudschus/Documents/spacerace/build/lib/Debug/libGLeed.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Libtool build/lib/Debug/libGLeed.a normal x86_6448"Libtool build/lib/Debug/libGLeed.a normal x86_641669363d150db941^be4f393d150db941^---0#0#1#--661"Libtool build/lib/Debug/libGLeed.a normal x86_64    cd /Users/danielraudschus/Documents/spacerace    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/danielraudschus/Documents/spacerace/build/lib/Debug -filelist /Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLeed.LinkFileList -o /Users/danielraudschus/Documents/spacerace/build/lib/Debug/libGLeed.a36"F9F2206A-0ED6-43B8-BB15-A5BB31FEC850-
+bB8E31E20-B992-4A73-B69E-4560AE6BBDB5
+

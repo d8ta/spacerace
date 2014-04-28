@@ -1,0 +1,7 @@
+/Users/danielraudschus/Documents/spacerace/build/CMakeFiles/ALL_BUILD.dir
+/Users/danielraudschus/Documents/spacerace/build/external/GLee-5.4/CMakeFiles/GLee.dir
+/Users/danielraudschus/Documents/spacerace/build/CMakeFiles/ZERO_CHECK.dir
+/Users/danielraudschus/Documents/spacerace/build/projectSpacerace/common/CMakeFiles/common.dir
+/Users/danielraudschus/Documents/spacerace/build/external/glm-obj-0.3.1/CMakeFiles/glmobj.dir
+/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/CMakeFiles/lib3ds.dir
+/Users/danielraudschus/Documents/spacerace/build/projectSpacerace/spacerace/CMakeFiles/spacerace.dir
