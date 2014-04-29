@@ -116,6 +116,15 @@ void drawCube() {
     
 }
 
+// ring strukture ??
+void gluPartialDisk(GLUquadric* quad,
+                    GLdouble	inner,
+                    GLdouble	outer,
+                    GLint slices,
+                    GLint loops,
+                    GLdouble	start,
+                    GLdouble	sweep ) {}
+
 void drawSpheres() {
     
 
@@ -155,15 +164,13 @@ void display() {
 
 	/** Projektaufrufe **/
     drawSpheres();
-    
+
     // set vantage point
 	glTranslatef(10.0f, 10.0f, -50.0f);
     
-    glRotatef(rotAngle, rotX, rotY, rotZ);
     glTranslatef(moveX, moveY, moveZ);
+    glRotatef(rotAngle, rotX, rotY, rotZ);
     drawCube();
-
-    
     
 	LOG_GL_ERRORS();
 	glutSwapBuffers(); // draw scene
