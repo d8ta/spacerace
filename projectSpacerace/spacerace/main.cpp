@@ -15,10 +15,18 @@ bool leftMouseButtonDown = false;
 int mousePosX = 0, mousePosY = 0;
 float rotationX = 0, rotationY = 0;
 
-/** Globale Translate Variablen **/
+/** global variables **/
+
 float moveX = 0.0f;
 float moveY = 0.0f;
 float moveZ = 0.0f;
+
+// Playerrotation
+float rotX = 0.0f;
+float rotY = 0.0f;
+float rotZ = 0.0f;
+float rotAngle = 5.0f;
+
 
 double cameraPositionX = 0.0;
 double cameraPositionY = 1.0;
@@ -27,17 +35,14 @@ double cameraPositionZ = 0.0;
 
 
 float angle = 0.0f;
-/*----------6.1----------*/
 float reflectionMatrix[] = {
     0, 0, 0, 0,
     0, 0, 0, 0,
     0, 0, 0, 0,
     0, 0, 0, 0};
 
-/*----------11.1----------*/
 
 void init() {
-    /*----------11.2----------*/
     
 	glEnable(GL_DEPTH_TEST); // we enable the depth test, to handle occlusions
     
@@ -153,7 +158,8 @@ void display() {
     
     // set vantage point
 	glTranslatef(10.0f, 10.0f, -50.0f);
-
+    
+    glRotatef(rotAngle, rotX, rotY, rotZ);
     glTranslatef(moveX, moveY, moveZ);
     drawCube();
 
@@ -218,11 +224,11 @@ void keyboard(unsigned char key, int x, int y) {
             exit(0);
             break;
         case 'w':
-            std::cout << "fly backward" << std::endl;
+            std::cout << "fly forward" << std::endl;
             moveZ -= 5;
             break;
         case 's':
-            std::cout << "fly forward" << std::endl;
+            std::cout << "fly backward" << std::endl;
             moveZ += 5;
             break;
         case 'r':
@@ -251,20 +257,28 @@ void SpecialKeys(int key, int x, int y)
     switch (key)
 	{
 		case GLUT_KEY_LEFT:
-            std::cout << "strafe left" << std::endl;
-            moveX -= 5;
+            std::cout << "y-axis rotate left" << std::endl;
+            rotY = 1.0f;
+            rotX = 0.0f;
+            rotAngle += 5.0f;
             break;
 		case GLUT_KEY_RIGHT:
-            std::cout << "strafe right" << std::endl;
-            moveX += 5;
+            std::cout << "y-axis rotate right" << std::endl;
+            rotY = 1.0f;
+            rotX = 0.0f;
+            rotAngle -= 5.0f;
             break;
 		case GLUT_KEY_UP:
-            std::cout << "strafe up" << std::endl;
-            moveY += 5;
+            std::cout << "x-axis rotate down" << std::endl;
+            rotX = 1.0f;
+            rotY = 0.0f;
+            rotAngle -= 5.0f;
 			break;
 		case GLUT_KEY_DOWN:
-            std::cout << "strafe down" << std::endl;
-            moveY -= 5;
+            std::cout << "y-axis rotate right" << std::endl;
+            rotX = 1.0f;
+            rotY = 0.0f;
+            rotAngle += 5.0f;
 			break;
 	}
     glutPostRedisplay();
