@@ -107,27 +107,29 @@ void drawCube() {
     glVertex3f( 5, -5, -5 );
     glEnd();
     
+
     
 }
 
 void drawSpheres() {
     
-	//draw the sphere
-//    glColor3f(1.5f, 1.0f, 0.0f);
-//    glutSolidSphere(10.0, 60, 60);
-    
-glPushMatrix();
+
+    // Saving the drawCube matrix with pop
+    glPushMatrix();
     {
-    glTranslatef(30, 20, -10);
-	glColor3f(0.0f, 1.0f, 1.0f);
-	glutSolidSphere(5.0, 60, 60);
+        // Planet 1
+        glTranslatef(30, 20, -70);
+        glColor3f(0.0f, 1.0f, 1.0f);
+        glutSolidSphere(5.0, 60, 60);
     
-    glTranslatef(10, 10, 10);
-	glColor3f(0.0f, 1.0f, 0.0f);
-	glutSolidSphere(5.0, 60, 60);
+        // Planet 2
+        glTranslatef(10, 10, -60);
+        glColor3f(0.0f, 1.0f, 0.0f);
+        glutSolidSphere(5.0, 60, 60);
     }
-glPopMatrix();
-    }
+    // Deleting Planet Matrix with Pop
+    glPopMatrix();
+}
 
 
 void display() {
@@ -136,21 +138,25 @@ void display() {
 	// switch to modelview matrix
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
+    
+    // Cam fokus on Object
     //gluLookAt(cameraPositionX, cameraPositionY, cameraPositionZ, moveX, moveY, moveZ, 0.0, 20.0, 0.0);
     
-	// set vantage point
-	glTranslatef(0.0f, 0.0f, -50.0f);
     
-    // add rotation
+    // add rotation to the mouse
     glRotatef(rotationX, 1.0f, 0.0f, 0.0f);
     glRotatef(rotationY, 0.0f, 1.0f, 0.0f);
     
 
 	/** Projektaufrufe **/
     drawSpheres();
+    
+    // set vantage point
+	glTranslatef(10.0f, 10.0f, -50.0f);
 
     glTranslatef(moveX, moveY, moveZ);
     drawCube();
+
     
     
 	LOG_GL_ERRORS();
@@ -165,7 +171,6 @@ void display() {
 void update(int value) {
     
     
-    /*----------11.4----------*/
 	//increment angle variable and keep it in the range of 0..32s
 	angle += 2.0f;
 	if (angle > 360)
@@ -213,15 +218,56 @@ void keyboard(unsigned char key, int x, int y) {
             exit(0);
             break;
         case 'w':
-            std::cout << "Cam forward" << std::endl;
-            moveZ += 5;
-            break;
-        case 's':
-            std::cout << "Cam backward" << std::endl;
+            std::cout << "fly backward" << std::endl;
             moveZ -= 5;
             break;
+        case 's':
+            std::cout << "fly forward" << std::endl;
+            moveZ += 5;
+            break;
+        case 'r':
+            std::cout << "strafe down" << std::endl;
+            moveY += 5;
+            break;
+        case 'f':
+            std::cout << "strafe up" << std::endl;
+            moveY -= 5;
+            break;
+        case 'a':
+            std::cout << "strafe left" << std::endl;
+            moveX -= 5;
+            break;
+        case 'd':
+            std::cout << "strafe right" << std::endl;
+            moveX += 5;
+            break;
+            
 	}
 	glutPostRedisplay();
+}
+
+void SpecialKeys(int key, int x, int y)
+{
+    switch (key)
+	{
+		case GLUT_KEY_LEFT:
+            std::cout << "strafe left" << std::endl;
+            moveX -= 5;
+            break;
+		case GLUT_KEY_RIGHT:
+            std::cout << "strafe right" << std::endl;
+            moveX += 5;
+            break;
+		case GLUT_KEY_UP:
+            std::cout << "strafe up" << std::endl;
+            moveY += 5;
+			break;
+		case GLUT_KEY_DOWN:
+            std::cout << "strafe down" << std::endl;
+            moveY -= 5;
+			break;
+	}
+    glutPostRedisplay();
 }
 
 void mouse(int button, int state, int x, int y) {
@@ -270,7 +316,7 @@ int main(int argc, char** argv) {
 	oogl::dumpGLInfos();
     
 	init();
-    
+    glutSpecialFunc(SpecialKeys);
 	glutMainLoop();
     
 	return 0;
