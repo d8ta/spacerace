@@ -9,6 +9,7 @@
 #include <oogl/Model.h>
 
 
+
 int windowWidth, windowHeight;
 
 bool leftMouseButtonDown = false;
@@ -42,6 +43,9 @@ float reflectionMatrix[] = {
     0, 0, 0, 0};
 
 
+
+
+
 void init() {
     
 	glEnable(GL_DEPTH_TEST); // we enable the depth test, to handle occlusions
@@ -56,7 +60,7 @@ void init() {
 }
 
 void drawCube() {
-
+    
     //draw player
     // White side - BACK
     glBegin(GL_POLYGON);
@@ -125,47 +129,55 @@ void drawCube() {
 
 void drawUniverse() {
     
-
-    // Saving the drawCube matrix with pop
-
-        // Planet 1
-        glTranslatef(30, 20, -70);
-        glColor3f(0.0f, 1.0f, 1.0f);
-        glutSolidSphere(5.0, 60, 60);
     
-        // Planet 2
-        glTranslatef(10, 10, -60);
-        glColor3f(0.0f, 1.0f, 0.0f);
-        glutSolidSphere(5.0, 60, 60);
-
+    
+    // Saving the drawCube matrix with pop
+    
+    // Planet 1
+    glTranslatef(30, 20, -70);
+    glColor3f(0.0f, 1.0f, 1.0f);
+    glutSolidSphere(5.0, 60, 60);
+    
+    // Planet 2
+    glTranslatef(10, 10, -60);
+    glColor3f(0.0f, 1.0f, 0.0f);
+    glutSolidSphere(5.0, 60, 60);
+    
 }
 
 
 void display() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear color and depth buffer
-
+    
 	// switch to modelview matrix
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
     
     // Cam fokus on Object
     //gluLookAt(cameraPositionX, cameraPositionY, cameraPositionZ, moveX, moveY, moveZ, 0.0, 20.0, 0.0);
-
+    
     // add rotation to the mouse
     glRotatef(rotationX, 1.0f, 0.0f, 0.0f);
     glRotatef(rotationY, 0.0f, 1.0f, 0.0f);
     
+    
+    
 	/** Projektaufrufe **/
     // set vantage point behind and a little above the player
 	glTranslatef(0.0f, -10.0f, -50.0f);
+	
     
     glTranslatef(0.0f, 0.0f, 0.0f);
-    drawCube();
-
-    // rotate the universe and all objects, the ship and cam are fixed
-    glTranslatef(moveX, moveY, moveZ);
+	drawCube();
+	
+    
+	// rotate the universe and all objects, the ship and cam are fixed
     glRotatef(rotAngle, rotX, rotY, rotZ);
+	glTranslatef(moveX, moveY, moveZ);
     drawUniverse();
+    
+	
+    
     
 	LOG_GL_ERRORS();
 	glutSwapBuffers(); // draw scene
@@ -227,27 +239,27 @@ void keyboard(unsigned char key, int x, int y) {
             break;
         case 'w':
             std::cout << "fly forward" << std::endl;
-            moveZ -= 5;
+            moveZ += 5;
             break;
         case 's':
             std::cout << "fly backward" << std::endl;
-            moveZ += 5;
+            moveZ -= 5;
             break;
         case 'r':
             std::cout << "strafe down" << std::endl;
-            moveY += 5;
+            moveY -= 5;
             break;
         case 'f':
             std::cout << "strafe up" << std::endl;
-            moveY -= 5;
+            moveY += 5;
             break;
         case 'a':
             std::cout << "strafe left" << std::endl;
-            moveX -= 5;
+            moveX += 5;
             break;
         case 'd':
             std::cout << "strafe right" << std::endl;
-            moveX += 5;
+            moveX -= 5;
             break;
             
 	}
