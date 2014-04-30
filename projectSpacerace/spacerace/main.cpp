@@ -21,13 +21,13 @@ float moveX = 0.0f;
 float moveY = 0.0f;
 float moveZ = 0.0f;
 
-// Playerrotation
+// Universal Rotation!
 float rotX = 0.0f;
 float rotY = 0.0f;
 float rotZ = 0.0f;
-float rotAngle = 5.0f;
+float rotAngle = 0.0f;
 
-
+// For gluLookAt
 double cameraPositionX = 0.0;
 double cameraPositionY = 1.0;
 double cameraPositionZ = 0.0;
@@ -56,7 +56,8 @@ void init() {
 }
 
 void drawCube() {
-
+    glPushMatrix();
+    {
     //draw player
     // White side - BACK
     glBegin(GL_POLYGON);
@@ -111,26 +112,27 @@ void drawCube() {
     glVertex3f( -5, -5, -5 );
     glVertex3f( 5, -5, -5 );
     glEnd();
-    
+}
+// Deleting Planet Matrix with Pop
+glPopMatrix();
 
-    
+
 }
 
-// ring strukture ??
-void gluPartialDisk(GLUquadric* quad,
-                    GLdouble	inner,
-                    GLdouble	outer,
-                    GLint slices,
-                    GLint loops,
-                    GLdouble	start,
-                    GLdouble	sweep ) {}
+//// ring strukture ??
+//void gluPartialDisk(GLUquadric* quad,
+//                    GLdouble	inner,
+//                    GLdouble	outer,
+//                    GLint slices,
+//                    GLint loops,
+//                    GLdouble	start,
+//                    GLdouble	sweep ) {}
 
 void drawSpheres() {
     
 
     // Saving the drawCube matrix with pop
-    glPushMatrix();
-    {
+
         // Planet 1
         glTranslatef(30, 20, -70);
         glColor3f(0.0f, 1.0f, 1.0f);
@@ -140,9 +142,6 @@ void drawSpheres() {
         glTranslatef(10, 10, -60);
         glColor3f(0.0f, 1.0f, 0.0f);
         glutSolidSphere(5.0, 60, 60);
-    }
-    // Deleting Planet Matrix with Pop
-    glPopMatrix();
 }
 
 
@@ -163,14 +162,19 @@ void display() {
     
 
 	/** Projektaufrufe **/
-    drawSpheres();
-
-    // set vantage point
-	glTranslatef(10.0f, 10.0f, -50.0f);
+    // set vantage point behind and a little above the player
+	glTranslatef(0.0f, -10.0f, -50.0f);
+    glRotatef(rotAngle, rotX, rotY, rotZ);
+  
     
-    glTranslatef(moveX, moveY, moveZ);
+    glTranslatef(0.0f, 0.0f, 0.0f);
     glRotatef(rotAngle, rotX, rotY, rotZ);
     drawCube();
+
+    // rotate the universe and all objects, the ship and cam are fixed
+    glTranslatef(moveX, moveY, moveZ);
+    glRotatef(rotAngle, rotX, rotY, rotZ);
+    drawSpheres();
     
 	LOG_GL_ERRORS();
 	glutSwapBuffers(); // draw scene
@@ -267,25 +271,25 @@ void SpecialKeys(int key, int x, int y)
             std::cout << "y-axis rotate left" << std::endl;
             rotY = 1.0f;
             rotX = 0.0f;
-            rotAngle += 5.0f;
+            rotAngle -= 5.0f;
             break;
 		case GLUT_KEY_RIGHT:
             std::cout << "y-axis rotate right" << std::endl;
             rotY = 1.0f;
             rotX = 0.0f;
-            rotAngle -= 5.0f;
+            rotAngle += 5.0f;
             break;
 		case GLUT_KEY_UP:
             std::cout << "x-axis rotate down" << std::endl;
             rotX = 1.0f;
             rotY = 0.0f;
-            rotAngle -= 5.0f;
+            rotAngle += 5.0f;
 			break;
 		case GLUT_KEY_DOWN:
             std::cout << "y-axis rotate right" << std::endl;
             rotX = 1.0f;
             rotY = 0.0f;
-            rotAngle += 5.0f;
+            rotAngle -= 5.0f;
 			break;
 	}
     glutPostRedisplay();
