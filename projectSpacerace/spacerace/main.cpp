@@ -56,8 +56,7 @@ void init() {
 }
 
 void drawCube() {
-    glPushMatrix();
-    {
+
     //draw player
     // White side - BACK
     glBegin(GL_POLYGON);
@@ -112,11 +111,7 @@ void drawCube() {
     glVertex3f( -5, -5, -5 );
     glVertex3f( 5, -5, -5 );
     glEnd();
-}
-// Deleting Planet Matrix with Pop
-glPopMatrix();
-
-
+    
 }
 
 //// ring strukture ??
@@ -128,7 +123,7 @@ glPopMatrix();
 //                    GLdouble	start,
 //                    GLdouble	sweep ) {}
 
-void drawSpheres() {
+void drawUniverse() {
     
 
     // Saving the drawCube matrix with pop
@@ -142,6 +137,7 @@ void drawSpheres() {
         glTranslatef(10, 10, -60);
         glColor3f(0.0f, 1.0f, 0.0f);
         glutSolidSphere(5.0, 60, 60);
+
 }
 
 
@@ -154,27 +150,22 @@ void display() {
     
     // Cam fokus on Object
     //gluLookAt(cameraPositionX, cameraPositionY, cameraPositionZ, moveX, moveY, moveZ, 0.0, 20.0, 0.0);
-    
-    
+
     // add rotation to the mouse
     glRotatef(rotationX, 1.0f, 0.0f, 0.0f);
     glRotatef(rotationY, 0.0f, 1.0f, 0.0f);
     
-
 	/** Projektaufrufe **/
     // set vantage point behind and a little above the player
 	glTranslatef(0.0f, -10.0f, -50.0f);
-    glRotatef(rotAngle, rotX, rotY, rotZ);
-  
     
     glTranslatef(0.0f, 0.0f, 0.0f);
-    glRotatef(rotAngle, rotX, rotY, rotZ);
     drawCube();
 
     // rotate the universe and all objects, the ship and cam are fixed
     glTranslatef(moveX, moveY, moveZ);
     glRotatef(rotAngle, rotX, rotY, rotZ);
-    drawSpheres();
+    drawUniverse();
     
 	LOG_GL_ERRORS();
 	glutSwapBuffers(); // draw scene
