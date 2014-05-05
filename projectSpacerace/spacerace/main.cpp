@@ -45,7 +45,6 @@ float reflectionMatrix[] = {
 
 
 
-
 void init() {
     
 	glEnable(GL_DEPTH_TEST); // we enable the depth test, to handle occlusions
@@ -107,7 +106,7 @@ void drawCube() {
     glVertex3f( -5, -5, -5 );
     glEnd();
     
-    // Red side - BOTTOM
+    // Grey side - BACK
     glBegin(GL_POLYGON);
     glColor3f(  0.0,  0.0,  0.0 );
     glVertex3f(  5, 5, -5 );
@@ -118,31 +117,110 @@ void drawCube() {
     
 }
 
-//// ring strukture ??
-//void gluPartialDisk(GLUquadric* quad,
-//                    GLdouble	inner,
-//                    GLdouble	outer,
-//                    GLint slices,
-//                    GLint loops,
-//                    GLdouble	start,
-//                    GLdouble	sweep ) {}
+
+// Zeichnet einen Ring
+void drawCircle(float cx, float cy, float r, int num_segments)
+{
+    float theta = 2 * 3.1415926 / float(num_segments);
+    float tangetial_factor = tanf(theta);//calculate the tangential factor
+    
+    float radial_factor = cosf(theta);//calculate the radial factor
+    
+    float x = r;//we start at angle = 0
+    
+    float y = 0;
+    
+    glBegin(GL_LINE_LOOP);
+    for(int i = 0; i < num_segments; i++)
+    {
+        glVertex2f(x + cx, y + cy);//output vertex
+        
+        //calculate the tangential vector
+        //remember, the radial vector is (x, y)
+        //to get the tangential vector we flip those coordinates and negate one of them
+        
+        float tx = -y;
+        float ty = x;
+        
+        //add the tangential vector
+        
+        x += tx * tangetial_factor;
+        y += ty * tangetial_factor;
+        
+        //correct using the radial factor
+        
+        x *= radial_factor;
+        y *= radial_factor;
+    }
+    glEnd();
+};
+
+
+void drawFlightpath () {
+    
+    glBegin(GL_POLYGON);
+    glColor3f(  1.0,  0.0,  0.0 );
+    glVertex3f(  0, 100, 0 );
+    glVertex3f(  0, 90, 0 );
+    glVertex3f( 100, 90, 0 );
+    glVertex3f( 100, 100, 0 );
+    glEnd();
+    
+    
+    glBegin(GL_POLYGON);
+    glColor3f(  1.0,  0.0,  0.0 );
+    glVertex3f(  0, 0, 0 );
+    glVertex3f(  0, 10, 0 );
+    glVertex3f( 100, 10, 0 );
+    glVertex3f( 100, 0, 0 );
+    glEnd();
+    
+    
+    glBegin(GL_POLYGON);
+    glColor3f(  1.0,  0.0,  0.0 );
+    glVertex3f(  0, 0, 0 );
+    glVertex3f(  0, 100, 0 );
+    glVertex3f( 10, 100, 0 );
+    glVertex3f( 10, 0, 0 );
+    glEnd();
+    
+    glTranslated(90, 0, 0);
+    glBegin(GL_POLYGON);
+    glColor3f(  1.0,  0.0,  0.0 );
+    glVertex3f(  0, 0, 0 );
+    glVertex3f(  0, 100, 0 );
+    glVertex3f( 10, 100, 0 );
+    glVertex3f( 10, 0, 0 );
+    glEnd();
+}
+
+
 
 void drawUniverse() {
     
+    // Moon
+    glTranslatef(-600, 0, -750);
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glutSolidSphere(1000.0, 60, 60);
     
-    
-    // Saving the drawCube matrix with pop
-    
-    // Planet 1
-    glTranslatef(30, 20, -70);
-    glColor3f(0.0f, 1.0f, 1.0f);
-    glutSolidSphere(5.0, 60, 60);
     
     // Planet 2
-    glTranslatef(10, 10, -60);
-    glColor3f(0.0f, 1.0f, 0.0f);
-    glutSolidSphere(5.0, 60, 60);
+//    glTranslatef(10, 10, -60);
+//    glColor3f(1.0f, 1.0f, 0.0f);
+//    glutSolidSphere(5.0, 60, 60);
     
+    // Ring
+//    glColor3f(1.0f, 1.0f, 0.0f);
+//    glTranslatef(14, 22, -5);
+//    drawCircle(1.0f, 1.0f, 50.0f, 180.0f);
+    
+    glTranslatef(550, 0, -10);
+    drawFlightpath();
+    glTranslatef(20, -10, -250);
+    drawFlightpath();
+    
+
+
 }
 
 
@@ -166,10 +244,13 @@ void display() {
     // set vantage point behind and a little above the player
 	glTranslatef(0.0f, -10.0f, -50.0f);
 	
-    
+    glPushMatrix();
+    {
     glTranslatef(0.0f, 0.0f, 0.0f);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
 	drawCube();
-	
+    }
+    glPopMatrix();
     
 	// rotate the universe and all objects, the ship and cam are fixed
     glRotatef(rotAngle, rotX, rotY, rotZ);
@@ -311,8 +392,8 @@ void mouse(int button, int state, int x, int y) {
 void mouseMotion(int x, int y) {
 	if (leftMouseButtonDown) {
 		//add the relative movement of the mouse to the rotation variables
-		rotationX += mousePosY - y;
-		rotationY += mousePosX - x;
+		rotationX -= mousePosY - y;
+		rotationY -= mousePosX - x;
         
 		mousePosX = x;
 		mousePosY = y;
