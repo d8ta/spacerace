@@ -199,9 +199,9 @@ void drawFlightpath () {
 void drawUniverse() {
     
     // Moon
-    glTranslatef(-600, 0, -750);
+    glTranslatef(-900, 0, -750);
     glColor3f(1.0f, 1.0f, 1.0f);
-    glutSolidSphere(1000.0, 60, 60);
+    glutSolidSphere(1000.0, 180, 180);
     
     
     // Planet 2
@@ -213,12 +213,14 @@ void drawUniverse() {
 //    glColor3f(1.0f, 1.0f, 0.0f);
 //    glTranslatef(14, 22, -5);
 //    drawCircle(1.0f, 1.0f, 50.0f, 180.0f);
-    
-    glTranslatef(550, 0, -10);
+    glPushMatrix();
+    {
+    glTranslatef(1050, 0, -10);
     drawFlightpath();
-    glTranslatef(20, -10, -250);
+    glTranslatef(-80, 50, -250);
     drawFlightpath();
-    
+    }
+    glPopMatrix();
 
 
 }
