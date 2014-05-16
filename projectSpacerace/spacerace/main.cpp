@@ -412,6 +412,8 @@ void display() {
 	// switch to modelview matrix
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
+    //glFrustum( -1.6, 1.6, -1.2, 1.2, 1.5, 6.5 );
+
     
     // Cam fokus on Object
     //gluLookAt(cameraPositionX, cameraPositionY, cameraPositionZ, moveX, moveY, moveZ, 0.0, 20.0, 0.0);
@@ -469,7 +471,6 @@ void reshape(int w, int h) {
 	glViewport(0, 0, w, h);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-    //glFrustum( -1.6, 1.6, -1.2, 1.2, 1.5, 6.5 );
 	gluPerspective(60.0, w/(float)h, 1.0, 1000.0);
 }
 
