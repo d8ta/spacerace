@@ -393,23 +393,6 @@ void drawUniverse() {
         drawFlightpath();
     }
     glPopMatrix();
-    
-//    glTranslatef(-80, 50, -250);
-//    drawFlightpath();
-//        
-//    glTranslatef(-120, 30, -250);
-//    drawFlightpath();
-//        
-//    glRotatef(-35.0f, 0.0f, 0.0f, 1.0f);
-//    glRotatef(-35.0f, 0.0f, 0.0f, 1.0f);
-//    glTranslatef(-250, -50, -250);
-//    drawFlightpath();
-//    
-//    glRotatef(-35.0f, 0.0f, 0.0f, 1.0f);
-//    glRotatef(-35.0f, 0.0f, 0.0f, 1.0f);
-//    glTranslatef(-450, -150, -250);
-//    drawFlightpath();
-
 
 }
 
@@ -494,13 +477,11 @@ void dumpMatrix(float* m, int c, int r) {
 }
 
 
-/** Projektfunktion für Movement **/
-//void move(){
-//    float moveZ = 500;
-//    glTranslatef(0.0f, 0.0f, moveZ);
-//    //moveZ += 1;
-//    glutPostRedisplay();
-//}
+void glMovePlayer(float speed)
+{
+    moveX += sin(angle*3.1415/180) * speed;
+    moveZ += cos(angle*3.1415/180) * speed;
+}
 
 
 void keyboard(unsigned char key, int x, int y) {
