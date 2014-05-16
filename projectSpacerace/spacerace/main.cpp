@@ -28,11 +28,11 @@ float rotY = 0.0f;
 float rotZ = 0.0f;
 float rotAngle = 0.0f;
 
-// For gluLookAt
-double cameraPositionX = 0.0;
-double cameraPositionY = 1.0;
-double cameraPositionZ = 0.0;
 
+// For gluLookAt
+//float cameraPositionX = 0.0;
+//float cameraPositionY = 1.0;
+//float cameraPositionZ = 0.0;
 
 
 float angle = 0.0f;
@@ -42,6 +42,15 @@ float reflectionMatrix[] = {
     0, 0, 0, 0,
     0, 0, 0, 0};
 
+
+
+// set clipping plane
+void glFrustum( GLdouble left,
+               GLdouble right,
+               GLdouble bottom,
+               GLdouble top,
+               GLdouble zNear,
+               GLdouble zFar );
 
 
 
@@ -460,6 +469,7 @@ void reshape(int w, int h) {
 	glViewport(0, 0, w, h);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
+    //glFrustum( -1.6, 1.6, -1.2, 1.2, 1.5, 6.5 );
 	gluPerspective(60.0, w/(float)h, 1.0, 1000.0);
 }
 
@@ -517,6 +527,8 @@ void keyboard(unsigned char key, int x, int y) {
 	}
 	glutPostRedisplay();
 }
+
+
 
 void SpecialKeys(int key, int x, int y)
 {
@@ -584,7 +596,6 @@ int setupGLUT(int argc, char** argv) {
 	glutKeyboardFunc(keyboard);
 	glutMouseFunc(mouse);
 	glutMotionFunc(mouseMotion);
-    
 	glutTimerFunc(25, update, 0);  //request to call in at least 25ms
     
 	return windowId;
@@ -592,9 +603,7 @@ int setupGLUT(int argc, char** argv) {
 
 int main(int argc, char** argv) {
 	setupGLUT(argc, argv);
-    
 	oogl::dumpGLInfos();
-    
 	init();
     glutSpecialFunc(SpecialKeys);
 	glutMainLoop();
