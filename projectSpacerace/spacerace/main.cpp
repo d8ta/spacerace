@@ -406,6 +406,12 @@ void drawUniverse() {
 }
 
 
+
+void fly() {
+    moveZ += 15;
+}
+
+
 void display() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear color and depth buffer
     
@@ -436,9 +442,12 @@ void display() {
     }
     glPopMatrix();
     
+    
+
 	// rotate the universe and all objects, the ship and cam are fixed
     glRotatef(rotAngle, rotX, rotY, rotZ);
 	glTranslatef(moveX, moveY, moveZ);
+    fly();
     drawUniverse();
     
 	
@@ -447,6 +456,7 @@ void display() {
 	LOG_GL_ERRORS();
 	glutSwapBuffers(); // draw scene
 }
+
 
 
 /**
@@ -488,11 +498,11 @@ void dumpMatrix(float* m, int c, int r) {
 }
 
 
-void glMovePlayer(float speed)
-{
-    moveX += sin(angle*3.1415/180) * speed;
-    moveZ += cos(angle*3.1415/180) * speed;
-}
+//void glMovePlayer(float speed)
+//{
+//    moveX += sin(angle*3.1415/180) * speed;
+//    moveZ += cos(angle*3.1415/180) * speed;
+//}
 
 
 void keyboard(unsigned char key, int x, int y) {
@@ -500,19 +510,19 @@ void keyboard(unsigned char key, int x, int y) {
         case 27: //27=esc
             exit(0);
             break;
+//        case 'w':
+//            std::cout << "fly forward" << std::endl;
+//            moveZ += 15;
+//            break;
+//        case 's':
+//            std::cout << "fly backward" << std::endl;
+//            moveZ -= 15;
+//            break;
         case 'w':
-            std::cout << "fly forward" << std::endl;
-            moveZ += 15;
-            break;
-        case 's':
-            std::cout << "fly backward" << std::endl;
-            moveZ -= 15;
-            break;
-        case 'r':
             std::cout << "strafe down" << std::endl;
             moveY -= 15;
             break;
-        case 'f':
+        case 's':
             std::cout << "strafe up" << std::endl;
             moveY += 15;
             break;
@@ -531,37 +541,37 @@ void keyboard(unsigned char key, int x, int y) {
 
 
 
-void SpecialKeys(int key, int x, int y)
-{
-    switch (key)
-	{
-		case GLUT_KEY_LEFT:
-            std::cout << "y-axis rotate left" << std::endl;
-            rotY = 1.0f;
-            rotX = 0.0f;
-            rotAngle -= 5.0f;
-            break;
-		case GLUT_KEY_RIGHT:
-            std::cout << "y-axis rotate right" << std::endl;
-            rotY = 1.0f;
-            rotX = 0.0f;
-            rotAngle += 5.0f;
-            break;
-		case GLUT_KEY_UP:
-            std::cout << "x-axis rotate down" << std::endl;
-            rotX = 1.0f;
-            rotY = 0.0f;
-            rotAngle += 5.0f;
-			break;
-		case GLUT_KEY_DOWN:
-            std::cout << "y-axis rotate right" << std::endl;
-            rotX = 1.0f;
-            rotY = 0.0f;
-            rotAngle -= 5.0f;
-			break;
-	}
-    glutPostRedisplay();
-}
+//void SpecialKeys(int key, int x, int y)
+//{
+//    switch (key)
+//	{
+//		case GLUT_KEY_LEFT:
+//            std::cout << "y-axis rotate left" << std::endl;
+//            rotY = 1.0f;
+//            rotX = 0.0f;
+//            rotAngle -= 5.0f;
+//            break;
+//		case GLUT_KEY_RIGHT:
+//            std::cout << "y-axis rotate right" << std::endl;
+//            rotY = 1.0f;
+//            rotX = 0.0f;
+//            rotAngle += 5.0f;
+//            break;
+//		case GLUT_KEY_UP:
+//            std::cout << "x-axis rotate down" << std::endl;
+//            rotX = 1.0f;
+//            rotY = 0.0f;
+//            rotAngle += 5.0f;
+//			break;
+//		case GLUT_KEY_DOWN:
+//            std::cout << "y-axis rotate right" << std::endl;
+//            rotX = 1.0f;
+//            rotY = 0.0f;
+//            rotAngle -= 5.0f;
+//			break;
+//	}
+//    glutPostRedisplay();
+//}
 
 void mouse(int button, int state, int x, int y) {
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
@@ -606,7 +616,7 @@ int main(int argc, char** argv) {
 	setupGLUT(argc, argv);
 	oogl::dumpGLInfos();
 	init();
-    glutSpecialFunc(SpecialKeys);
+    //glutSpecialFunc(SpecialKeys);
 	glutMainLoop();
     
 	return 0;
