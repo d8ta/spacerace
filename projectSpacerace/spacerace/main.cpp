@@ -208,7 +208,7 @@ void drawFlightpath () {
 void drawUniverse() {
     
     // Moon
-    glTranslatef(-900, 0, -750);
+    glTranslatef(-1000, 20, -1050);
     glColor3f(1.0f, 1.0f, 1.0f);
     glutSolidSphere(1000.0, 180, 180);
     
@@ -223,192 +223,41 @@ void drawUniverse() {
 //    glTranslatef(14, 22, -5);
 //    drawCircle(1.0f, 1.0f, 50.0f, 180.0f);
 
-    glPushMatrix();
-    {
         glTranslatef(1050, -40, 0);
         glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
         drawFlightpath();
-    }
-    glPopMatrix();
     
-    glPushMatrix();
-    {
-        glTranslatef(1050, -50, -250);
-        glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(1000, -80, -500);
-        glRotatef(20.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(25.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(900, -40, -750);
-        glRotatef(40.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(45.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(700, -40, -1000);
-        glRotatef(80.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(50.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(400, -40, -1200);
-        glRotatef(80.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(55.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
+    glTranslatef(1050, -40, 400);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    drawFlightpath();
     
     
-    glPushMatrix();
-    {
-        glTranslatef(100, -40, -1200);
-        glRotatef(100.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(70.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
+    glTranslatef(1050, -40, 400);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    drawFlightpath();
     
-    glPushMatrix();
-    {
-        glTranslatef(-100, -40, -1200);
-        glRotatef(110.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(85.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
+    glTranslatef(1050, -40, 800);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    drawFlightpath();
     
-    glPushMatrix();
-    {
-        glTranslatef(-300, -40, -1100);
-        glRotatef(110.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(85.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
     
-    glPushMatrix();
-    {
-        glTranslatef(-500, -40, -1000);
-        glRotatef(110.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(85.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-
-
-    glPushMatrix();
-    {
-        glTranslatef(-700, -50, -900);
-        glRotatef(120.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(85.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
+    glTranslatef(1050, -40, 1200);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    drawFlightpath();
     
-    glPushMatrix();
-    {
-        glTranslatef(-1000, -50, -700);
-        glRotatef(140.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
+    glTranslatef(1050, -40, 1600);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    drawFlightpath();
     
-    glPushMatrix();
-    {
-        glTranslatef(-1200, -50, -300);
-        glRotatef(180.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(-1200, -50, -50);
-        glRotatef(180.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(-1200, -50, 250);
-        glRotatef(180.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(-1200, -50, 650);
-        glRotatef(210.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(-1100, -50, 950);
-        glRotatef(220.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(-600, -50, 1300);
-        glRotatef(230.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(-300, -50, 1400);
-        glRotatef(240.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-    
-    glPushMatrix();
-    {
-        glTranslatef(0, -50, 1400);
-        glRotatef(260.0f, 0.0f, 1.0f, 0.0f);
-        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
-        drawFlightpath();
-    }
-    glPopMatrix();
-
+    glTranslatef(1050, -40, 1800);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    drawFlightpath();
 }
 
 
 
 void fly() {
-    moveZ += 15;
+    moveZ += 5;
 }
 
 
