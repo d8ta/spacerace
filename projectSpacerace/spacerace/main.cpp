@@ -1,16 +1,15 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
-
 #include <GLee.h>
 #include <oogl/glutIncludes.h>
 #include <oogl/gl_error.h>
-
 #include <oogl/Model.h>
 
 
 
 int windowWidth, windowHeight;
+
 
 bool leftMouseButtonDown = false;
 int mousePosX = 0, mousePosY = 0;
@@ -29,11 +28,6 @@ float rotZ = 0.0f;
 float rotAngle = 0.0f;
 
 
-// For gluLookAt
-//float cameraPositionX = 0.0;
-//float cameraPositionY = 1.0;
-//float cameraPositionZ = 0.0;
-
 
 float angle = 0.0f;
 float reflectionMatrix[] = {
@@ -41,16 +35,6 @@ float reflectionMatrix[] = {
     0, 0, 0, 0,
     0, 0, 0, 0,
     0, 0, 0, 0};
-
-
-
-// set clipping plane
-void glFrustum( GLdouble left,
-               GLdouble right,
-               GLdouble bottom,
-               GLdouble top,
-               GLdouble zNear,
-               GLdouble zFar );
 
 
 
@@ -127,44 +111,7 @@ void drawCube() {
 }
 
 
-// Zeichnet einen Ring
-void drawCircle(float cx, float cy, float r, int num_segments)
-{
-    float theta = 2 * 3.1415926 / float(num_segments);
-    float tangetial_factor = tanf(theta);//calculate the tangential factor
-    
-    float radial_factor = cosf(theta);//calculate the radial factor
-    
-    float x = r;//we start at angle = 0
-    
-    float y = 0;
-    
-    glBegin(GL_LINE_LOOP);
-    for(int i = 0; i < num_segments; i++)
-    {
-        glVertex2f(x + cx, y + cy);//output vertex
-        
-        //calculate the tangential vector
-        //remember, the radial vector is (x, y)
-        //to get the tangential vector we flip those coordinates and negate one of them
-        
-        float tx = -y;
-        float ty = x;
-        
-        //add the tangential vector
-        
-        x += tx * tangetial_factor;
-        y += ty * tangetial_factor;
-        
-        //correct using the radial factor
-        
-        x *= radial_factor;
-        y *= radial_factor;
-    }
-    glEnd();
-};
-
-
+// red rectangles for the flightpath
 void drawFlightpath () {
     
     glBegin(GL_POLYGON);
@@ -223,35 +170,22 @@ void drawUniverse() {
 //    glTranslatef(14, 22, -5);
 //    drawCircle(1.0f, 1.0f, 50.0f, 180.0f);
 
-        glTranslatef(1050, -40, 0);
-        glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-        drawFlightpath();
+    glPushMatrix();
+    {
+    glTranslatef(1050, -40, 0);
+    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+    drawFlightpath();
+    }
+    glPopMatrix();
     
+    
+    glPushMatrix();
+    {
     glTranslatef(1050, -40, 400);
     glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
     drawFlightpath();
-    
-    
-    glTranslatef(1050, -40, 400);
-    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-    drawFlightpath();
-    
-    glTranslatef(1050, -40, 800);
-    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-    drawFlightpath();
-    
-    
-    glTranslatef(1050, -40, 1200);
-    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-    drawFlightpath();
-    
-    glTranslatef(1050, -40, 1600);
-    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-    drawFlightpath();
-    
-    glTranslatef(1050, -40, 1800);
-    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-    drawFlightpath();
+    }
+    glPopMatrix();
 }
 
 
@@ -330,8 +264,9 @@ void reshape(int w, int h) {
 	glViewport(0, 0, w, h);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	gluPerspective(60.0, w/(float)h, 1.0, 1000.0);
+	gluPerspective(60.0, w/(float)h, 1.0, 100000.0);  // near clipping plane 1.0 and far clipping plane 100000.0
 }
+
 
 void idle() {
 	glutPostRedisplay(); //force a redisplay
@@ -347,41 +282,27 @@ void dumpMatrix(float* m, int c, int r) {
 }
 
 
-//void glMovePlayer(float speed)
-//{
-//    moveX += sin(angle*3.1415/180) * speed;
-//    moveZ += cos(angle*3.1415/180) * speed;
-//}
-
 
 void keyboard(unsigned char key, int x, int y) {
 	switch (key) {
         case 27: //27=esc
             exit(0);
             break;
-//        case 'w':
-//            std::cout << "fly forward" << std::endl;
-//            moveZ += 15;
-//            break;
-//        case 's':
-//            std::cout << "fly backward" << std::endl;
-//            moveZ -= 15;
-//            break;
         case 'w':
             std::cout << "strafe down" << std::endl;
-            moveY -= 15;
+            moveY -= 5;
             break;
         case 's':
             std::cout << "strafe up" << std::endl;
-            moveY += 15;
+            moveY += 5;
             break;
         case 'a':
             std::cout << "strafe left" << std::endl;
-            moveX += 15;
+            moveX += 5;
             break;
         case 'd':
             std::cout << "strafe right" << std::endl;
-            moveX -= 15;
+            moveX -= 5;
             break;
             
 	}
@@ -434,7 +355,8 @@ void mouse(int button, int state, int x, int y) {
 
 void mouseMotion(int x, int y) {
 	if (leftMouseButtonDown) {
-		//add the relative movement of the mouse to the rotation variables
+		
+        //add the relative movement of the mouse to the rotation variables
 		rotationX -= mousePosY - y;
 		rotationY -= mousePosX - x;
         
@@ -465,8 +387,10 @@ int main(int argc, char** argv) {
 	setupGLUT(argc, argv);
 	oogl::dumpGLInfos();
 	init();
+    
     //glutSpecialFunc(SpecialKeys);
-	glutMainLoop();
+	
+    glutMainLoop();
     
 	return 0;
 }
