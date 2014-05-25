@@ -28,7 +28,6 @@ float rotZ = 0.0f;
 float rotAngle = 0.0f;
 
 
-
 float angle = 0.0f;
 float reflectionMatrix[] = {
     0, 0, 0, 0,
@@ -150,6 +149,14 @@ void drawFlightpath () {
     glEnd();
 }
 
+void path(int x, int y, int z) {
+    glPushMatrix(); {
+        glTranslatef(x, y, z);
+        glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
+        drawFlightpath();
+    }
+    glPopMatrix();
+}
 
 
 void drawUniverse() {
@@ -159,33 +166,22 @@ void drawUniverse() {
     glColor3f(1.0f, 1.0f, 1.0f);
     glutSolidSphere(1000.0, 180, 180);
     
-    
     // Planet 2
 //    glTranslatef(10, 10, -60);
 //    glColor3f(1.0f, 1.0f, 0.0f);
 //    glutSolidSphere(5.0, 60, 60);
     
-    // Ring
-//    glColor3f(1.0f, 1.0f, 0.0f);
-//    glTranslatef(14, 22, -5);
-//    drawCircle(1.0f, 1.0f, 50.0f, 180.0f);
+    path(1050, -50, 200);
+    path(1000, -10, -200);
+    path(1150, -60, -800);
+    path(1200, -30, -1600);
+    path(1050, -20, -2200);
+    path(1150, -70, -2800);
+    path(950, -80, -3200);
+    path(980, -40, -3600);
+    path(1050, -50, -4000);
 
-    glPushMatrix();
-    {
-    glTranslatef(1050, -40, 0);
-    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-    drawFlightpath();
-    }
-    glPopMatrix();
     
-    
-    glPushMatrix();
-    {
-    glTranslatef(1050, -40, 400);
-    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-    drawFlightpath();
-    }
-    glPopMatrix();
 }
 
 

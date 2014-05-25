@@ -48,7 +48,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies685d9fad5232b941^a5859fad5232b941^---0#1#1#--18"Check dependencies36"9A2F5E32-0D33-4E34-A97B-E1D339599144-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa3ead73b5f32b941^2008d83b5f32b941^---0#1#1#--18"Check dependencies36"752FC090-B945-48E1-B7B2-055B726AF605-
 
 CCompileC build/external/GLee-5.4/spacerace.build/Debug/GLee.build/Objects-normal/x86_64/GLee.o /Users/danielraudschus/Documents/spacerace/external/GLee-5.4/GLee.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s420287803.691525
