@@ -27,8 +27,15 @@ float rotY = 0.0f;
 float rotZ = 0.0f;
 float rotAngle = 0.0f;
 
+// Planet rot.
+float planetaryRotX = 0;
+float planetaryRotY = 0;
 
-float angle = 0.0f;
+// Asteroid movment
+float asteroidZ = -5000;
+
+
+
 float reflectionMatrix[] = {
     0, 0, 0, 0,
     0, 0, 0, 0,
@@ -39,12 +46,14 @@ float reflectionMatrix[] = {
 
 void init() {
     
-	glEnable(GL_DEPTH_TEST); // we enable the depth test, to handle occlusions
-    
 	// enable lighting
-	glEnable(GL_LIGHTING);
-	glEnable(GL_LIGHT0);
+	glEnable(GL_DEPTH_TEST); // for occlusions
 	glEnable(GL_COLOR_MATERIAL);
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+    glEnable(GL_AMBIENT_AND_DIFFUSE);
+    glShadeModel(GL_SMOOTH);
+	
     
 	// set clear color to black
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -162,32 +171,74 @@ void path(int x, int y, int z) {
 void drawUniverse() {
     
     // Moon
-    glTranslatef(-1000, 20, -1050);
+    glPushMatrix();
+    {
+    glTranslatef(-1500, 800, -4050);
     glColor3f(1.0f, 1.0f, 1.0f);
     glutSolidSphere(1000.0, 180, 180);
+    }
+    glPopMatrix();
     
-    // Planet 2
-//    glTranslatef(10, 10, -60);
-//    glColor3f(1.0f, 1.0f, 0.0f);
-//    glutSolidSphere(5.0, 60, 60);
+    // sun
+    glPushMatrix();
+    {
+    glTranslatef(8000, 1000, -18060);
+    glColor3f(1.0f, .7f, 0.0f);
+    glutSolidSphere(5000.0, 60, 60);
+    }
+    glPopMatrix();
     
-    path(1050, -50, 200);
-    path(1000, -10, -200);
-    path(1150, -60, -800);
-    path(1200, -30, -1600);
-    path(1050, -20, -2200);
-    path(1150, -70, -2800);
-    path(950, -80, -3200);
-    path(980, -40, -3600);
-    path(1050, -50, -4000);
+    // thats no moon
+    glPushMatrix();
+    {
+        glTranslatef(planetaryRotX, planetaryRotY, -10000);
+        glColor3f(.2f, .2f, .2f);
+        glutSolidSphere(500.0, 60, 60);
+        
+    }
+    glPopMatrix();
+    
+    
+    // Asteroids
+    glPushMatrix();
+    {
+        glTranslatef(50, 50, asteroidZ);
+        glColor3f(.2f, .2f, .2f);
+        glutSolidSphere(10.0, 33, 15);
+        
+        glTranslatef(10, 50, asteroidZ);
+        glColor3f(.2f, .2f, .2f);
+        glutSolidSphere(17.0, 33, 15);
+        
+        glTranslatef(80, 50, asteroidZ);
+        glColor3f(.2f, .2f, .2f);
+        glutSolidSphere(20.0, 33, 15);
+        
+        
+    }
+    glPopMatrix();
+    
 
     
+    // draw flightpath
+    path(50, -50, 200);
+    path(120, -10, -200);
+    path(-50, -60, -800);
+    path(100, -30, -1600);
+    path(150, -20, -2200);
+    path(-50, -70, -2800);
+    path(195, -80, -3200);
+    path(-80, -40, -3800);
+    path(155, -50, -4200);
+    path(100, -10, -4600);
+    path(-150, 5, -5000);
+    path(-180, 20, -5400);
 }
 
 
 
 void fly() {
-    moveZ += 5;
+    moveZ += 4;
 }
 
 
@@ -197,7 +248,6 @@ void display() {
 	// switch to modelview matrix
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-    //glFrustum( -1.6, 1.6, -1.2, 1.2, 1.5, 6.5 );
 
     
     // Cam fokus on Object
@@ -237,18 +287,15 @@ void display() {
 }
 
 
-
-/**
- * callback function, which can be used for the glutTimerFunc
- * @param value parameter, which can be specified in glutTimerFunc
- */
 void update(int value) {
     
     
 	//increment angle variable and keep it in the range of 0..32s
-	angle += 2.0f;
-	if (angle > 360)
-		angle -= 360;
+	planetaryRotX += 2;
+    planetaryRotY += 2;
+    asteroidZ += 14;
+//	if (planetaryRotX > 360)
+//		planetaryRotX -= 360;
 	glutPostRedisplay();
 	glutTimerFunc(25, update, 0); //request to call again in at least 25ms
 }
@@ -260,7 +307,7 @@ void reshape(int w, int h) {
 	glViewport(0, 0, w, h);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	gluPerspective(60.0, w/(float)h, 1.0, 100000.0);  // near clipping plane 1.0 and far clipping plane 100000.0
+	gluPerspective(60.0, w/(float)h, 1.0, 100000.0);  // near clipping plane 1.0 and far clipping  plane 100000.0
 }
 
 
@@ -312,28 +359,25 @@ void keyboard(unsigned char key, int x, int y) {
 //    switch (key)
 //	{
 //		case GLUT_KEY_LEFT:
-//            std::cout << "y-axis rotate left" << std::endl;
+//            std::cout << "faster" << std::endl;
 //            rotY = 1.0f;
 //            rotX = 0.0f;
 //            rotAngle -= 5.0f;
 //            break;
 //		case GLUT_KEY_RIGHT:
-//            std::cout << "y-axis rotate right" << std::endl;
+//            std::cout << "slower" << std::endl;
 //            rotY = 1.0f;
 //            rotX = 0.0f;
 //            rotAngle += 5.0f;
 //            break;
 //		case GLUT_KEY_UP:
-//            std::cout << "x-axis rotate down" << std::endl;
-//            rotX = 1.0f;
-//            rotY = 0.0f;
-//            rotAngle += 5.0f;
+//            std::cout << "faster" << std::endl;
+//            moveZ -= 2;
+//
 //			break;
 //		case GLUT_KEY_DOWN:
-//            std::cout << "y-axis rotate right" << std::endl;
-//            rotX = 1.0f;
-//            rotY = 0.0f;
-//            rotAngle -= 5.0f;
+//            std::cout << "slower" << std::endl;
+//            moveZ += 2;
 //			break;
 //	}
 //    glutPostRedisplay();
@@ -364,8 +408,8 @@ void mouseMotion(int x, int y) {
 int setupGLUT(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
-	glutInitWindowSize(800, 600);
-	glutInitWindowPosition(100, 100);
+	glutInitWindowSize(1400, 750);
+	glutInitWindowPosition(50, 10);
 	int windowId = glutCreateWindow("spacerace_building better worlds!");
     
 	glutDisplayFunc(display);
@@ -374,7 +418,7 @@ int setupGLUT(int argc, char** argv) {
 	glutKeyboardFunc(keyboard);
 	glutMouseFunc(mouse);
 	glutMotionFunc(mouseMotion);
-	glutTimerFunc(25, update, 0);  //request to call in at least 25ms
+	glutTimerFunc(30, update, 0);  //request to call in at least 25ms
     
 	return windowId;
 }
@@ -384,6 +428,7 @@ int main(int argc, char** argv) {
 	oogl::dumpGLInfos();
 	init();
     
+    // for the arrow keys
     //glutSpecialFunc(SpecialKeys);
 	
     glutMainLoop();
