@@ -48,7 +48,7 @@ float reflectionMatrix[] = {
 
 
 //oogl::GLSLProgram* phongshader;
-//oogl::Texture2D* moontexture;
+oogl::Texture2D* skybox;
 
 
 //void setLights() {
@@ -93,7 +93,7 @@ void init() {
     
     
 //    phongshader = oogl::GLSLProgram::create("/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.vert", "/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.frag");
-//    moontexture = oogl::Texture2D::load(oogl::Image::load("/Users/danielraudschus/Documents/spacerace/build/bin/Debug/data/textures/moon.jpg"));
+    skybox = oogl::Texture2D::load(oogl::Image::load("/Users/danielraudschus/Documents/spacerace/build/bin/Debug/data/textures/moon.jpg"));
     
 	// set clear color to black
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -283,61 +283,67 @@ void fly() {
 
 
 void drawCube() {
-    
-    //draw player
-    // White side - BACK
-    glBegin(GL_POLYGON);
-    glColor3f(   1.0,  1.0, 1.0 );
-    glVertex3f(  5, -5, 5 );
-    glVertex3f(  5,  5, 5 );
-    glVertex3f( -5,  5, 5 );
-    glVertex3f( -5, -5, 5 );
+    // Render the front quad
+    skybox->bind();
+    glBegin(GL_QUADS);
+    glTexCoord2f(0, 0); glVertex3f(  0.5f, -0.5f, -0.5f );
+    glTexCoord2f(1, 0); glVertex3f( -0.5f, -0.5f, -0.5f );
+    glTexCoord2f(1, 1); glVertex3f( -0.5f,  0.5f, -0.5f );
+    glTexCoord2f(0, 1); glVertex3f(  0.5f,  0.5f, -0.5f );
     glEnd();
+    skybox->unbind();
     
-    // Purple side - RIGHT
-    glBegin(GL_POLYGON);
-    glColor3f(  1.0,  0.0,  1.0 );
-    glVertex3f( 5, -5, -5 );
-    glVertex3f( 5,  5, -5 );
-    glVertex3f( 5,  5,  5 );
-    glVertex3f( 5, -5,  5 );
+    // Render the left quad
+    skybox->bind();
+    glBegin(GL_QUADS);
+    glTexCoord2f(0, 0); glVertex3f(  0.5f, -0.5f,  0.5f );
+    glTexCoord2f(1, 0); glVertex3f(  0.5f, -0.5f, -0.5f );
+    glTexCoord2f(1, 1); glVertex3f(  0.5f,  0.5f, -0.5f );
+    glTexCoord2f(0, 1); glVertex3f(  0.5f,  0.5f,  0.5f );
     glEnd();
+    skybox->unbind();
     
-    // Green side - LEFT
-    glBegin(GL_POLYGON);
-    glColor3f(   0.0,  1.0,  0.0 );
-    glVertex3f( -5, -5,  5 );
-    glVertex3f( -5,  5,  5 );
-    glVertex3f( -5,  5, -5 );
-    glVertex3f( -5, -5, -5 );
+    // Render the back quad
+    skybox->bind();
+    glBegin(GL_QUADS);
+    glTexCoord2f(0, 0); glVertex3f( -0.5f, -0.5f,  0.5f );
+    glTexCoord2f(1, 0); glVertex3f(  0.5f, -0.5f,  0.5f );
+    glTexCoord2f(1, 1); glVertex3f(  0.5f,  0.5f,  0.5f );
+    glTexCoord2f(0, 1); glVertex3f( -0.5f,  0.5f,  0.5f );
     glEnd();
+    skybox->unbind();
     
-    // Blue side - TOP
-    glBegin(GL_POLYGON);
-    glColor3f(   0.0,  0.0,  1.0 );
-    glVertex3f(  5,  5,  5 );
-    glVertex3f(  5,  5, -5 );
-    glVertex3f( -5,  5, -5 );
-    glVertex3f( -5,  5,  5 );
+    // Render the right quad
+    skybox->bind();
+    glBegin(GL_QUADS);
+    glTexCoord2f(0, 0); glVertex3f( -0.5f, -0.5f, -0.5f );
+    glTexCoord2f(1, 0); glVertex3f( -0.5f, -0.5f,  0.5f );
+    glTexCoord2f(1, 1); glVertex3f( -0.5f,  0.5f,  0.5f );
+    glTexCoord2f(0, 1); glVertex3f( -0.5f,  0.5f, -0.5f );
     glEnd();
+    skybox->unbind();
     
-    // Red side - BOTTOM
-    glBegin(GL_POLYGON);
-    glColor3f(   1.0,  0.0,  0.0 );
-    glVertex3f(  5, -5, -5 );
-    glVertex3f(  5, -5,  5 );
-    glVertex3f( -5, -5,  5 );
-    glVertex3f( -5, -5, -5 );
+    // Render the top quad
+    skybox->bind();
+    glBegin(GL_QUADS);
+    glTexCoord2f(0, 1); glVertex3f( -0.5f,  0.5f, -0.5f );
+    glTexCoord2f(0, 0); glVertex3f( -0.5f,  0.5f,  0.5f );
+    glTexCoord2f(1, 0); glVertex3f(  0.5f,  0.5f,  0.5f );
+    glTexCoord2f(1, 1); glVertex3f(  0.5f,  0.5f, -0.5f );
     glEnd();
+    skybox->unbind();
     
-    // Grey side - BACK
-    glBegin(GL_POLYGON);
-    glColor3f(  0.0,  0.0,  0.0 );
-    glVertex3f(  5, 5, -5 );
-    glVertex3f(  -5, 5, -5 );
-    glVertex3f( -5, -5, -5 );
-    glVertex3f( 5, -5, -5 );
+    // Render the bottom quad
+    skybox->bind();
+    glBegin(GL_QUADS);
+    glTexCoord2f(0, 0); glVertex3f( -0.5f, -0.5f, -0.5f );
+    glTexCoord2f(0, 1); glVertex3f( -0.5f, -0.5f,  0.5f );
+    glTexCoord2f(1, 1); glVertex3f(  0.5f, -0.5f,  0.5f );
+    glTexCoord2f(1, 0); glVertex3f(  0.5f, -0.5f, -0.5f );
     glEnd();
+    skybox->unbind();
+
+
     
 }
 
