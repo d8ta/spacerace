@@ -284,13 +284,13 @@ void fly() {
 
 void drawCube() {
     
-    // Enable/Disable features
-    glPushAttrib(GL_ENABLE_BIT);
-    glEnable(GL_TEXTURE_2D);
-    glDisable(GL_DEPTH_TEST);
-    glDisable(GL_LIGHTING);
-    glDisable(GL_BLEND);
-    
+//    // Enable/Disable features
+//    glPushAttrib(GL_ENABLE_BIT);
+//    glEnable(GL_TEXTURE_2D);
+//    glDisable(GL_DEPTH_TEST);
+//    glDisable(GL_LIGHTING);
+//    glDisable(GL_BLEND);
+//    
     
     // Render the front quad
     glPushMatrix();
@@ -302,75 +302,55 @@ void drawCube() {
     glTexCoord2f(1, 1); glVertex3f( -0.5f,  0.5f, -0.5f );
     glTexCoord2f(0, 1); glVertex3f(  0.5f,  0.5f, -0.5f );
     glEnd();
-    skybox->unbind();
-    }
-    glPopMatrix();
+
         
         
         
     // Render the left quad
-    glPushMatrix();
-    {
-    skybox->bind();
-    glBegin(GL_QUADS);
+
+        glBegin(GL_QUADS);
     glTexCoord2f(0, 0); glVertex3f(  0.5f, -0.5f,  0.5f );
     glTexCoord2f(1, 0); glVertex3f(  0.5f, -0.5f, -0.5f );
     glTexCoord2f(1, 1); glVertex3f(  0.5f,  0.5f, -0.5f );
     glTexCoord2f(0, 1); glVertex3f(  0.5f,  0.5f,  0.5f );
     glEnd();
-    skybox->unbind();
-    }
-    glPopMatrix();
+
     
     
     // Render the back quad
-    glPushMatrix();
-    {
-    skybox->bind();
+
     glBegin(GL_QUADS);
     glTexCoord2f(0, 0); glVertex3f( -0.5f, -0.5f,  0.5f );
     glTexCoord2f(1, 0); glVertex3f(  0.5f, -0.5f,  0.5f );
     glTexCoord2f(1, 1); glVertex3f(  0.5f,  0.5f,  0.5f );
     glTexCoord2f(0, 1); glVertex3f( -0.5f,  0.5f,  0.5f );
     glEnd();
-    skybox->unbind();
-    }
-    glPopMatrix();
+
     
     
     // Render the right quad
-    glPushMatrix();
-    {
-    skybox->bind();
+
     glBegin(GL_QUADS);
     glTexCoord2f(0, 0); glVertex3f( -0.5f, -0.5f, -0.5f );
     glTexCoord2f(1, 0); glVertex3f( -0.5f, -0.5f,  0.5f );
     glTexCoord2f(1, 1); glVertex3f( -0.5f,  0.5f,  0.5f );
     glTexCoord2f(0, 1); glVertex3f( -0.5f,  0.5f, -0.5f );
     glEnd();
-    skybox->unbind();
-    }
-    glPopMatrix();
+
     
     // Render the top quad
-    glPopMatrix();
-    {
-    skybox->bind();
+
     glBegin(GL_QUADS);
     glTexCoord2f(0, 1); glVertex3f( -0.5f,  0.5f, -0.5f );
     glTexCoord2f(0, 0); glVertex3f( -0.5f,  0.5f,  0.5f );
     glTexCoord2f(1, 0); glVertex3f(  0.5f,  0.5f,  0.5f );
     glTexCoord2f(1, 1); glVertex3f(  0.5f,  0.5f, -0.5f );
     glEnd();
-    skybox->unbind();
-    }
-    glPopMatrix();
 
 
-    glPopMatrix();
-    {
+
+
     // Render the bottom quad
-    skybox->bind();
     glBegin(GL_QUADS);
     glTexCoord2f(0, 0); glVertex3f( -0.5f, -0.5f, -0.5f );
     glTexCoord2f(0, 1); glVertex3f( -0.5f, -0.5f,  0.5f );
@@ -390,28 +370,6 @@ void display() {
 	// switch to modelview matrix
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-
-//
-//	phongshader->bind();
-//	(*phongshader)["texture"].set(moontexture);
-//    phongshader->bind();
-//    
-//    // create a rectangle covering the whole screen
-//    // if you have multiple texts or other 2d elements you may want to create smaller rectangles, one per text/element, and place them were the text/element belongs
-//    
-//    // Moon
-//    glPushMatrix();
-//    {
-//        
-//        glTranslatef(-1500, 800, -4050);
-//        glColor3f(1.0f, 1.0f, 1.0f);
-//        glutSolidSphere(1000.0, 180, 180);
-//    }
-//    glPopMatrix();
-//    
-//    moontexture->unbind();
-//	phongshader->unbind();
-
     
     // Cam fokus on Object
     //gluLookAt(cameraPositionX, cameraPositionY, cameraPositionZ, moveX, moveY, moveZ, 0.0, 20.0, 0.0);
@@ -426,43 +384,21 @@ void display() {
     // set vantage point behind and a little above the player
 	glTranslatef(0.0f, -10.0f, -50.0f);
     
-    
-//    
-//    
-//    GLfloat mat_shininess[] = { 50.0 };
-//    GLfloat mat_ambient[] = { 1.0, .7, .5, 1.0 };
-//    GLfloat light_position[] = { 10.0, 10.0, 10.0, 0.0 };
-//    glClearColor (0.0, 0.0, 0.0, 0.0);
-//    glShadeModel (GL_SMOOTH);
-//    
-//    
-//    glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);
-//    glMaterialfv(GL_FRONT, GL_AMBIENT_AND_DIFFUSE, mat_ambient);
-//    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
-//    
-//    glEnable(GL_LIGHTING);
-//    glEnable(GL_LIGHT0);
-//    glEnable(GL_DEPTH_TEST);
-//    glEnable(GL_COLOR_MATERIAL);
-//    
-//
     // set ufo
     glPushMatrix();
     {
     glTranslatef(0.0f, 0.0f, -50.0f);
     glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-//        GLfloat specular[] = { 1.0, .7, .5, 1.0 };
-//        glMaterialfv(GL_FRONT, GL_SPECULAR, specular);
-//        glEnable(GL_COLOR_MATERIAL);
-//        
+
             drawUFO();
         
     }
     glPopMatrix();
     
+    
     glPushMatrix();
     {
-        glScaled(1000, 500, 500);
+        glScaled(50000, 50000, 50000);
         drawCube();
     }
     glPopMatrix();

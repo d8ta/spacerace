@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectSpacerace/spacerace/main.cpp"
-            timestampString = "423068434.488236"
+            timestampString = "423068831.304926"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "476"
-            endingLineNumber = "476"
+            startingLineNumber = "412"
+            endingLineNumber = "412"
             landmarkName = "display()"
             landmarkType = "7">
          </BreakpointContent>
