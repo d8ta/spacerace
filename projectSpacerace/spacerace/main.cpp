@@ -75,7 +75,7 @@ oogl::Texture2D* skybox;
 void init() {
     
 	// enable lighting
-    GLfloat mat_shininess[] = { 50.0 };
+    GLfloat mat_shininess[] = { 100.0 };
     GLfloat mat_ambient[] = { 1.0, .7, .5, 1.0 };
     GLfloat light_position[] = { 10.0, 10.0, 10.0, 0.0 };
     glClearColor (0.0, 0.0, 0.0, 0.0);
@@ -93,7 +93,7 @@ void init() {
     
     
 //    phongshader = oogl::GLSLProgram::create("/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.vert", "/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.frag");
-    skybox = oogl::Texture2D::load(oogl::Image::load("/Users/danielraudschus/Documents/spacerace/build/bin/Debug/data/textures/moon.jpg"));
+    skybox = oogl::Texture2D::load(oogl::Image::load("/Users/danielraudschus/Documents/spacerace/build/bin/Debug/data/textures/comic.jpg"));
     
 	// set clear color to black
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -283,7 +283,18 @@ void fly() {
 
 
 void drawCube() {
+    
+    // Enable/Disable features
+    glPushAttrib(GL_ENABLE_BIT);
+    glEnable(GL_TEXTURE_2D);
+    glDisable(GL_DEPTH_TEST);
+    glDisable(GL_LIGHTING);
+    glDisable(GL_BLEND);
+    
+    
     // Render the front quad
+    glPushMatrix();
+    {
     skybox->bind();
     glBegin(GL_QUADS);
     glTexCoord2f(0, 0); glVertex3f(  0.5f, -0.5f, -0.5f );
@@ -292,8 +303,14 @@ void drawCube() {
     glTexCoord2f(0, 1); glVertex3f(  0.5f,  0.5f, -0.5f );
     glEnd();
     skybox->unbind();
-    
+    }
+    glPopMatrix();
+        
+        
+        
     // Render the left quad
+    glPushMatrix();
+    {
     skybox->bind();
     glBegin(GL_QUADS);
     glTexCoord2f(0, 0); glVertex3f(  0.5f, -0.5f,  0.5f );
@@ -302,8 +319,13 @@ void drawCube() {
     glTexCoord2f(0, 1); glVertex3f(  0.5f,  0.5f,  0.5f );
     glEnd();
     skybox->unbind();
+    }
+    glPopMatrix();
+    
     
     // Render the back quad
+    glPushMatrix();
+    {
     skybox->bind();
     glBegin(GL_QUADS);
     glTexCoord2f(0, 0); glVertex3f( -0.5f, -0.5f,  0.5f );
@@ -312,8 +334,13 @@ void drawCube() {
     glTexCoord2f(0, 1); glVertex3f( -0.5f,  0.5f,  0.5f );
     glEnd();
     skybox->unbind();
+    }
+    glPopMatrix();
+    
     
     // Render the right quad
+    glPushMatrix();
+    {
     skybox->bind();
     glBegin(GL_QUADS);
     glTexCoord2f(0, 0); glVertex3f( -0.5f, -0.5f, -0.5f );
@@ -322,8 +349,12 @@ void drawCube() {
     glTexCoord2f(0, 1); glVertex3f( -0.5f,  0.5f, -0.5f );
     glEnd();
     skybox->unbind();
+    }
+    glPopMatrix();
     
     // Render the top quad
+    glPopMatrix();
+    {
     skybox->bind();
     glBegin(GL_QUADS);
     glTexCoord2f(0, 1); glVertex3f( -0.5f,  0.5f, -0.5f );
@@ -332,7 +363,12 @@ void drawCube() {
     glTexCoord2f(1, 1); glVertex3f(  0.5f,  0.5f, -0.5f );
     glEnd();
     skybox->unbind();
-    
+    }
+    glPopMatrix();
+
+
+    glPopMatrix();
+    {
     // Render the bottom quad
     skybox->bind();
     glBegin(GL_QUADS);
@@ -342,9 +378,10 @@ void drawCube() {
     glTexCoord2f(1, 0); glVertex3f(  0.5f, -0.5f, -0.5f );
     glEnd();
     skybox->unbind();
+    }
+    glPopMatrix();
 
 
-    
 }
 
 
@@ -425,19 +462,24 @@ void display() {
     
     glPushMatrix();
     {
-        glScaled(10000, 10000, 10000);
+        glScaled(1000, 500, 500);
         drawCube();
     }
     glPopMatrix();
     
 
+    glPushMatrix();
+    {
 	// rotate the universe and all objects, the ship and cam are fixed
     glRotatef(rotAngle, rotX, rotY, rotZ);
 	glTranslatef(moveX, moveY, moveZ);
     fly();
     drawUniverse();
-    
-    
+    }
+    glPopMatrix();
+
+
+
 	LOG_GL_ERRORS();
 	glutSwapBuffers(); // draw scene
 }
@@ -588,8 +630,7 @@ int main(int argc, char** argv) {
     glutMainLoop();
     
     // have to delete the textres.. dont run automatically
-//    delete phongshader;
-//    delete moontexture;
+    delete skybox;
     
 	return 0;
 }
