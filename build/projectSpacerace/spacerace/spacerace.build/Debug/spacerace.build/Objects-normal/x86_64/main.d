@@ -80,4 +80,9 @@ dependencies: \
   /Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include/glm/vector_relational.hpp \
   /Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include/glm/integer.hpp \
   /Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include/glm/detail/func_integer.hpp \
-  /Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include/glm/detail/func_integer.inl
+  /Users/danielraudschus/Documents/spacerace/external/glm-0.9.5.2/include/glm/detail/func_integer.inl \
+  /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture2D.h \
+  /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Texture.h \
+  /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/Image.h \
+  /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLProgram.h \
+  /Users/danielraudschus/Documents/spacerace/projectSpacerace/common/oogl/GLSLShader.h
