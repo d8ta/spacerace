@@ -100,32 +100,19 @@ void init() {
 }
 
 
+float ufoAngle = 0.0f;
+float ufoSlant = 0.0f;
+float engineColorY = 0.2f;
+float engineColorX = 0.2f;
+
 
 /* UFO */
 void drawUFO() {
-    
-
-	
-	void drawCircle();
-    
+	// Color
 	glColor3f(0.4f, 0.4f, 0.4f);
-	glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-	glPushMatrix();
-	{
-		glutSolidSphere(10.0, 50.0, 100.0);
-
-	}
-	glPopMatrix();
-    
-	glPushMatrix();
-	{
-		glTranslatef(0.0f, -10.0f, 0.0f);
-		glRotatef(90.0f, 1.0f, 0.0f, 0.0f);
-		glScalef(10.0f, 10.0f, 0.0f);
-		drawCircle();
-	}
-	glPopMatrix();
-    
+	glRotatef(0.0f, -1.0f, 0.0f, 0.0f);
+	
+	// Bottom
 	glPushMatrix();
 	{
 		glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);
@@ -133,26 +120,66 @@ void drawUFO() {
 		gluCylinder(gluNewQuadric(), 10, 20, 5, 100, 10);
 	}
 	glPopMatrix();
-    
+	
+	// Top
 	glPushMatrix();
 	{
 		glRotatef(90.0f, 1.0f, 0.0f, 0.0f);
 		gluCylinder(gluNewQuadric(), 10, 20, 5, 100, 10);
 	}
 	glPopMatrix();
+	
+	// Cockpit
+	glColor4f(0.2f, 0.2f, 0.2f, 0.2f);
+	glutSolidSphere(10.0, 50.0, 100.0);
+    
+	// Engines
+	glColor3f(0.2f, 0.2f, engineColorY);
+	glPushMatrix();
+	{
+		glRotatef(angle, 0.0f, 1.0f, 0.0f);
+		glTranslatef(0.0f, -5.0f, 14.0f);
+		glutSolidSphere(3.0, 50.0, 100.0);
+	}
+	glPopMatrix();
+    
+	glPushMatrix();
+	{
+		glRotatef(angle, 0.0f, 1.0f, 0.0f);
+		glTranslatef(0.0f, -5.0f, -14.0f);
+		glutSolidSphere(3.0, 50.0, 100.0);
+	}
+	glPopMatrix();
+    
+	glPushMatrix();
+	{
+		glRotatef(angle, 0.0f, 1.0f, 0.0f);
+		glTranslatef(14.0f, -5.0f, 0.0f);
+		glutSolidSphere(3.0, 50.0, 100.0);
+	}
+	glPopMatrix();
+    
+	glPushMatrix();
+	{
+		glRotatef(angle, 0.0f, 1.0f, 0.0f);
+		glTranslatef(-14.0f, -5.0f, 0.0f);
+		glutSolidSphere(3.0, 50.0, 100.0);
+	}
+	glPopMatrix();
 }
 
-/* Kreis */
-void drawCircle()
-{
-	glBegin(GL_POLYGON);
-	for (int i = 0; i < 20; i++)
-	{
-		angle = i * 3.14159 / 10;
-		glVertex2f(cos(angle), sin(angle));
-	}
-	glEnd();
-};
+
+///* Kreis */
+//void drawCircle()
+//{
+//	glBegin(GL_POLYGON);
+//	for (int i = 0; i < 20; i++)
+//	{
+//		angle = i * 3.14159 / 10;
+//		glVertex2f(cos(angle), sin(angle));
+//	}
+//	glEnd();
+//};
 
 
 
@@ -361,7 +388,26 @@ void drawCube() {
     }
     glPopMatrix();
 
+}
 
+
+/* Triebwerke drehen */
+void engineRotation(int value) {
+	angle += 2.0f;
+	if (angle > 360)
+	{
+		angle -= 360;
+	}
+	glutPostRedisplay();
+	glutTimerFunc(25, engineRotation, 0);
+}
+
+/* Triebwerke Licht */
+void engineLight(int value)
+{
+	engineColorY += 0.1f;
+	glutPostRedisplay();
+	glutTimerFunc(25, engineLight, 0); //request to call again in at least 25ms
 }
 
 
@@ -379,21 +425,16 @@ void display() {
     glRotatef(rotationY, 0.0f, 1.0f, 0.0f);
     
 
-    
-	/** Projektaufrufe **/
-    // set vantage point behind and a little above the player
+    /* UFO + Vantage Point */
 	glTranslatef(0.0f, -10.0f, -50.0f);
-    
-    // set ufo
-    glPushMatrix();
-    {
-    glTranslatef(0.0f, 0.0f, -50.0f);
-    glRotatef(0.0f, 0.0f, 0.0f, 0.0f);
-
-            drawUFO();
-        
-    }
-    glPopMatrix();
+	
+	glPushMatrix();
+	{
+		glRotatef(ufoAngle, 0.0f, 0.0f, ufoSlant);
+		glTranslatef(0.0f, 0.0f, -20.0f);
+		drawUFO();
+	}
+	glPopMatrix();
     
     
     glPushMatrix();
@@ -457,32 +498,70 @@ void dumpMatrix(float* m, int c, int r) {
 }
 
 
-
+/* Tastatur */
 void keyboard(unsigned char key, int x, int y) {
 	switch (key) {
         case 27: //27=esc
             exit(0);
             break;
         case 'w':
-            std::cout << "strafe down" << std::endl;
-            moveY -= 7;
+            std::cout << "fly up" << std::endl;
+            moveZ += 15;
+			ufoSlant = 0.0f;
             break;
         case 's':
-            std::cout << "strafe up" << std::endl;
-            moveY += 7;
+            std::cout << "fly down" << std::endl;
+            moveZ -= 15;
             break;
         case 'a':
-            std::cout << "strafe left" << std::endl;
-            moveX += 7;
+            std::cout << "fly left" << std::endl;
+            moveX += 15;
+			ufoAngle -= 5.0f;
+			if(ufoSlant != -1.0f)
+			{
+				ufoSlant -= 0.2f;
+			}
             break;
         case 'd':
-            std::cout << "strafe right" << std::endl;
-            moveX -= 7;
+            std::cout << "fly right" << std::endl;
+            moveX -= 15;
+			ufoAngle += 5.0f;
+			if (ufoSlant != -1.0f)
+			{
+				ufoSlant -= 0.2f;
+			}
             break;
-            
 	}
 	glutPostRedisplay();
 }
+
+
+// alte steuerung
+//void keyboard(unsigned char key, int x, int y) {
+//	switch (key) {
+//        case 27: //27=esc
+//            exit(0);
+//            break;
+//        case 'w':
+//            std::cout << "strafe down" << std::endl;
+//            moveY -= 7;
+//            break;
+//        case 's':
+//            std::cout << "strafe up" << std::endl;
+//            moveY += 7;
+//            break;
+//        case 'a':
+//            std::cout << "strafe left" << std::endl;
+//            moveX += 7;
+//            break;
+//        case 'd':
+//            std::cout << "strafe right" << std::endl;
+//            moveX -= 7;
+//            break;
+//            
+//	}
+//	glutPostRedisplay();
+//}
 
 
 
@@ -536,25 +615,25 @@ void mouseMotion(int x, int y) {
 		mousePosY = y;
 	}
 }
-
+/* GLUT Setup */
 int setupGLUT(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
-	glutInitWindowSize(1400, 750);
-	glutInitWindowPosition(50, 10);
+	glutInitWindowSize(1400, 1200);
+	glutInitWindowPosition(100, 100);
 	int windowId = glutCreateWindow("spacerace_building better worlds!");
     
 	glutDisplayFunc(display);
-	//glutIdleFunc(idle);
 	glutReshapeFunc(reshape);
 	glutKeyboardFunc(keyboard);
 	glutMouseFunc(mouse);
 	glutMotionFunc(mouseMotion);
-	glutTimerFunc(30, update, 0);  //request to call in at least 25ms
+    
+	glutTimerFunc(25, engineRotation, 0);
+	glutTimerFunc(25, engineLight, 0);
     
 	return windowId;
 }
-
 int main(int argc, char** argv) {
 	setupGLUT(argc, argv);
 	oogl::dumpGLInfos();
