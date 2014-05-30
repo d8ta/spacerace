@@ -11,11 +11,11 @@ s187
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesbbd3893ca938b941^2f198b3ca938b941^---0#1#1#--18"Check dependencies36"CF9182EF-2803-4A41-AADA-620B0D011389-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies9a4213ceaa38b941^957c14ceaa38b941^---0#1#1#--18"Check dependencies36"116CDC4F-540F-4EF4-B563-DAD9570174B4-
 
 CPhaseScriptExecution CMake\ Rules /Users/danielraudschus/Documents/spacerace/build/spacerace.build/Debug/ZERO_CHECK.build/Script-2080782B6E9D452E99E41D38.sh
-s423143740.539054
-e423143740.591149
+s423144142.075999
+e423144142.123169
 r1
 xPhaseScriptExecution
 xCMake Rules
@@ -24,6 +24,6 @@ oecho ""
 o
 omake -f /Users/danielraudschus/Documents/spacerace/build/CMakeScripts/ReRunCMake.make
 omake[1]: `/Users/danielraudschus/Documents/spacerace/build/CMakeFiles/cmake.check_cache' is up to date.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'113"PhaseScriptExecution CMake\ Rules build/spacerace.build/Debug/ZERO_CHECK.build/Script-2080782B6E9D452E99E41D38.sh54578a3ca938b941^5456973ca938b941^-199"echo ""make -f /Users/danielraudschus/Documents/spacerace/build/CMakeScripts/ReRunCMake.makemake[1]: `/Users/danielraudschus/Documents/spacerace/build/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-423143740#0#8#-0#-----2@86"make -f /Users/danielraudschus/Documents/spacerace/build/CMakeScripts/ReRunCMake.make-423143740#9#86#-0#-----2@104"make[1]: `/Users/danielraudschus/Documents/spacerace/build/CMakeFiles/cmake.check_cache' is up to date.-423143740#95#104#-0#-----0#0#1#--302"PhaseScriptExecution CMake\ Rules build/spacerace.build/Debug/ZERO_CHECK.build/Script-2080782B6E9D452E99E41D38.sh    cd /Users/danielraudschus/Documents/spacerace    /bin/sh -c /Users/danielraudschus/Documents/spacerace/build/spacerace.build/Debug/ZERO_CHECK.build/Script-2080782B6E9D452E99E41D38.sh36"E49CCCEA-0357-44FD-8705-453F9424A321-
-bFEB11E8B-2110-4E1A-85E2-C03FE1272099
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'113"PhaseScriptExecution CMake\ Rules build/spacerace.build/Debug/ZERO_CHECK.build/Script-2080782B6E9D452E99E41D38.sh7fc013ceaa38b941^a9881fceaa38b941^-199"echo ""make -f /Users/danielraudschus/Documents/spacerace/build/CMakeScripts/ReRunCMake.makemake[1]: `/Users/danielraudschus/Documents/spacerace/build/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-423144142#0#8#-0#-----2@86"make -f /Users/danielraudschus/Documents/spacerace/build/CMakeScripts/ReRunCMake.make-423144142#9#86#-0#-----2@104"make[1]: `/Users/danielraudschus/Documents/spacerace/build/CMakeFiles/cmake.check_cache' is up to date.-423144142#95#104#-0#-----0#0#1#--302"PhaseScriptExecution CMake\ Rules build/spacerace.build/Debug/ZERO_CHECK.build/Script-2080782B6E9D452E99E41D38.sh    cd /Users/danielraudschus/Documents/spacerace    /bin/sh -c /Users/danielraudschus/Documents/spacerace/build/spacerace.build/Debug/ZERO_CHECK.build/Script-2080782B6E9D452E99E41D38.sh36"E3F6C60D-21CB-4C47-87CD-3060B9E3AF50-
+bA5AC6D7F-8ECB-410A-9543-B2C22D00601A
 

@@ -574,7 +574,7 @@ void keyboard(unsigned char key, int x, int y) {
             
             // TODO Enter
 
-        case 'enter':
+        case 13:
             std::cout << "enter" << std::endl;
             gameStart = true;
 
