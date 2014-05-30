@@ -17,6 +17,9 @@ bool leftMouseButtonDown = false;
 int mousePosX = 0, mousePosY = 0;
 float rotationX = 0, rotationY = 0;
 
+bool gameStart = false;
+std::string startGame = "Start";
+
 /** global variables **/
 float moveX = 0.0f;
 float moveY = 0.0f;
@@ -91,11 +94,15 @@ void init() {
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_COLOR_MATERIAL);
     
-    
-//    phongshader = oogl::GLSLProgram::create("/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.vert", "/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.frag");
-    skybox = oogl::Texture2D::load(oogl::Image::load("/Users/danielraudschus/Documents/spacerace/build/bin/Debug/data/textures/comic.jpg"));
-    
-	// set clear color to black
+    try {
+       // phongshader = oogl::GLSLProgram::create("/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.vert", "/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.frag");
+        skybox = oogl::Texture2D::load(oogl::Image::load("/Users/danielraudschus/Documents/spacerace/build/bin/Debug/data/textures/comic.jpg"));
+        
+
+    } catch (std::exception& e) {
+        std::cout << e.what() << std::endl;
+    }
+  	// set clear color to black
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 }
 
@@ -181,7 +188,29 @@ void drawUFO() {
 //	glEnd();
 //};
 
-
+void drawText (const char *text, int length, int x, int y){
+    glDisable(GL_LIGHTING);
+    glMatrixMode(GL_PROJECTION);
+    double *matrix = new double[16];
+    glGetDoublev(GL_PROJECTION_MATRIX, matrix);
+    glLoadIdentity();
+    glOrtho(0, 800, 0, 600, -5, 5);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    glPushMatrix();
+    glLoadIdentity();
+    glRasterPos2i(x, y);
+    
+    for (int i = 0; i<length; i++) {
+        glutBitmapCharacter(GLUT_BITMAP_9_BY_15, (int)text[i]);
+    }
+    
+    glPopMatrix();
+    glMatrixMode(GL_PROJECTION);
+    glLoadMatrixd(matrix);
+    glMatrixMode(GL_MODELVIEW);
+    glEnable(GL_LIGHTING);
+}
 
 // red rectangles for the flightpath
 void drawFlightpath () {
@@ -322,7 +351,9 @@ void drawCube() {
     // Render the front quad
     glPushMatrix();
     {
-    skybox->bind();
+       // phongshader->bind();
+        skybox->bind();
+       //(*phongshader)["texture"].set(skybox);
     glBegin(GL_QUADS);
     glTexCoord2f(0, 0); glVertex3f(  0.5f, -0.5f, -0.5f );
     glTexCoord2f(1, 0); glVertex3f( -0.5f, -0.5f, -0.5f );
@@ -385,6 +416,7 @@ void drawCube() {
     glTexCoord2f(1, 0); glVertex3f(  0.5f, -0.5f, -0.5f );
     glEnd();
     skybox->unbind();
+      //  phongshader->unbind();
     }
     glPopMatrix();
 
@@ -417,6 +449,9 @@ void display() {
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
     
+    
+    if(gameStart)
+    {
     // Cam fokus on Object
     //gluLookAt(cameraPositionX, cameraPositionY, cameraPositionZ, moveX, moveY, moveZ, 0.0, 20.0, 0.0);
     
@@ -454,7 +489,12 @@ void display() {
     drawUniverse();
     }
     glPopMatrix();
-
+    }
+    
+    else{
+        drawText(startGame.data(), startGame.size(), 100, 100);
+    }
+    
 
 
 	LOG_GL_ERRORS();
@@ -531,7 +571,16 @@ void keyboard(unsigned char key, int x, int y) {
 				ufoSlant -= 0.2f;
 			}
             break;
-	}
+            
+            // TODO Enter
+
+        case 'enter':
+            std::cout << "enter" << std::endl;
+            gameStart = true;
+
+            break;
+
+    }
 	glutPostRedisplay();
 }
 
@@ -565,10 +614,18 @@ void keyboard(unsigned char key, int x, int y) {
 
 
 
-//void SpecialKeys(int key, int x, int y)
-//{
-//    switch (key)
-//	{
+void SpecialKeys(int key, int x, int y)
+{
+    switch (key)
+	{
+            
+            
+        case GLUT_KEY_UP:
+            std::cout << "Enter" << std::endl;
+            gameStart = true;
+
+            break;
+            
 //		case GLUT_KEY_LEFT:
 //            std::cout << "faster" << std::endl;
 //            rotY = 1.0f;
@@ -590,9 +647,9 @@ void keyboard(unsigned char key, int x, int y) {
 //            std::cout << "slower" << std::endl;
 //            moveZ += 2;
 //			break;
-//	}
-//    glutPostRedisplay();
-//}
+	}
+    glutPostRedisplay();
+}
 
 void mouse(int button, int state, int x, int y) {
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
@@ -619,7 +676,7 @@ void mouseMotion(int x, int y) {
 int setupGLUT(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
-	glutInitWindowSize(1400, 1200);
+	glutInitWindowSize(800, 600);
 	glutInitWindowPosition(100, 100);
 	int windowId = glutCreateWindow("spacerace_building better worlds!");
     
@@ -640,12 +697,13 @@ int main(int argc, char** argv) {
 	init();
     
     // for the arrow keys
-    //glutSpecialFunc(SpecialKeys);
+    glutSpecialFunc(SpecialKeys);
 	
     glutMainLoop();
     
     // have to delete the textres.. dont run automatically
     delete skybox;
+    // delete phongshader;
     
 	return 0;
 }
