@@ -455,6 +455,7 @@ void display() {
     glPushMatrix();
     {
         glScaled(100000, 100000, 100000);
+        //glColor3f(0.0f, 0.0f, 1.0f);
         drawCube();
     }
     glPopMatrix();
