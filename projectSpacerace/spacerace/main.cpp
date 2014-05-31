@@ -153,15 +153,14 @@ void engineRotation(int value) {
 /* Engine light */
 void engineLight(int value)
 {
+    
+	engineColor += 0.1f;
 	if (engineColor == 1.0f)
 	{
-		engineColor -= 0.8f;
+		engineColor = 0.2f;
 	}
-    else {
-        engineColor += 0.8;
-    }
 	glutPostRedisplay();
-	glutTimerFunc(500, engineLight, 0);
+	glutTimerFunc(25, engineLight, 0);
     
 }
 
