@@ -341,7 +341,7 @@ t1398492465
 s6000
 
 N/Users/danielraudschus/Documents/spacerace/build/bin/Debug/spaceraced
-t1401540877
+t1401540903
 s86888
 
 N/Users/danielraudschus/Documents/spacerace/build/lib/Debug/libGLeed.a
@@ -838,7 +838,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies768bc0a6083ab941^d49cc0a6083ab941^---0#1#1#--18"Check dependencies36"CE686EB4-C3C5-40D1-8A61-454217825D27-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies5fb3f445093ab941^b0cbf445093ab941^---0#1#1#--18"Check dependencies36"E372FC25-340C-48A8-BAC5-E327BC5F4FF5-
 
 CCompileC build/projectSpacerace/spacerace/spacerace.build/Debug/spacerace.build/Objects-normal/x86_64/main.o /Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s423233702.753643

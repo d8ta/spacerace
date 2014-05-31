@@ -453,7 +453,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesef8eb8a6083ab941^48a9b8a6083ab941^---0#1#1#--18"Check dependencies36"C5932E17-1008-40F5-BCAB-D6C475F228AA-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd444c745093ab941^933ac945093ab941^---0#1#1#--18"Check dependencies36"6C441A95-0BA9-4C99-BEC9-017F4B28CD4C-
 
 CCompileC build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Objects-normal/x86_64/lib3ds_atmosphere.o /Users/danielraudschus/Documents/spacerace/external/lib3ds-2.0/src/lib3ds_atmosphere.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
 s420287803.691578
@@ -842,8 +842,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Link /U
 b6809C53F-38A9-4147-8B70-710DBE98354A
 
 CPhaseScriptExecution CMake\ PostBuild\ Rules /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh
-s423233702.724907
-e423233702.744916
+s423233861.782405
+e423233861.805546
 r1
 xPhaseScriptExecution
 xCMake PostBuild Rules
@@ -851,6 +851,6 @@ x/Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacer
 oecho "Creating symlinks"
 oCreating symlinks
 o/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -E cmake_symlink_library /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'144"PhaseScriptExecution CMake\ PostBuild\ Rules build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh9ddab9a6083ab941^ccb3bea6083ab941^-355"echo "Creating symlinks"Creating symlinks/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -E cmake_symlink_library /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.dylib3(21%IDEActivityLogMessage2@25"echo "Creating symlinks"-423233702#0#25#-0#-----2@18"Creating symlinks-423233702#25#18#-0#-----2@312"/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -E cmake_symlink_library /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.dylib-423233702#43#312#-0#-----0#0#1#--353"PhaseScriptExecution CMake\ PostBuild\ Rules build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh    cd /Users/danielraudschus/Documents/spacerace    /bin/sh -c /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh36"0FE3C862-D48C-4DD5-959A-603B8C63AEB0-
-b3D5AAD9A-BEB1-4AF6-818C-3224D8472ADC
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'144"PhaseScriptExecution CMake\ PostBuild\ Rules build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.shbaa2c845093ab941^a914df45093ab941^-355"echo "Creating symlinks"Creating symlinks/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -E cmake_symlink_library /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.dylib3(21%IDEActivityLogMessage2@25"echo "Creating symlinks"-423233861#0#25#-0#-----2@18"Creating symlinks-423233861#25#18#-0#-----2@312"/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -E cmake_symlink_library /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.2.0.dylib /Users/danielraudschus/Documents/spacerace/build/lib/Debug/liblib3dsd.dylib-423233861#43#312#-0#-----0#0#1#--353"PhaseScriptExecution CMake\ PostBuild\ Rules build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh    cd /Users/danielraudschus/Documents/spacerace    /bin/sh -c /Users/danielraudschus/Documents/spacerace/build/external/lib3ds-2.0/src/spacerace.build/Debug/lib3ds.build/Script-388D53AC98954772A167284A.sh36"00CB1545-DABB-4BF5-9BFA-329AA9926F02-
+b20B9DE80-2A67-4307-BA55-D75220F045B2
 
