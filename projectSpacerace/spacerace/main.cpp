@@ -484,14 +484,6 @@ void display() {
 	glutSwapBuffers(); // draw scene
 }
 
-/* Update */
-void update(int value) {
-    
-    
-	//increment angle variable and keep it in the range of 0..32s
-	glutPostRedisplay();
-	glutTimerFunc(25, update, 0); //request to call again in at least 25ms
-}
 
 void reshape(int w, int h) {
 	windowWidth = w;
