@@ -8,30 +8,40 @@
 #include <oogl/Texture2D.h>
 #include <oogl/GLSLProgram.h>
 
-
-
+/* Window size */
 int windowWidth, windowHeight;
 
-
+/* Global */
 bool leftMouseButtonDown = false;
 int mousePosX = 0, mousePosY = 0;
 float rotationX = 0, rotationY = 0;
 
+/* Start game */
 bool gameStart = false;
-std::string startGame = "Start";
 
-/** global variables **/
+/* Menu */
+std::string GameTitle = "SPACERACE";
+std::string startGameText = "ENTER Start";
+std::string endGameText = "ESC Exit";
+
+/* InGame */
+std::string score = "Passed Rings: 0";
+
+/* Controls */
 float moveX = 0.0f;
 float moveY = 0.0f;
 float moveZ = 0.0f;
 
-// Universal Rotation!
+/* UFO */
 float rotX = 0.0f;
 float rotY = 0.0f;
 float rotZ = 0.0f;
 float rotAngle = 0.0f;
+float ufoAngle = 0.0f;
+float ufoSlant = 0.0f;
+float engineColor = 0.2f;
 
-//UFO moovement
+/* UFO Engine rotation */
 float angle = 0;
 
 
@@ -43,27 +53,14 @@ float reflectionMatrix[] = {
     0, 0, 0, 0};
 
 
-//oogl::GLSLProgram* phongshader;
+/* Phong shader */
+oogl::GLSLProgram* phongshader;
+
+/* Skybox */
 oogl::Texture2D* skybox;
 
+
 void init() {
-    
-//	// enable lighting
-//    GLfloat mat_shininess[] = { 100.0 };
-//    GLfloat mat_ambient[] = { 1.0, .7, .5, 1.0 };
-//    GLfloat light_position[] = { 10.0, 10.0, 10.0, 0.0 };
-//    glClearColor (0.0, 0.0, 0.0, 0.0);
-//    glShadeModel (GL_SMOOTH);
-//
-//    
-//    glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);
-//    glMaterialfv(GL_FRONT, GL_AMBIENT_AND_DIFFUSE, mat_ambient);
-//    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
-//    
-//    glEnable(GL_LIGHTING);
-//    glEnable(GL_LIGHT0);
-//    glEnable(GL_DEPTH_TEST);
-//    glEnable(GL_COLOR_MATERIAL);
     
     try {
        // phongshader = oogl::GLSLProgram::create("/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.vert", "/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.frag");
@@ -77,12 +74,11 @@ void init() {
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 }
 
-
-float ufoAngle = 0.0f;
-float ufoSlant = 0.0f;
-float engineColorY = 0.2f;
-float engineColorX = 0.2f;
-
+//
+//float ufoAngle = 0.0f;
+//float ufoSlant = 0.0f;
+//float engineColorY = 0.2f;
+//float engineColorX = 0.2f;
 
 /* UFO */
 void drawUFO() {
@@ -112,7 +108,7 @@ void drawUFO() {
 	glutSolidSphere(10.0, 50.0, 100.0);
     
 	// Engines
-	glColor3f(0.2f, 0.2f, engineColorY);
+	glColor3f(0.2f, 0.2f, engineColor);
 	glPushMatrix();
 	{
 		glRotatef(angle, 0.0f, 1.0f, 0.0f);
@@ -120,7 +116,6 @@ void drawUFO() {
 		glutSolidSphere(3.0, 50.0, 100.0);
 	}
 	glPopMatrix();
-    
 	glPushMatrix();
 	{
 		glRotatef(angle, 0.0f, 1.0f, 0.0f);
@@ -128,7 +123,6 @@ void drawUFO() {
 		glutSolidSphere(3.0, 50.0, 100.0);
 	}
 	glPopMatrix();
-    
 	glPushMatrix();
 	{
 		glRotatef(angle, 0.0f, 1.0f, 0.0f);
@@ -136,7 +130,6 @@ void drawUFO() {
 		glutSolidSphere(3.0, 50.0, 100.0);
 	}
 	glPopMatrix();
-    
 	glPushMatrix();
 	{
 		glRotatef(angle, 0.0f, 1.0f, 0.0f);
@@ -146,7 +139,34 @@ void drawUFO() {
 	glPopMatrix();
 }
 
+/* Rotate engines */
+void engineRotation(int value) {
+	angle += 2.0f;
+	if (angle > 360)
+	{
+		angle -= 360;
+	}
+	glutPostRedisplay();
+	glutTimerFunc(25, engineRotation, 0);
+}
 
+/* Engine light */
+void engineLight(int value)
+{
+	if (engineColor == 1.0f)
+	{
+		engineColor -= 0.8f;
+	}
+    else {
+        engineColor += 0.8;
+    }
+	glutPostRedisplay();
+	glutTimerFunc(500, engineLight, 0);
+    
+}
+
+
+/* Create Text */
 void drawText (const char *text, int length, int x, int y){
     glDisable(GL_LIGHTING);
     glMatrixMode(GL_PROJECTION);
@@ -160,7 +180,8 @@ void drawText (const char *text, int length, int x, int y){
     glLoadIdentity();
     glRasterPos2i(x, y);
     
-    for (int i = 0; i<length; i++) {
+    for (int i = 0; i < length; i++)
+	{
         glutBitmapCharacter(GLUT_BITMAP_9_BY_15, (int)text[i]);
     }
     
@@ -171,7 +192,7 @@ void drawText (const char *text, int length, int x, int y){
     glEnable(GL_LIGHTING);
 }
 
-// red rectangles for the flightpath
+/* Red rectangles for the flightpath */
 void drawFlightpath () {
     
     glBegin(GL_POLYGON);
@@ -210,6 +231,7 @@ void drawFlightpath () {
     glEnd();
 }
 
+/* Flightpath */
 void path(int x, int y, int z) {
     glPushMatrix(); {
         glTranslatef(x, y, z);
@@ -221,10 +243,10 @@ void path(int x, int y, int z) {
 
 
 
-
+/* Universe */
 void drawUniverse() {
     
-    // enable lighting
+    // Universe lighting
     GLfloat mat_shininess[] = { 500.0 };
     GLfloat mat_ambient[] = { 1.0, 1.0, 1.0, 0.0 };
     GLfloat light_position[] = { 10.0, 10.0, 10.0, 0.0 };
@@ -244,7 +266,7 @@ void drawUniverse() {
     
     glPushMatrix();
     {
-        // Moon
+        // Planet 1
         glTranslatef(-1500, 800, -4050);
         glColor3f(1.0f, 1.0f, 1.0f);
         glutSolidSphere(1000.0, 180, 180);
@@ -253,12 +275,12 @@ void drawUniverse() {
     glPopMatrix();
 
 
-    // sun
+    // Planet 2
     glPushMatrix();
     {
-    glTranslatef(8000, 1000, -18060);
-    glColor3f(1.0f, .7f, 0.0f);
-    glutSolidSphere(5000.0, 60, 60);
+        glTranslatef(8000, 1000, -18060);
+        glColor3f(1.0f, .7f, 0.0f);
+        glutSolidSphere(5000.0, 60, 60);
     }
     glPopMatrix();
     
@@ -280,7 +302,7 @@ void drawUniverse() {
 }
 
 
-
+/* Fly UFO */
 void fly() {
     moveZ += 4;
 }
@@ -375,26 +397,8 @@ void sunRotation(int value) {
 }
 
 
-/* Triebwerke drehen */
-void engineRotation(int value) {
-	angle += 2.0f;
-	if (angle > 360)
-	{
-		angle -= 360;
-	}
-	glutPostRedisplay();
-	glutTimerFunc(25, engineRotation, 0);
-}
 
-/* Triebwerke Licht */
-void engineLight(int value)
-{
-	engineColorY += 0.1f;
-	glutPostRedisplay();
-	glutTimerFunc(25, engineLight, 0); //request to call again in at least 25ms
-}
-
-
+/* Display */
 void display() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear color and depth buffer
 	// switch to modelview matrix
@@ -469,7 +473,10 @@ void display() {
     }
     
     else{
-        drawText(startGame.data(), startGame.size(), 100, 100);
+        drawText(GameTitle.data(), GameTitle.size(), 350, 400);
+		drawText(startGameText.data(), startGameText.size(), 350, 120);
+		drawText(endGameText.data(), endGameText.size(), 350, 100);
+
     }
     
 
@@ -478,7 +485,7 @@ void display() {
 	glutSwapBuffers(); // draw scene
 }
 
-
+/* Update */
 void update(int value) {
     
     
@@ -497,7 +504,7 @@ void reshape(int w, int h) {
 	gluPerspective(60.0, w/(float)h, 1.0, 100000.0);  // near clipping plane 1.0 and far clipping  plane 100000.0
 }
 
-
+/* Idle */
 void idle() {
 	glutPostRedisplay(); //force a redisplay
 }
@@ -511,7 +518,6 @@ void dumpMatrix(float* m, int c, int r) {
 	}
 }
 
-
 /* Tastatur */
 void keyboard(unsigned char key, int x, int y) {
 	switch (key) {
@@ -520,12 +526,11 @@ void keyboard(unsigned char key, int x, int y) {
             break;
         case 'w':
             std::cout << "fly up" << std::endl;
-            moveZ += 15;
-			ufoSlant = 0.0f;
+            moveY -= 15;
             break;
         case 's':
             std::cout << "fly down" << std::endl;
-            moveZ -= 15;
+            moveY += 15;
             break;
         case 'a':
             std::cout << "fly left" << std::endl;
@@ -545,86 +550,19 @@ void keyboard(unsigned char key, int x, int y) {
 				ufoSlant -= 0.2f;
 			}
             break;
-            
-            // TODO Enter
-
         case 13:
             std::cout << "enter" << std::endl;
             gameStart = true;
-
             break;
-
     }
 	glutPostRedisplay();
 }
 
 
-// alte steuerung
-//void keyboard(unsigned char key, int x, int y) {
-//	switch (key) {
-//        case 27: //27=esc
-//            exit(0);
-//            break;
-//        case 'w':
-//            std::cout << "strafe down" << std::endl;
-//            moveY -= 7;
-//            break;
-//        case 's':
-//            std::cout << "strafe up" << std::endl;
-//            moveY += 7;
-//            break;
-//        case 'a':
-//            std::cout << "strafe left" << std::endl;
-//            moveX += 7;
-//            break;
-//        case 'd':
-//            std::cout << "strafe right" << std::endl;
-//            moveX -= 7;
-//            break;
-//            
-//	}
-//	glutPostRedisplay();
-//}
 
 
 
-void SpecialKeys(int key, int x, int y)
-{
-    switch (key)
-	{
-            
-            
-        case GLUT_KEY_UP:
-            std::cout << "Enter" << std::endl;
-            gameStart = true;
-
-            break;
-            
-//		case GLUT_KEY_LEFT:
-//            std::cout << "faster" << std::endl;
-//            rotY = 1.0f;
-//            rotX = 0.0f;
-//            rotAngle -= 5.0f;
-//            break;
-//		case GLUT_KEY_RIGHT:
-//            std::cout << "slower" << std::endl;
-//            rotY = 1.0f;
-//            rotX = 0.0f;
-//            rotAngle += 5.0f;
-//            break;
-//		case GLUT_KEY_UP:
-//            std::cout << "faster" << std::endl;
-//            moveZ -= 2;
-//
-//			break;
-//		case GLUT_KEY_DOWN:
-//            std::cout << "slower" << std::endl;
-//            moveZ += 2;
-//			break;
-	}
-    glutPostRedisplay();
-}
-
+/* Mouse */
 void mouse(int button, int state, int x, int y) {
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
 		leftMouseButtonDown = true;
@@ -635,6 +573,7 @@ void mouse(int button, int state, int x, int y) {
 	mousePosY = y;
 }
 
+/* Mouse motion */
 void mouseMotion(int x, int y) {
 	if (leftMouseButtonDown) {
 		
@@ -646,6 +585,8 @@ void mouseMotion(int x, int y) {
 		mousePosY = y;
 	}
 }
+
+
 /* GLUT Setup */
 int setupGLUT(int argc, char** argv) {
 	glutInit(&argc, argv);
@@ -671,9 +612,6 @@ int main(int argc, char** argv) {
 	oogl::dumpGLInfos();
 	init();
     
-    // for the arrow keys
-    glutSpecialFunc(SpecialKeys);
-	
     glutMainLoop();
     
     // have to delete the textres.. dont run automatically
