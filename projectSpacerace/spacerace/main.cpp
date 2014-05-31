@@ -31,13 +31,6 @@ float rotY = 0.0f;
 float rotZ = 0.0f;
 float rotAngle = 0.0f;
 
-// Planet rot.
-float planetaryRotX = 0;
-float planetaryRotY = 0;
-
-// Asteroid movment
-float asteroidZ = -5000;
-
 //UFO moovement
 float angle = 0;
 
@@ -53,50 +46,28 @@ float reflectionMatrix[] = {
 //oogl::GLSLProgram* phongshader;
 oogl::Texture2D* skybox;
 
-
-//void setLights() {
-//
-//    
+void init() {
+    
+//	// enable lighting
 //    GLfloat mat_shininess[] = { 100.0 };
 //    GLfloat mat_ambient[] = { 1.0, .7, .5, 1.0 };
-//    GLfloat light_position[] = { 10.0, 10.0, 5.0, 0.0 };
+//    GLfloat light_position[] = { 10.0, 10.0, 10.0, 0.0 };
 //    glClearColor (0.0, 0.0, 0.0, 0.0);
 //    glShadeModel (GL_SMOOTH);
-//    
+//
 //    
 //    glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);
-//    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient);
+//    glMaterialfv(GL_FRONT, GL_AMBIENT_AND_DIFFUSE, mat_ambient);
 //    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
 //    
 //    glEnable(GL_LIGHTING);
 //    glEnable(GL_LIGHT0);
 //    glEnable(GL_DEPTH_TEST);
-//    
-//}
-//
-
-void init() {
-    
-	// enable lighting
-    GLfloat mat_shininess[] = { 100.0 };
-    GLfloat mat_ambient[] = { 1.0, .7, .5, 1.0 };
-    GLfloat light_position[] = { 10.0, 10.0, 10.0, 0.0 };
-    glClearColor (0.0, 0.0, 0.0, 0.0);
-    glShadeModel (GL_SMOOTH);
-
-    
-    glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);
-    glMaterialfv(GL_FRONT, GL_AMBIENT_AND_DIFFUSE, mat_ambient);
-    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
-    
-    glEnable(GL_LIGHTING);
-    glEnable(GL_LIGHT0);
-    glEnable(GL_DEPTH_TEST);
-    glEnable(GL_COLOR_MATERIAL);
+//    glEnable(GL_COLOR_MATERIAL);
     
     try {
        // phongshader = oogl::GLSLProgram::create("/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.vert", "/Users/danielraudschus/Documents/spacerace/projectSpacerace/spacerace/data/shader/textShader.frag");
-        skybox = oogl::Texture2D::load(oogl::Image::load("/Users/danielraudschus/Documents/spacerace/build/bin/Debug/data/textures/comic.jpg"));
+        skybox = oogl::Texture2D::load(oogl::Image::load("/Users/danielraudschus/Documents/spacerace/build/bin/Debug/data/textures/stars2.jpg"));
         
 
     } catch (std::exception& e) {
@@ -176,18 +147,6 @@ void drawUFO() {
 }
 
 
-///* Kreis */
-//void drawCircle()
-//{
-//	glBegin(GL_POLYGON);
-//	for (int i = 0; i < 20; i++)
-//	{
-//		angle = i * 3.14159 / 10;
-//		glVertex2f(cos(angle), sin(angle));
-//	}
-//	glEnd();
-//};
-
 void drawText (const char *text, int length, int x, int y){
     glDisable(GL_LIGHTING);
     glMatrixMode(GL_PROJECTION);
@@ -265,12 +224,31 @@ void path(int x, int y, int z) {
 
 void drawUniverse() {
     
+    // enable lighting
+    GLfloat mat_shininess[] = { 500.0 };
+    GLfloat mat_ambient[] = { 1.0, 1.0, 1.0, 0.0 };
+    GLfloat light_position[] = { 10.0, 10.0, 10.0, 0.0 };
+    glClearColor (0.0, 0.0, 0.0, 0.0);
+    glShadeModel (GL_SMOOTH);
+    
+    
+    glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);
+    glMaterialfv(GL_FRONT, GL_AMBIENT_AND_DIFFUSE, mat_ambient);
+    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+    
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_COLOR_MATERIAL);
+
+    
     glPushMatrix();
     {
         // Moon
         glTranslatef(-1500, 800, -4050);
         glColor3f(1.0f, 1.0f, 1.0f);
         glutSolidSphere(1000.0, 180, 180);
+        
     }
     glPopMatrix();
 
@@ -281,36 +259,6 @@ void drawUniverse() {
     glTranslatef(8000, 1000, -18060);
     glColor3f(1.0f, .7f, 0.0f);
     glutSolidSphere(5000.0, 60, 60);
-    }
-    glPopMatrix();
-    
-    // thats no moon
-    glPushMatrix();
-    {
-        glTranslatef(planetaryRotX, planetaryRotY, -10000);
-        glColor3f(.2f, .2f, .2f);
-        glutSolidSphere(500.0, 60, 60);
-        
-    }
-    glPopMatrix();
-    
-    
-    // Asteroids
-    glPushMatrix();
-    {
-        glTranslatef(50, 50, asteroidZ + 400);
-        glColor3f(.2f, .2f, .2f);
-        glutSolidSphere(10.0, 33, 15);
-        
-        glTranslatef(10, 50, asteroidZ -100);
-        glColor3f(.2f, .2f, .2f);
-        glutSolidSphere(17.0, 33, 15);
-        
-        glTranslatef(80, 50, asteroidZ + 200);
-        glColor3f(.2f, .2f, .2f);
-        glutSolidSphere(20.0, 33, 15);
-        
-        
     }
     glPopMatrix();
     
@@ -339,14 +287,6 @@ void fly() {
 
 
 void drawCube() {
-    
-//    // Enable/Disable features
-//    glPushAttrib(GL_ENABLE_BIT);
-//    glEnable(GL_TEXTURE_2D);
-//    glDisable(GL_DEPTH_TEST);
-//    glDisable(GL_LIGHTING);
-//    glDisable(GL_BLEND);
-//    
     
     // Render the front quad
     glPushMatrix();
@@ -423,6 +363,18 @@ void drawCube() {
 }
 
 
+/* Rotierende Sonne */
+void sunRotation(int value) {
+	angle += 2.0f;
+	if (angle > 360)
+	{
+		angle -= 360;
+	}
+	glutPostRedisplay();
+	glutTimerFunc(25, sunRotation, 0);
+}
+
+
 /* Triebwerke drehen */
 void engineRotation(int value) {
 	angle += 2.0f;
@@ -452,14 +404,41 @@ void display() {
     
     if(gameStart)
     {
-    // Cam fokus on Object
-    //gluLookAt(cameraPositionX, cameraPositionY, cameraPositionZ, moveX, moveY, moveZ, 0.0, 20.0, 0.0);
-    
+        
     // add rotation to the mouse
     glRotatef(rotationX, 1.0f, 0.0f, 0.0f);
     glRotatef(rotationY, 0.0f, 1.0f, 0.0f);
     
 
+            glPushMatrix();
+            {
+                glRotatef(angle, 0.0f, 0.0f, 1.0f);
+                glTranslatef(4000.0f, 1000.0f, 500.0f);
+                // enable lighting
+                GLfloat ufo_shininess[] = { 10.0 };
+                GLfloat ufo_ambient[] = { .0, .7, .5, 0 };
+                GLfloat light_position[] = { 10.0f, 10.0f, 50.0f };
+                glClearColor (0.0, 0.0, 0.0, 0.0);
+                glShadeModel (GL_SMOOTH);
+                
+                
+                glMaterialfv(GL_FRONT, GL_SHININESS, ufo_shininess);
+                glMaterialfv(GL_FRONT, GL_SPECULAR, ufo_ambient);
+                glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+                
+                glEnable(GL_LIGHTING);
+                glEnable(GL_LIGHT0);
+                glEnable(GL_DEPTH_TEST);
+                glEnable(GL_COLOR_MATERIAL);
+                
+                
+                
+            }
+            glPopMatrix();
+
+        
+        
+        
     /* UFO + Vantage Point */
 	glTranslatef(0.0f, -10.0f, -50.0f);
 	
@@ -474,7 +453,7 @@ void display() {
     
     glPushMatrix();
     {
-        glScaled(50000, 50000, 50000);
+        glScaled(100000, 100000, 100000);
         drawCube();
     }
     glPopMatrix();
@@ -506,9 +485,6 @@ void update(int value) {
     
     
 	//increment angle variable and keep it in the range of 0..32s
-	planetaryRotX += 2;
-    planetaryRotY += 2;
-    asteroidZ += 14;
 	glutPostRedisplay();
 	glutTimerFunc(25, update, 0); //request to call again in at least 25ms
 }
@@ -676,7 +652,7 @@ void mouseMotion(int x, int y) {
 int setupGLUT(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
-	glutInitWindowSize(800, 600);
+	glutInitWindowSize(1200, 1000);
 	glutInitWindowPosition(100, 100);
 	int windowId = glutCreateWindow("spacerace_building better worlds!");
     
@@ -686,7 +662,8 @@ int setupGLUT(int argc, char** argv) {
 	glutMouseFunc(mouse);
 	glutMotionFunc(mouseMotion);
     
-	glutTimerFunc(25, engineRotation, 0);
+	glutTimerFunc(25, sunRotation, 0);
+    glutTimerFunc(25, engineRotation, 0);
 	glutTimerFunc(25, engineLight, 0);
     
 	return windowId;
